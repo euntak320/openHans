@@ -33,6 +33,7 @@ time, mark, audio, video {
   font-weight: 400;
   font-family: "NotoSans", sans-serif;
   font-size: 16px;
+  color: #000;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -158,14 +159,14 @@ header.open {
 header.scroll_menu {
   position: fixed;
   top: -78px;
-  height: 150px;
+  height: 128px;
   transition: 0.5s;
   background: #004098;
 }
 
 header.scroll_menu .gnb_area .menu_area .sub_menu_list{
   display: none;
-  top:80px;
+  top:50px;
   height: 115px;
 }
 
@@ -175,6 +176,7 @@ header.scroll_menu .gnb_area .menu_area .sub_menu_list.on {
 
 header.scroll_menu .gnb_area .menu_area .sub_menu_list li {
   margin-right: 50px;
+  margin-bottom: 0;
 }
 
 header.scroll_menu .gnb_area .menu_area .sub_menu_list a {
@@ -182,14 +184,46 @@ header.scroll_menu .gnb_area .menu_area .sub_menu_list a {
   color: #fff;
 }
 
-header.scroll_menu .gnb_area .menu_area .sub_menu_list a.on:after {
+header.scroll_menu .gnb_area .menu_area .sub_menu_list a.on:after,
+header.scroll_menu .gnb_area .menu_area .sub_menu_list a:hover::after {
   content: "";
   position: absolute;
   left:0;
-  bottom:-11px;
+  bottom:-10px;
   width: 100%;
   height: 2px;
   background: #fff;
   z-index: 0;
 }
 
+/* footer */
+footer {
+  padding: 80px 260px;
+  background-color: #fff;
+}
+
+footer .top_area {
+  display: flex;
+  align-items: center;
+  
+}
+
+footer .top_area .footer_logo {
+  width:220px;
+  margin-right: 60px;
+}
+footer .top_area .footer_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .top_area .link_area {
+  display: flex;
+}
+
+footer .top_area .link_area li {
+  margin: 0 20px;
+}
+footer .top_area .link_area li a {
+  color: #333;
+}
