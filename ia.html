@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>OPENHAND RENEWAL</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+			;
+		}
+		#contents {
+			position: relative;
+			overflow: hidden;
+			padding: 0 430px 0 50px;
+		}
+
+		#contents .mobile_check {
+			position: fixed;
+			right: 50px;
+			overflow-y: auto;
+			border: 1px solid #ccc;
+			width: 360px;
+			height: 640px;
+			background: #fff;
+		}
+
+		#wrap {
+			padding: 10px;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+
+		#header {
+			overflow: hidden;
+			padding: 50px 50px 30px 50px;
+			width: 100%;
+		}
+
+		#header .titleArea {
+			overflow: hidden;
+			padding-bottom: 20px;
+			border-bottom: 3px solid #ddd;
+		}
+
+		#header .titleArea>* {
+			display: inline-block;
+			width: 49%;
+			vertical-align: middle;
+		}
+
+		#header .titleArea .fr {
+			line-height: 26px;
+		}
+		
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		table th {
+			background: #ccc;
+		}
+
+		table td,
+		table th {
+			padding: 7px 2px;
+			border: 1px solid #ddd;
+			font-size: 14px;
+			font-weight: 500;
+			text-align: center;
+		}
+		table td {
+			width: 10%;
+		}
+
+		table .depth {
+			border-top: 1px solid #333;
+		}
+
+		section {
+			padding:10px;
+		}
+
+		section .title {
+			display: block;
+			margin: 10px 0;
+			font-size:20px;
+		}
+
+		.tab {
+			margin-top:20px;
+		}
+
+		.tab button {
+			display: inline-block;
+			width:150px;
+			line-height: 30px;
+			font-size:20px;
+		}
+		.check_area {
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			margin-bottom:10px;
+		}
+		.check_area > span {
+			margin-left:10px;
+		}
+	</style>
+
+	<script>
+		$(function() {
+			$("table tr").each(function( index ){
+				$(this).find("td").eq(0).text( index);
+			});
+		})
+	</script>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+
+		<!-- header -->
+		<header id="header">
+			<div class="titleArea">
+				<div class="fl">
+					<h1>OPENHAND RENEWAL(반응형)</h1>
+				</div>
+				<div class="fr">
+					<strong>국문</strong>
+					<p>HTML5 / utf-8</p>
+					<p>Browser - Firefox, Eage Crome, Safari, Opera</p>
+				</div>
+			</div>
+
+		</header>
+		<!-- header -->
+		<!-- info -->
+		
+		<!-- info -->
+
+		<!-- section -->
+		<section id="contents">
+			
+			<!-- 메뉴 구조도 -->
+			<div class="table_style01">
+				<div class="check_area">
+					<span>○ : 완료,</span>
+					<span>△ : ing,</span>
+					<span>X : 안함</span>
+				</div>
+				<table>
+					<colgroup>
+						<col span="8" style="width:atuo" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">Depth</th>
+							<th scope="col">2Depth</th>
+							<th scope="col">URL</th>
+							<th scope="col">완료</th>
+							<th scope="col">기타사항</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>메인</td>
+							<td></td>
+							<td><a href="html/index.html" target="_blank" title="새창으로 열기">메인</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>회사소개</td>
+							<td>회사개요</td>
+							<td><a href="html/info/introduce.html" target="_blank" title="새창으로 열기">회사개요</a></td>
+							<td></td>
+							<td>회사개요, 슬로건/비전/경영이념/CI</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>CEO인사말</td>
+							<td><a href="html/info/ceo.html" target="_blank" title="새창으로 열기">CEO 인사말</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>연혁</td>
+							<td><a href="html/info/histroy.html" target="_blank" title="새창으로 열기">연혁</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>찾아오시는길</td>
+							<td><a href="html/info/loaction.html" target="_blank" title="새창으로 열기">찾아오시는길</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>사업소개</td>
+							<td>IT서비스</td>
+							<td><a href="html/business/service.html" target="_blank" title="새창으로 열기">IT서비스</a></td>
+							<td></td>
+							<td>S/W TEST, 정보보안, 서비스데스크, 모니터링 /운영, UIUX검증 IT 서비스 직원인터뷰</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>물류지원</td>
+							<td><a href="html/business/distribution.html" target="_blank" title="새창으로 열기">물류지원</a></td>
+							<td></td>
+							<td>물류지원 운영/정산 물류지원직원 인터뷰</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>헬스키퍼</td>
+							<td><a href="html/info/health.html" target="_blank" title="새창으로 열기">헬스키퍼</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>홍보센터</td>
+							<td>오픈핸즈 NEWS</td>
+							<td><a href="html/promotion/news.html" target="_blank" title="새창으로 열기">오픈핸즈 NEWS</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>채용정보</td>
+							<td>오픈핸즈 人은</td>
+							<td><a href="html/recruit/openpeople.html" target="_blank" title="새창으로 열기">오픈핸즈 人은</a></td>
+							<td></td>
+							<td>인재상/ 복리 후생</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>채용절차</td>
+							<td><a href="html/recruit/procedure.html" target="_blank" title="새창으로 열기">채용절차</a></td>
+							<td></td>
+							<td>채용 프로세스 구직 등록방법</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>채용지원</td>
+							<td><a href="html/recruit/support.html" target="_blank" title="새창으로 열기">채용지원</a></td>
+							<td></td>
+							<td>지원하기</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>오픈핸즈 FAQ</td>
+							<td><a href="html/recruit/faq.html" target="_blank" title="새창으로 열기">오픈핸즈 FAQ</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>기타</td>
+							<td>사업자 정보</td>
+							<td><a href="html/information.html" target="_blank" title="새창으로 열기">사업자 정보</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>찾아오시는길</td>
+							<td><a href="html/location.html" target="_blank" title="새창으로 열기">찾아오시는길</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>SITEMAP</td>
+							<td><a href="html/sitemap.html" target="_blank" title="새창으로 열기">사이트맵</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>개인정보취급방침</td>
+							<td><a href="html/privacy.html" target="_blank" title="새창으로 열기">개인정보취급방침</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+	<!--// wrap -->
+
+</body>
+
+</html>
