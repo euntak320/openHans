@@ -1,0 +1,26 @@
+.main {
+  position: relative;
+}
+
+/* 첫번째 영역 */
+.first_area {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  background: url('../images/main/main-first-section-bg_01.jpg') no-repeat;
+  background-size: cover;
+}
+
+.first_area .main_text {
+  position: absolute;
+  left: 285px;
+  top:407px;
+}
+
+.first_area .main_text p {
+  letter-spacing: -3%;
+  line-height: 80px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
