@@ -3,12 +3,12 @@
 @font-face {
     font-family:'NotoSans';
     font-weight: 400;
-    src: url('../../fonts/NotoSans-Regular.ttf') format('truetype');
+    src: url('../fonts/NotoSansKR-Bold.otf') format('truetype');
 }
 @font-face {
     font-family:'NotoSans';
     font-weight: 700;
-    src: url('../../fonts/NotoSans-Bold.ttf') format('truetype');
+    src: url('../fonts/NotoSansKR-Bold.otf') format('truetype');
 }
 
 /* ============================== reset ========================== */
@@ -82,7 +82,7 @@ button {
 }
 
 section {
-  background: #eee;
+  /* background: #eee; */
   padding-bottom: 80px;
 }
 
@@ -468,7 +468,7 @@ footer .copyright {
 
 footer .accessibility_area {
   margin-top: 22px;
-  background: url("../../images/common/accessibility-logo.png") no-repeat;
+  background: url("../images/common/accessibility-logo.png") no-repeat;
   background-size: 80px;
 
 }

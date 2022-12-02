@@ -9,11 +9,14 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<!-- js -->
 	<script src="assets/js/common/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/common/swiper.min.js"></script>
 	<script src="assets/js/common/script.js"></script>
+	<script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -70,25 +73,36 @@
 
 		<!-- section : [S] -->
 		<section class="main">
-			<div class="first_area one">
-				<div class="main_text">
-					<p>오픈핸즈는 직원과</p>
-					<p>회사가 함께 열린마음으로</p>
-					<p>“더 나은 세상”을 만들어 갑니다.</p>
+			<div class="first_area">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide one">
+						<div class="main_text">
+							<p>오픈핸즈는 직원과</p>
+							<p>회사가 함께 열린마음으로</p>
+							<p>“더 나은 세상”을 만들어 갑니다.</p>
+						</div>
+					</div>
+					<div class="swiper-slide two">
+						<div class="main_text">
+							<p>오픈핸즈는 직원과 123</p>
+							<p>회사가 함께 열린마음으로</p>
+							<p>“더 나은 세상”을 만들어 갑니다.</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="first_area two" style="display: none">
-				<div class="main_text">
-					<p>오픈핸즈는 직원과</p>
-					<p>회사가 함께 열린마음으로</p>
-					<p>“더 나은 세상”을 만들어 갑니다.</p>
+				<span class="line"></span>
+				<div class="button_area">
+					<div class="swiper-button-prev"></div>
+					<button type="button" class="stop">일시정지</button>
+					<div class="swiper-button-next"></div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 
-			<div class="sercond_area">
-				<div class="pagnation" style="display: none;">
+			<div class="second_area">
+				<div class="pagnation">
 					<ul>
-						<li><a href=""></a></li>
+						<li><a href="" class="on"></a></li>
 						<li><a href=""></a></li>
 						<li><a href=""></a></li>
 						<li><a href=""></a></li>
@@ -116,7 +130,7 @@
 						</div>
 						<div class="text_area health">
 							<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
-							<span class="main_title">헬스키퍼</span>
+							<span class="main_title">헬스케어</span>
 							<p>고객사 임직원의 근골격계 질환을 예방하는 전문 건강 관리 서비스를 제공합니다.</p>
 							<a href="">자세히 보기</a>
 						</div>
@@ -140,31 +154,140 @@
 			</div>
 
 			<div class="thrid_area">
-				<div class="swiper_area">
-					<div class="text_area">
-						<p>오픈핸즈와 함께 한다는건 어떤것인가요? </p>
-						<p>오픈핸즈는 나에게 친구같은 존재입니다.</p>
-						<p>좋은 사람들과 좋은 일자리에서 함께 웃으며 기쁜일 슬픈 일 모두 함께 공유하고 서로 하나가되어 하나씩 함께 발전해 나아가는 동체가 되어 마치 오래된 친구처럼 든든한 동료들이 곁에 있기 때문입니다.</p>
+				<span class="line"></span>
+				<div class="text_swiper">
+					<div class="swiper-wrapper">
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈와 함께 한다는건<br>어떤것인가요?</p>
+							<p class="normal">오픈핸즈는 나에게 친구같은 존재입니다.</p>
+							<p class="normal">좋은 사람들과 좋은 일자리에서 함께 웃으며 기쁜일 슬픈 일 모두 함께 공유하고 서로 하나가되어 하나씩 함께 발전해 나아가는 동체가 되어 마치 오래된 친구처럼 든든한 동료들이 곁에 있기 때문입니다.</p>
+						</div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈와 함께 한다는건<br>어떤것인가요??</p>
+							<p class="normal">오픈핸즈는 나에게 친구같은 존재입니다.</p>
+							<p class="normal">좋은 사람들과 좋은 일자리에서 함께 웃으며 기쁜일 슬픈 일 모두 함께 공유하고 서로 하나가되어 하나씩 함께 발전해 나아가는 동체가 되어 마치 오래된 친구처럼 든든한 동료들이 곁에 있기 때문입니다.</p>
+						</div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈와 함께 한다는건<br>어떤것인가요???</p>
+							<p class="normal">오픈핸즈는 나에게 친구같은 존재입니다.</p>
+							<p class="normal">좋은 사람들과 좋은 일자리에서 함께 웃으며 기쁜일 슬픈 일 모두 함께 공유하고 서로 하나가되어 하나씩 함께 발전해 나아가는 동체가 되어 마치 오래된 친구처럼 든든한 동료들이 곁에 있기 때문입니다.</p>
+						</div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈와 함께 한다는건<br>어떤것인가요????</p>
+							<p class="normal">오픈핸즈는 나에게 친구같은 존재입니다.</p>
+							<p class="normal">좋은 사람들과 좋은 일자리에서 함께 웃으며 기쁜일 슬픈 일 모두 함께 공유하고 서로 하나가되어 하나씩 함께 발전해 나아가는 동체가 되어 마치 오래된 친구처럼 든든한 동료들이 곁에 있기 때문입니다.</p>
+						</div>
+					</div>
+					<div class="button_area">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<button type="button" class="stop">일시정지</button>
+						<div class="swiper-button-next"></div>
+					</div>
 				</div>
-				<div class="img_area">
-					<img src="assets/images/main/@dummy_01.jpg" alt="">
-				</div>
-				
+				<div class="image_swiper">
+					<div class="swiper-wrapper">
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/@dummy_01.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/@dummy_01.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/@dummy_01.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/@dummy_01.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div class="forth_area">
-				<p>오픈핸즈는 “더 나은 세상”을 위해 끊임없이 노력하고 있습니다. </p>
-				<a href="">오픈핸즈 NEWS 바로가기 </a>
-
-				<div class="swiper_warp">
-					<a href="" class="siwper_content">
-						<p>[공지] 오픈핸즈 제 12기 결산공고</p>
-						<span>2022.03.16</span>
-						<div class="img_area">
-							<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+				<span class="line"></span>
+				<p class="main_title">오픈핸즈는 “더 나은 세상”을 위해<br> 끊임없이 노력하고 있습니다.</p>
+				<a href="" class="news_link">오픈핸즈 NEWS 바로가기 </a>
+				<div class="swiper-area">
+					<div class="swiper-wrapper">
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
 						</div>
-					</a>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_02.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
+								<span>2022.01.04</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_03.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_02.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
+								<span>2022.01.04</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_03.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="button_area">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<button type="button" class="stop">일시정지</button>
+						<div class="swiper-button-next"></div>
+					</div>
 				</div>
 			</div>
 
