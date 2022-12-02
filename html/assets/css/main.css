@@ -11,12 +11,13 @@
 .first_area .line {
   position: absolute;
   top: 778px;
-  left:0;
+  left: 0;
   width: 100%;
   height: 2px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
+
 .first_area .swiper-slide {
   position: relative;
   width: 100%;
@@ -28,7 +29,7 @@
 .first_area .swiper-slide .main_text {
   position: absolute;
   left: 285px;
-  top:407px;
+  top: 407px;
 }
 
 .first_area .swiper-slide .main_text p {
@@ -59,7 +60,7 @@
   background: #00a6ec;
 }
 
-.first_area .swiper-pagination .swiper-pagination-bullet > span {
+.first_area .swiper-pagination .swiper-pagination-bullet>span {
   display: block;
   margin-top: -40px;
   font-size: 20px;
@@ -71,8 +72,8 @@
 
 .first_area .button_area {
   position: absolute;
-  bottom:222px;
-  right:260px;
+  bottom: 222px;
+  right: 260px;
   width: 200px;
   z-index: 10;
 }
@@ -83,20 +84,23 @@
   justify-content: space-between;
 }
 
-.first_area .swiper-button-next, .first_area .swiper-button-prev {
+.first_area .swiper-button-next,
+.first_area .swiper-button-prev {
   position: static;
   bottom: 0;
   right: 0;
   left: 0;
   top: auto;
-  margin-top:0;
+  margin-top: 0;
   opacity: 1;
 }
 
-.first_area .swiper-button-next, .first_area .swiper-button-prev, .first_area button {
+.first_area .swiper-button-next,
+.first_area .swiper-button-prev,
+.first_area button {
   width: 60px;
   height: 60px;
-  border:1px solid #fff;
+  border: 1px solid #fff;
   border-radius: 50%;
 }
 
@@ -104,7 +108,8 @@
   text-indent: -9999px;
 }
 
-.first_area .swiper-button-next:after, .first_area .swiper-button-prev:after{
+.first_area .swiper-button-next:after,
+.first_area .swiper-button-prev:after {
   display: none
 }
 
@@ -132,25 +137,28 @@
 .second_area {
   position: relative;
 }
+
 .second_area::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.second_area .pagnation{
+.second_area .pagnation {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
+
 .second_area .pagnation ul li {
- width: 30px; 
- height: 4px;
- margin-bottom: 221px;
- background: #fff;
- transition: all 0.5s;
- cursor: pointer;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 221px;
+  background: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
 }
+
 .second_area .pagnation ul li:hover,
 .second_area .pagnation ul li.on {
   width: 80px;
@@ -229,11 +237,11 @@
 .second_area .left_area a::before {
   content: "";
   position: absolute;
-  left:0;
+  left: 0;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #fff;  
+  background: #fff;
 }
 
 .second_area .left_area a:hover {
@@ -250,31 +258,31 @@
 .second_area .left_area a::after {
   content: "";
   position: absolute;
-  left:18px;
-  top:50%;
+  left: 18px;
+  top: 50%;
   width: 26px;
   height: 42px;
   transform: translateY(-50%);
 }
 
-.second_area .left_area .text_area.it a::after{
+.second_area .left_area .text_area.it a::after {
   background: url('../images/main/icon-it-arrow.png') no-repeat center;
-  background-size:50%;
+  background-size: 50%;
 }
 
-.second_area .left_area .text_area.supply a::after{
+.second_area .left_area .text_area.supply a::after {
   background: url('../images/main/icon-supply-arrow.png') no-repeat center;
-  background-size:50%;
+  background-size: 50%;
 }
 
-.second_area .left_area .text_area.service a::after{
+.second_area .left_area .text_area.service a::after {
   background: url('../images/main/icon-service-arrow.png') no-repeat center;
-  background-size:50%;
+  background-size: 50%;
 }
 
-.second_area .left_area .text_area.health a::after{
+.second_area .left_area .text_area.health a::after {
   background: url('../images/main/icon-health-arrow.png') no-repeat center;
-  background-size:50%;
+  background-size: 50%;
 }
 
 .second_area .right_area {
@@ -288,13 +296,13 @@
   overflow: hidden;
   position: relative;
   padding: 200px 260px;
-  margin:0 auto;
+  margin: 0 auto;
   background: #fff;
 }
 
 .thrid_area .line {
   position: absolute;
-  left:0;
+  left: 0;
   top: 380px;
   width: 100%;
   height: 2px;
@@ -318,7 +326,7 @@
 }
 
 .thrid_area .text_area .normal {
-  margin-top:40px;
+  margin-top: 40px;
   font-size: 24px;
   line-height: 36px;
   font-weight: 400;
@@ -334,20 +342,23 @@
   margin-left: 120px;
 }
 
-.thrid_area .swiper-button-next, .thrid_area .swiper-button-prev {
+.thrid_area .swiper-button-next,
+.thrid_area .swiper-button-prev {
   position: static;
   bottom: 0;
   right: 0;
   left: 0;
   top: auto;
-  margin-top:0;
+  margin-top: 0;
   opacity: 1;
 }
 
-.thrid_area .swiper-button-next, .thrid_area .swiper-button-prev, .thrid_area button {
+.thrid_area .swiper-button-next,
+.thrid_area .swiper-button-prev,
+.thrid_area button {
   width: 60px;
   height: 60px;
-  border:1px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
 }
 
@@ -355,7 +366,8 @@
   text-indent: -9999px;
 }
 
-.thrid_area .swiper-button-next:after, .thrid_area .swiper-button-prev:after{
+.thrid_area .swiper-button-next:after,
+.thrid_area .swiper-button-prev:after {
   display: none
 }
 
@@ -398,14 +410,16 @@
   font-size: 24px;
   font-weight: 700;
 }
+
 .thrid_area .swiper-pagination span {
   display: inline-block;
-  margin:0 -4px;
+  margin: 0 -4px;
   font-size: 24px;
   font-weight: 700;
 }
+
 .thrid_area .swiper-pagination span:first-child {
-  margin: 0 -3px 0 0 ;
+  margin: 0 -3px 0 0;
 }
 
 
@@ -417,7 +431,7 @@
 
 .forth_area .line {
   position: absolute;
-  left:0;
+  left: 0;
   top: 538px;
   width: 100%;
   height: 2px;
@@ -442,7 +456,7 @@
 }
 
 .forth_area .swiper_warp {
-  padding-top:59px;
+  padding-top: 59px;
 }
 
 .forth_area .swiper_warp .siwper_content {
@@ -452,30 +466,34 @@
 
 .forth_area .swiper_warp .siwper_content p {
   font-weight: 700;
-  font-size:30px;
+  font-size: 30px;
   line-height: 42px;
 }
 
 .forth_area .swiper_warp .siwper_content span {
-  margin-top:10px;
+  margin-top: 10px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
-.forth_area .swiper-button-next, .forth_area .swiper-button-prev {
+
+.forth_area .swiper-button-next,
+.forth_area .swiper-button-prev {
   position: static;
   bottom: 0;
   right: 0;
   left: 0;
   top: auto;
-  margin-top:0;
+  margin-top: 0;
   opacity: 1;
 }
 
-.forth_area .swiper-button-next, .forth_area .swiper-button-prev, .forth_area button {
+.forth_area .swiper-button-next,
+.forth_area .swiper-button-prev,
+.forth_area button {
   width: 60px;
   height: 60px;
-  border:1px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
 }
 
@@ -483,7 +501,8 @@
   text-indent: -9999px;
 }
 
-.forth_area .swiper-button-next:after, .forth_area .swiper-button-prev:after{
+.forth_area .swiper-button-next:after,
+.forth_area .swiper-button-prev:after {
   display: none
 }
 
@@ -536,13 +555,13 @@
 
 .forth_area .swiper-pagination span {
   display: inline-block;
-  margin:0 -4px;
+  margin: 0 -4px;
   font-size: 24px;
   font-weight: 700;
 }
 
 .forth_area .swiper-pagination span:first-child {
-  margin: 0 -3px 0 0 ;
+  margin: 0 -3px 0 0;
 }
 
 .forth_area .swiper_warp p {
@@ -550,14 +569,14 @@
   width: 95%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size:30px;
+  font-size: 30px;
   line-height: 42px;
   font-weight: 700;
-} 
+}
 
 .forth_area .swiper_warp span {
   display: block;
-  margin-top:20px;
+  margin-top: 20px;
   color: #666;
   font-size: 24px;
   font-weight: 400;
@@ -608,7 +627,7 @@
 .last_area .btn_area a::before {
   content: "";
   position: absolute;
-  left:0;
+  left: 0;
   width: 60px;
   height: 60px;
   background: #fff;
@@ -616,17 +635,17 @@
   transition: all 0.5s;
 }
 
-.last_area .btn_area a::after{
+.last_area .btn_area a::after {
   content: "";
   position: absolute;
-  left:20px;
-  top:50%;
+  left: 20px;
+  top: 50%;
   width: 23px;
   height: 42px;
-  background:  url('../images/main/icon-link-arrow.png') no-repeat center;
+  background: url('../images/main/icon-link-arrow.png') no-repeat center;
   background-size: 50%;
   transform: translateY(-50%);
-} 
+}
 
 .last_area .btn_area a:hover {
   color: #004098;

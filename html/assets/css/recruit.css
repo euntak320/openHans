@@ -1,0 +1,161 @@
+/* 채용절차  */
+.procedure .keyvisual_area {
+  background: url('../images/recurit/keyvisual_career.jpg') no-repeat;
+  background-size: cover;
+}
+
+.procedure_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.procedure_area .procedure_box {
+  padding-right: 122px;
+  text-align: center;
+  background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 90% 20px;
+  background-size: 16px 30px;
+}
+
+.procedure_area .procedure_box:last-child {
+  padding-right: 0;
+  background: none;
+}
+
+.procedure_area .procedure_box .img_area img {
+  width: 50%;
+  text-align: center;
+}
+
+.procedure_area .procedure_box .step {
+  margin-top: 44px;
+  color: #004098;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.procedure_area .procedure_box .normal {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+}
+
+.procedure .process_table {
+  margin-top: 160px;
+}
+
+.process_table .table_area {
+  margin-top: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.process_table .table_area .table_cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.process_table .table_area .table_cell:last-child {
+  border-bottom: 0;
+}
+
+.process_table .table_area .table_cell .step {
+  margin-right: 58px;
+  color: #004098;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.process_table .table_area .table_cell .bold {
+  width: 205px;
+  margin-right: 150px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.process_table .table_area .table_cell li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+}
+
+.process_table .table_area .table_cell li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.process_table .table_area button {
+  position: absolute;
+  right: 0;
+  height: 60px;
+  padding: 0 50px;
+  border: 1px solid #000;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.procedure .notication_area {
+  margin-top: 80px;
+  padding: 60px 120px;
+  background: #f5f5f5;
+}
+
+.procedure .notication_area .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.procedure .notication_area .list .bold {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.procedure .notication_area .list p {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.procedure .notication_area .list p a {
+  font-size: 20px;
+}
+
+.method_area .content_area {
+  position: relative;
+}
+
+.method_area .content_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.method_area .left_area {
+  float: left;
+  width:180px;
+  margin-right: 210px;
+}
+
+.method_area .left_area .bold {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #000;
+}
+
+.method_area .right_area {
+  float: right;
+}
