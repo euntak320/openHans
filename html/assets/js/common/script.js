@@ -4,6 +4,7 @@ $(function () {
 
 	var $tabButton = $('.tab_area .tab_list button')
 	var $tabView = $('.tab_area .view')
+	var $layerClose = $('.layer_wrap button')
 
 	// header
 	const $header = $('header');
@@ -14,7 +15,6 @@ $(function () {
 	$header.mouseleave(function () {
 		$(this).removeClass('open')
 	})
-	
 	
 	$(window).scroll(function(e) {
 		scrollTop = $(window).scrollTop();
@@ -31,6 +31,13 @@ $(function () {
 		}
 		thisScroll = $(window).scrollTop()
 	});
+
+	//layer
+	$layerClose.click(function(){
+		$(this).parents('.layer_wrap').hide();
+	});
+
+	
 
 	//  tab	
 	$tabButton.click(function(){

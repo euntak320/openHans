@@ -92,6 +92,20 @@ section {
   padding-top: 100px;
 }
 
+/* button */
+.wrap .com_button {
+  height: 60px;
+  padding: 0 50px;
+  line-height: 60px;
+  border: 1px solid #000;
+  border-radius: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+}
+
 /* keyvisual */
 .keyvisual_area {
   position: relative;
@@ -109,6 +123,15 @@ section {
   font-weight: 700;
   color: #fff;
   transform: translate(-50%, -50%);
+}
+
+.keyvisual_area .sub_title {
+  display: block;
+  margin-top:10px;
+  font-size:30px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .keyvisual_area .keyvisual_navi {
@@ -595,4 +618,44 @@ footer .accessibility_logo {
 footer .accessibility_logo img {
   display: block;
   width: 100%;
+}
+
+/* layer */
+.layer_wrap {
+  position: fixed;
+  top:0; 
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.layer_wrap .layer_area {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 522px;
+  padding: 80px 0 60px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  
+
+}
+
+.layer_wrap .layer_area span {
+  display: block;
+  width: 30.5%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.layer_wrap .layer_area .com_button {
+  display: block;
+  margin: 40px auto 0;
+
 }

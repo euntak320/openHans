@@ -1,4 +1,3 @@
-
 /* 오픈핸즈 인은 */
 .openhandsperson .keyvisual_area {
   background: url('../images/recurit/keyvisual_openhands.jpg') no-repeat;
@@ -8,20 +7,20 @@
 .openhandsperson .title {
   display: block;
   text-align: center;
-  font-size:30px;
+  font-size: 30px;
   line-height: 42px;
   font-weight: 700;
   color: #000;
-  
+
 }
 
 .openhandsperson .icon_list {
   display: flex;
   justify-content: center;
-  margin-top:85px;
+  margin-top: 85px;
 }
 
-.openhandsperson .icon_list + .icon_list {
+.openhandsperson .icon_list+.icon_list {
   margin-top: 120px;
 }
 
@@ -35,15 +34,15 @@
 }
 
 
-.openhandsperson .icon_box .img_area img{
+.openhandsperson .icon_box .img_area img {
   width: 50%;
   margin: 0 auto;
 }
 
 .openhandsperson .icon_box .bold {
   display: block;
-  margin-top:40px;
-  font-size:30px;
+  margin-top: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 42px;
   color: #004098;
@@ -157,12 +156,7 @@
 .process_table .table_area button {
   position: absolute;
   right: 0;
-  height: 60px;
   padding: 0 50px;
-  border: 1px solid #000;
-  border-radius: 60px;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 .procedure .notication_area {
@@ -203,14 +197,14 @@
   clear: both;
 }
 
-.method_area .content_area + .content_area {
+.method_area .content_area+.content_area {
   padding: 80px 0;
   border-bottom: 0;
 }
 
 .method_area .left_area {
   float: left;
-  width:180px;
+  width: 180px;
 }
 
 .method_area .left_area .bold {
@@ -246,7 +240,7 @@
   background: none;
 }
 
-.method_area .step_box .img_area img{
+.method_area .step_box .img_area img {
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -254,15 +248,15 @@
 
 .method_area .step_box .step {
   margin-top: 33px;
-  font-size:20px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   color: #004098;
 }
 
 .method_area .step_box .coment {
-  margin-top:20px;
-  font-size:20px;
+  margin-top: 20px;
+  font-size: 20px;
   line-height: 28px;
 }
 
@@ -271,7 +265,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  margin-top:120px;
+  margin-top: 120px;
 }
 
 .right_area .info_site {
@@ -281,13 +275,13 @@
 
 .right_area .info_site .title {
   margin-right: 30px;
-  font-size:20px;
+  font-size: 20px;
   color: #000;
   line-height: 28px;
   font-weight: 700;
 }
 
-.right_area .info_site .site span{
+.right_area .info_site .site span {
   display: inline-block;
   width: 90px;
   margin-right: 30px;
@@ -301,4 +295,480 @@
   text-decoration: underline;
   color: #059aee;
   letter-spacing: -0.03em
+}
+
+
+/* 채용공고 */
+.notice .keyvisual_area {
+  background: url('../images/recurit/keyvisual_notice.jpg') no-repeat;
+  background-size: cover;
+}
+
+.notice .title {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  line-height: 69px;
+  font-weight: 700;
+}
+
+.notice .notice_table {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.notice .notice_table .table_header {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.notice .notice_table .table_header span {
+  display: table-cell;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.notice .notice_table .table_body span {
+  display: table-cell;
+  text-align: center;
+}
+
+.notice .notice_table .table_body span {
+  padding: 40px 0;
+}
+
+.notice .notice_table .table_body a {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.notice .notice_table .table_body a:hover span {
+  font-weight: 700;
+}
+
+.notice .notice_table .table_body a:hover span:first-child {
+  color: #004098;
+}
+
+.notice .notice_table .w20 {
+  width: 20%;
+}
+
+.notice .notice_table .w15 {
+  width: 15%;
+}
+
+.notice .notice_table .w50 {
+  width: 50%;
+}
+
+.notice .caution {
+  display: block;
+  margin-top: 60px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.notice .detail_area .info_detail span {
+  display: block;
+}
+
+.notice .detail_area .info_detail .category {
+  color: #004098;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.notice .detail_area .info_detail .title {
+  margin-top: 20px;
+  line-height: 52px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.notice .detail_area .info_detail .date {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.notice .detail_area .detail_content {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.notice .detail_area .detail_content a {
+  display: block;
+  margin-top: 40px;
+  color: #059aee;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.notice .detail_area .paging_bar {
+  margin-top: 80px;
+}
+
+.notice .detail_area .paging_bar a {
+  font-size: 20px;
+  line-height: 29px;
+  padding-left: 16px;
+  background: url('../images/recurit/icon-list-arrow.png') no-repeat left center;
+  background-size: 7px;
+}
+
+/* 채용지원 */
+
+.support .keyvisual_area {
+  background: url('../images/recurit/keyvisual_support.jpg') no-repeat;
+  background-size: cover;
+}
+
+.support .form_area .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 69px;
+}
+
+.support .form_area .title>span {
+  font-size: 40px;
+  font-weight: 700;
+  color: #059aee;
+}
+
+.support .privacy_area {
+  overflow: auto;
+  height: 280px;
+  padding: 40px 20px;
+  margin-top: 60px;
+  background: #f5f5f5;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+}
+
+.support .privacy_area .text_box {
+  margin-top: 30px;
+}
+
+.support .checkbox {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.support .checkbox input {
+  position: relative;
+  opacity: 0;
+}
+
+.support .checkbox input+label {
+  position: relative;
+  padding-left: 39px;
+  cursor: pointer;
+}
+
+.support .checkbox input+label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.support .checkbox input:checked+label::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 18px;
+  background: url('../images/common/icon_check_on.png') no-repeat center left;
+  background-size: 50%;
+}
+
+.support .download_area {
+  position: relative;
+  margin-top: 120px;
+  padding:40px 0;
+  border-top:1px solid #000;
+  border-bottom:1px solid #000;
+}
+
+.support .download_area span {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+}
+
+.support .download_area .title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.support .download_area .button {
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  
+}
+
+.support .download_area .button a {
+  display: block;
+  font-size: 20px;
+  
+}
+
+.support .info_input_area {
+  margin-top:120px;
+}
+
+.support .info_input_area .title {
+  display: block;
+  font-size:40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.support .info_input_area .sub_title {
+  display: block;
+  margin-top:10px;
+  line-height: 28px;
+  font-size: 20px;
+  color: #059aee;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.support .input_wrap {
+  display: flex;
+  margin-top: 60px;
+}
+
+.support .input_wrap.email .input_area {
+  margin-right: 0;
+}
+
+.support .input_area {
+  margin-right: 60px;
+}
+
+.support .input_area span {
+  font-size:24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.support .input_area span > span {
+  font-weight: 700;
+  color: #059aee;
+}
+
+.support .input_area .input_box{
+  width: 420px;
+  height: 60px;
+  margin-top:10px;
+}
+
+.support .input_area .input_box.v2 {
+  width: 440px;
+}
+
+.support .input_area .input_box input[type="text"],
+.support .select_box select {
+  width: 100%;
+  height: 100%;
+  padding:22px 0 22px 20px;
+  border: 1px solid #999;
+  font-size:24px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.support .select_box{
+  width: 440px;
+  height: 60px;
+}
+
+.support .select_box select{
+  padding: 0 0 0 20px;
+}
+
+.support .input_wrap.email {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.support .input_wrap.email .txt {
+  margin:0 -20px;
+  line-height: 60px;
+  font-size: 24px;
+}
+
+.support .input_wrap.file {
+  display: block;
+}
+
+.support .input_wrap.file .input_box{ 
+  width: 50%;
+}
+
+.support .info_text {
+  margin-top: 40px;
+  font-size:20px;
+  color: #059aee;
+}
+
+.support .file_upload {
+  width: 100%;
+  height: 100%;
+}
+
+.support .input_area .file_upload > * {
+  display: inline-block;
+}
+
+.support .input_area .file_upload label {
+  display: inline-block;
+  cursor: pointer;
+}
+.support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.support .input_area .file_upload input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.support .input_area .file_upload label {
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+/* named upload */
+.support .input_area .file_upload .upload-name[type="text"] {
+  display: inline-block;
+  width: 420px;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.support .info_caution_text {
+  margin-top:60px;
+  padding: 40px 0;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.support .info_caution_text ul li {
+  font-size: 20px;
+  color: #000;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+}
+
+.support .confirm_button {
+  display: block;
+  width: 100%;
+  margin-top:80px;
+  text-align: center;
+}
+
+.support .success_area {
+  width: 580px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.support .success_area .title {
+  font-size: 40px;
+  color: #004098;
+  font-weight: 700;
+}
+
+.support .success_area p {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.support .success_area p + p{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.support .success_area .table {
+  margin-top: 80px;
+}
+
+.support .success_area .table_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.support .success_area table {
+  width: 100%;
+  margin-top:40px;
+  
+  
+}
+.support .success_area table thead tr {
+  border-top:1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.support .success_area table thead th {
+  padding: 20px 0;
+  font-weight: 700;
+
+}
+
+.support .success_area table tbody tr {
+  border-bottom:  1px solid #ccc;
+}
+
+.support .success_area table tbody td {
+  padding : 40px 0;
+}
+
+.support .success_area .final_button {
+  margin-top: 80px;
 }
