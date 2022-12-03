@@ -1,3 +1,61 @@
+
+/* 오픈핸즈 인은 */
+.openhandsperson .keyvisual_area {
+  background: url('../images/recurit/keyvisual_openhands.jpg') no-repeat;
+  background-size: cover;
+}
+
+.openhandsperson .title {
+  display: block;
+  text-align: center;
+  font-size:30px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #000;
+  
+}
+
+.openhandsperson .icon_list {
+  display: flex;
+  justify-content: center;
+  margin-top:85px;
+}
+
+.openhandsperson .icon_list + .icon_list {
+  margin-top: 120px;
+}
+
+.openhandsperson .icon_box {
+  padding-right: 94px;
+  text-align: center;
+}
+
+.openhandsperson .icon_list .icon_box:last-child {
+  padding-right: 0;
+}
+
+
+.openhandsperson .icon_box .img_area img{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.openhandsperson .icon_box .bold {
+  display: block;
+  margin-top:40px;
+  font-size:30px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #004098;
+}
+
+.openhandsperson .icon_box p {
+  margin-top: 20px;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+
 /* 채용절차  */
 .procedure .keyvisual_area {
   background: url('../images/recurit/keyvisual_career.jpg') no-repeat;
@@ -109,7 +167,7 @@
 
 .procedure .notication_area {
   margin-top: 80px;
-  padding: 60px 120px;
+  padding: 60px 260px 60px 120px;
   background: #f5f5f5;
 }
 
@@ -135,6 +193,8 @@
 
 .method_area .content_area {
   position: relative;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
 }
 
 .method_area .content_area:after {
@@ -143,10 +203,14 @@
   clear: both;
 }
 
+.method_area .content_area + .content_area {
+  padding: 80px 0;
+  border-bottom: 0;
+}
+
 .method_area .left_area {
   float: left;
   width:180px;
-  margin-right: 210px;
 }
 
 .method_area .left_area .bold {
@@ -158,4 +222,83 @@
 
 .method_area .right_area {
   float: right;
+  width: 75%;
+}
+
+.method_area .step_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.method_area .step_list span {
+  display: block
+}
+
+.method_area .step_box {
+  padding-right: 122px;
+  background: url(../images/recurit/icon-procedure-arrow.png) no-repeat 80% 20px;
+  background-size: 16px 30px;
+  text-align: center;
+}
+
+.method_area .step_box:last-child {
+  padding-right: 0;
+  background: none;
+}
+
+.method_area .step_box .img_area img{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.method_area .step_box .step {
+  margin-top: 33px;
+  font-size:20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #004098;
+}
+
+.method_area .step_box .coment {
+  margin-top:20px;
+  font-size:20px;
+  line-height: 28px;
+}
+
+
+.method_area .step_list.v2 {
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top:120px;
+}
+
+.right_area .info_site {
+  display: flex;
+  margin-top: 90px;
+}
+
+.right_area .info_site .title {
+  margin-right: 30px;
+  font-size:20px;
+  color: #000;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.right_area .info_site .site span{
+  display: inline-block;
+  width: 90px;
+  margin-right: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.03em
+}
+
+.right_area .info_site .site a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #059aee;
+  letter-spacing: -0.03em
 }
