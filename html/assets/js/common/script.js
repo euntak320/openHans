@@ -1,14 +1,14 @@
 $(function () {
 
 	var thisScroll = 20;
-
-	var $tabButton = $('.tab_area .tab_list button')
-	var $tabView = $('.tab_area .view')
-	var $layerClose = $('.layer_wrap button')
+	var $header = $('header');
+	var $tabButton = $('.tab_area .tab_list button');
+	var $tabView = $('.tab_area .view');
+	var $layerClose = $('.layer_wrap button');
+	
 
 	// header
-	const $header = $('header');
-
+	
 	$header.mouseenter(function () {
 		$(this).addClass('open')
 	})
@@ -32,12 +32,28 @@ $(function () {
 		thisScroll = $(window).scrollTop()
 	});
 
+	// var container = $('.accordian_area');
+  // container.find('.accordian_title').click(function() {
+	// 	$(this).toggleClass('on');
+  //   if($(this).siblings('.answer_area').css('display') == 'block'){
+  //     container.find('.answer_area').slideUp();
+  //   } else {
+  //     container.find('.answer_area').slideUp();
+	// 		$(this).siblings('.answer_area').slideDown();
+  //   }
+  // });
+
+	$('.accordian_area .accordian_title').click(function(){
+		$(this).toggleClass('on');
+		$(this).next('.answer_area').slideToggle();
+	})
+	
+  
+
 	//layer
 	$layerClose.click(function(){
 		$(this).parents('.layer_wrap').hide();
 	});
-
-	
 
 	//  tab	
 	$tabButton.click(function(){

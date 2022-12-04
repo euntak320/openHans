@@ -212,12 +212,12 @@ section {
   padding: 0 0 0 30px;
 }
 
-.tab_area .content_area .view {
+.tab_area .view {
   display: none;
   margin-top: 90px;
 }
 
-.tab_area .content_area .on {
+.tab_area .on {
   display: block;
 }
 
@@ -303,64 +303,69 @@ section {
 
 /* pageing */
 .pagingArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 30px 0;
   text-align: center;
 }
 
-.pagingArea>a {
-  display: inline-block;
+.pagingArea a.number {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
   font-size: 28px;
   color: #6f6f6f;
-  margin-right: 53px;
 }
 
-.pagingArea>a.last_paging {
+.pagingArea a.number:last-child {
+  margin-right:0;
+}
+
+.pagingArea a.on, 
+.pagingArea a:hover {
+  color: #477bff;
+}
+
+.pagingArea a.number.on::before, 
+.pagingArea a.number:hover::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border:1px solid #477bff;
+  border-radius: 50%;
+}
+
+.pagingArea a:last-child {
   margin-right: 0;
 }
 
-.pagingArea>a:hover,
-.pagingArea>a.on {
-  width: 80px;
-  height: 80px;
-  margin: 0 23px;
-  border-radius: 50%;
-  border: 1px solid #477bff;
-  color: #477bff;
-  line-height: 80px;
-  font-weight: 700;
-}
-
-.pagingArea>a.first_arrow {
+.pagingArea a.first_arrow {
   width: 20px;
   height: 23px;
   margin: 0;
   margin-right: 33px;
   vertical-align: middle;
-  background: url('../../images/common/icon-arrow.png') no-repeat center;
+  background: url('../images/common/icon-arrow.png') no-repeat center;
   background-size: 20px;
   transform: rotate(90deg);
 }
 
-.pagingArea>a.last_arrow {
+.pagingArea a.last_arrow {
   width: 20px;
   height: 23px;
   margin: 0;
   margin-left: 33px;
-  background: url(../../images/common/icon-arrow.png) no-repeat center;
+  background: url('../images/common/icon-arrow.png') no-repeat center;
   background-size: 20px;
   transform: rotate(270deg);
 }
-
-.pagingArea>a:hover:nth-child(2),
-.pagingArea>a.on:nth-child(2) {
-  margin: 0 23px 0 0;
-}
-
-.pagingArea>a.last_paging.on,
-.pagingArea>a.last_paging:hover {
-  margin: 0 0 0 0;
-}
-
 /* header */
 
 header {
