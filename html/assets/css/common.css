@@ -664,3 +664,53 @@ footer .accessibility_logo img {
   margin: 40px auto 0;
 
 }
+
+/* 디테일페이지 */
+.detail_area .info_detail span {
+  display: block;
+}
+.detail_area .info_detail .category {
+  color: #004098;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.detail_area .info_detail .title {
+  margin-top: 20px;
+  line-height: 52px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+.detail_area .info_detail .date {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.detail_area .detail_content {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail_area .detail_content a {
+  display: block;
+  margin-top: 40px;
+  color: #059aee;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.detail_area .paging_bar {
+  margin-top: 80px;
+}
+
+.detail_area .paging_bar a {
+  font-size: 20px;
+  line-height: 29px;
+  padding-left: 16px;
+  background: url('../images/recurit/icon-list-arrow.png') no-repeat left center;
+  background-size: 7px;
+}

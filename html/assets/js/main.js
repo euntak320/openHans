@@ -14,6 +14,12 @@ $(function(){
         return '<span class="' + className + '">' + '<span>0'+(index + 1) + '</span>' + '</span>';
       },
     },
+    a11y: { 
+      enabled: true,
+      prevSlideMessage: '이전 슬라이드',
+      nextSlideMessage: '다음 슬라이드',   
+      slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
   })
 
   $(".first_area button").on('click', function () {
@@ -51,6 +57,12 @@ $(function(){
     thumbs: {
       swiper: mainThridImageSection,
     },
+    a11y: { 
+      enabled: true,
+      prevSlideMessage: '이전 슬라이드',
+      nextSlideMessage: '다음 슬라이드',   
+      slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
   })
 
   $(".thrid_area button").on('click', function () {
@@ -79,6 +91,12 @@ $(function(){
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
+    },
+    a11y: { 
+      enabled: true,
+      prevSlideMessage: '이전 슬라이드',
+      nextSlideMessage: '다음 슬라이드',   
+      slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
   })
 
