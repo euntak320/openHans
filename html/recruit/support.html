@@ -10,9 +10,11 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../assets/css/common.css">
 	<link rel="stylesheet" href="../assets/css/recruit.css">
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
 
 	<!-- js -->
 	<script src="../assets/js/common/jquery-3.6.0.min.js"></script>
+	<script src="../assets/js/common/jquery-ui.min.js"></script>
 	<script src="../assets/js/common/script.js"></script>
 </head>
 
@@ -153,7 +155,7 @@
 							<div class="input_area">
 								<span>생년월일<span>*</span></span>
 								<div class="input_box">
-									<input type="text" placeholder="1996-01-01">
+									<input type="text" class="datepicker" placeholder="1996-01-01">
 								</div>
 							</div>
 						</div>
@@ -246,7 +248,7 @@
 		<!-- layer : [S] -->
 		<div class="layer_wrap">
 			<div class="layer_area">
-				<span>필수입력 항목을 다시 확인해주세요.</span>
+				<span>필수입력 항목을<br>다시 확인해주세요.</span>
 				<button type="button" class="com_button">확인</button>
 			</div>
 		</div>
@@ -256,15 +258,38 @@
 	<script>
 		var fileTarget = $('.file_upload .upload-hidden');
 		fileTarget.on('change', function(){  // 값이 변경되면
-				if(window.FileReader){  // modern browser
-							var filename = $(this)[0].files[0].name;
-				} 
-				else {  // old IE
-							var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
-				}
+			if(window.FileReader){  // modern browser
+						var filename = $(this)[0].files[0].name;
+			} 
+			else {  // old IE
+						var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
+			}
 
-				// 추출한 파일명 삽입
-				$(this).siblings('.upload-name').val(filename);
+			// 추출한 파일명 삽입
+			$(this).siblings('.upload-name').val(filename);
+		});
+
+		$( function() {
+			$(".datepicker").datepicker({
+				showOn: "both", // 버튼과 텍스트 필드 모두 캘린더를 보여준다.
+				buttonImage: "../assets/images/recurit/icon-calendar.png", // 버튼 이미지
+				buttonImageOnly: true, 
+				changeMonth: true, 
+				changeYear: true, 
+				minDate: '-100y',
+				nextText: '다음 달',
+				prevText: '이전 달',
+				numberOfMonths: [1,1], 
+				stepMonths: 3,
+				yearRange: 'c-100:c+10', 
+				showButtonPanel: true, 
+				currentText: '오늘 날짜' ,
+				closeText: '닫기', 
+				dateFormat: "yy-mm-dd",
+				showMonthAfterYear: true ,
+				dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+				monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+			});
 		});
 	</script>
 </body>

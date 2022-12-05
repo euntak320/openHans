@@ -94,6 +94,8 @@ section {
 
 /* button */
 .wrap .com_button {
+  position: relative;
+  display: inline-block;
   height: 60px;
   padding: 0 50px;
   line-height: 60px;
@@ -104,6 +106,35 @@ section {
   color: #000;
   cursor: pointer;
   font-weight: 700;
+  z-index: 1;
+}
+
+.wrap .com_button::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  border-radius: 60px;
+  width: 0;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.wrap .com_button:hover {
+  border:1px solid transparent;
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+.wrap .com_button:hover::before {
+  width: 100%;
+  transition: 0.5s;
+  background: #004098;
+  z-index: -1;
+
 }
 
 /* keyvisual */
@@ -303,69 +334,68 @@ section {
 
 /* pageing */
 .pagingArea {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0;
+  margin: 100px 0 0;
   text-align: center;
 }
 
-.pagingArea a.number {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 28px;
-  color: #6f6f6f;
+.pagingArea>a {
+  display: inline-block !important;
+  width: 15px;
+  height: 16px;
+  margin: 0 15px;
+  font-size: 20px;
 }
 
-.pagingArea a.number:last-child {
-  margin-right:0;
+.pagingArea>a:hover,
+.pagingArea>a.on {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+  color: #000
 }
 
-.pagingArea a.on, 
-.pagingArea a:hover {
-  color: #477bff;
-}
-
-.pagingArea a.number.on::before, 
-.pagingArea a.number:hover::before {
-  content: '';
-  position: absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  border:1px solid #477bff;
-  border-radius: 50%;
-}
-
-.pagingArea a:last-child {
-  margin-right: 0;
-}
-
-.pagingArea a.first_arrow {
-  width: 20px;
-  height: 23px;
+.pagingArea>a.txt {
   margin: 0;
-  margin-right: 33px;
-  vertical-align: middle;
-  background: url('../images/common/icon-arrow.png') no-repeat center;
-  background-size: 20px;
-  transform: rotate(90deg);
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px
 }
 
-.pagingArea a.last_arrow {
-  width: 20px;
-  height: 23px;
-  margin: 0;
-  margin-left: 33px;
-  background: url('../images/common/icon-arrow.png') no-repeat center;
-  background-size: 20px;
-  transform: rotate(270deg);
+.pagingArea>a.txt:hover,
+.pagingArea>a.txt.on {
+  border-bottom: 0;
 }
+
+.pagingArea>a.first {
+  background: url('../images/common/paging-first.png') no-repeat center;
+  background-size: contain
+}
+
+.pagingArea>a.prev {
+  margin-right: 20px;
+  background: url("../images/common/paging-prev.png") no-repeat center;
+  background-size: contain
+}
+
+
+.pagingArea>a.next {
+  margin-left: 20px;
+  background: url('../images/common/paging-next.png') no-repeat center;
+  background-size: contain
+}
+
+.pagingArea>a.last {
+  background: url('../images/common/paging-last.png') no-repeat center;
+  background-size: contain;
+}
+.pagingArea>a.first:hover,
+.pagingArea>a.prev:hover,
+.pagingArea>a.next:hover,
+.pagingArea>a.last:hover {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 /* header */
 
 header {
@@ -676,12 +706,12 @@ footer .accessibility_logo img {
   font-weight: 700;
 }
 
-.detail_area .info_detail .title {
+.detail_area .info_detail .detail_title {
   margin-top: 20px;
   line-height: 52px;
   font-size: 32px;
   font-weight: 700;
-  text-align: left;
+  text-align: left!important;
 }
 .detail_area .info_detail .date {
   margin-top: 40px;
