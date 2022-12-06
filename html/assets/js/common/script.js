@@ -5,6 +5,7 @@ $(function () {
 	var $tabButton = $('.tab_area .tab_list button');
 	var $tabView = $('.tab_area .view');
 	var $layerClose = $('.layer_wrap button');
+	var $layerAccessibility = $('.layer_accessibility');
 	
 
 	// header
@@ -52,7 +53,11 @@ $(function () {
 
 	//layer
 	$layerClose.click(function(){
-		$(this).parents('.layer_wrap').hide();
+		$(this).parents('.layer_wrap').fadeOut();
+	});
+
+	$layerAccessibility.click(function(){
+		$('.layer_wrap').fadeIn();
 	});
 
 	//  tab	

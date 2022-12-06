@@ -657,6 +657,7 @@ footer .accessibility_logo img {
 
 /* layer */
 .layer_wrap {
+  display: none;
   position: fixed;
   top:0; 
   left:0;
@@ -672,15 +673,14 @@ footer .accessibility_logo img {
   position: absolute;
   top:50%;
   left:50%;
-  width: 522px;
-  padding: 80px 0 60px;
+  padding: 60px;
   background: #fff;
   transform: translate(-50%, -50%);
   
 
 }
 
-.layer_wrap .layer_area span {
+.layer_wrap .layer_area .normal_text {
   display: block;
   width: 30.5%;
   margin: 0 auto;
@@ -692,8 +692,71 @@ footer .accessibility_logo img {
 .layer_wrap .layer_area .com_button {
   display: block;
   margin: 40px auto 0;
-
 }
+
+.layer_wrap .layer_area .top_area span{
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.layer_wrap .layer_area .top_area button {
+  position: absolute;
+  top:60px;
+  right:60px;
+  width: 32px;
+  height: 32px;
+  background: url('../images/common/icon_close.png') no-repeat ;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.layer_wrap .layer_area .content_area {
+  margin-top: 74px;
+}
+
+.layer_wrap .layer_area .content_area strong {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.layer_wrap .layer_area .content_area p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.layer_wrap .layer_area .content_area .img_area {
+  padding: 80px 0;
+  text-align: center;
+}
+.layer_wrap .layer_area .content_area .img_area img {
+  max-width: 420px;
+}
+
+.layer_wrap .layer_area .content_area .text_area {
+  padding: 60px 45px;
+  border: 1px solid #f7f7f7;
+}
+
+.layer_wrap .layer_area .content_area .text_area li {
+  position: relative;
+  font-size:20px;
+  line-height: 24px;
+}
+
+.layer_wrap .layer_area .content_area .text_area li img {
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+.layer_wrap .layer_area .content_area .text_area li + li {
+  margin-top: 40px;
+}
+
+
+
 
 /* 디테일페이지 */
 .detail_area .info_detail span {
