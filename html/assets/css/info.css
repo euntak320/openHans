@@ -1,11 +1,176 @@
-/* 오픈핸즈 NEWS */
+
+/* 오픈핸즈 소개 */
+.introduce .keyvisual_area {
+  background: url('../images/info/keyvisual_introduce.jpg') no-repeat;
+  background-size: cover;
+}
+
+.introduce .main_title {
+  display: block;
+  font-size:30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.introduce .icon_list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.introduce .icon_box .date {
+  display: block;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #004098;
+  line-height: 1.2;
+}
+
+.introduce .icon_box p {
+  margin-top:20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.introduce .business_area {
+  margin-top: 140px;
+}
+
+.introduce .business_area > .title {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.introduce .business_area > p {
+  margin-top:40px;
+  font-size:24px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.introduce .business_area .slide_area {
+  position: relative;
+  max-width: 1920px;
+  margin: 80px auto 0;
+}
+
+.introduce .business_area .slide_area::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.introduce .slide_area .text_area {
+  float: left;
+  width: 50%;
+  max-width: 940px;
+  height: 560px;
+}
+
+.introduce .slide_area .text_area .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 0 260px;
+  box-sizing: border-box;
+ 
+}
+
+.introduce .slide_area .text_area .swiper-slide.one.swiper-slide-active {
+  background: #059aee;
+}
+
+.introduce .slide_area .text_area .swiper-slide.two.swiper-slide-active {
+  background: #8c55d9;
+}
+.introduce .slide_area .text_area .swiper-slide.three.swiper-slide-active {
+  background: #26a677;
+}
+
+.introduce .slide_area .text_area .title {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.introduce .slide_area .text_area p {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.introduce .slide_area .image_area {
+  overflow: hidden;
+  position: absolute;
+  right:0;
+  top:80px;
+  width: 55%;
+}
+
+.introduce .slide_area .image_area .swiper-slide {
+  width: 70%;
+}
+
+.introduce .ci_area {
+  width: 1400px;
+  margin: 220px auto 0;
+  text-align: center;
+}
+
+.introduce .ci_area .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.introduce .ci_area .img_area {
+  margin: 40px 0 80px;
+}
+
+.introduce .ci_area p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.introduce .ci_area p + p {
+  margin-top: 10px;  
+}
+
+.introduce .ci_area .button_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.introduce .ci_area .button_area a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+
+/* CEO 인사말 */
+.ceo .keyvisual_area {
+  background: url('../images/info/keyvisual_ceo.jpg') no-repeat;
+  background-size: cover;
+}
+
+
+/* 찾아오시는길 */
 .location .keyvisual_area {
   background: url('../images/info/keyvisual_location.jpg') no-repeat;
   background-size: cover;
 }
 
 .location .main_title {
-  display: block;  
+  display: block;   
   font-weight: 700;
   font-size: 48px;
   line-height: 69px;

@@ -33,23 +33,20 @@ $(function () {
 		thisScroll = $(window).scrollTop()
 	});
 
-	// var container = $('.accordian_area');
-  // container.find('.accordian_title').click(function() {
-	// 	$(this).toggleClass('on');
-  //   if($(this).siblings('.answer_area').css('display') == 'block'){
-  //     container.find('.answer_area').slideUp();
-  //   } else {
-  //     container.find('.answer_area').slideUp();
-	// 		$(this).siblings('.answer_area').slideDown();
-  //   }
-  // });
-
-	$('.accordian_area .accordian_title').click(function(){
-		$(this).toggleClass('on');
-		$(this).next('.answer_area').slideToggle();
-	})
 	
-  
+
+
+	 $(document).on("click",".accordian_wrap .accordian_title",function() {	
+	 	if($(this).hasClass('on')){		
+	 		$(this).removeClass('on');
+	 		$(this).siblings('.answer_area').stop().slideUp(300);
+	 	} else {		
+	 		$(".accordian_wrap").find('.accordian_area .accordian_title').removeClass('on');
+	 		$(this).addClass('on');
+	 		$(".accordian_wrap").find('.accordian_area .answer_area').stop().slideUp(300);
+	 		$(this).siblings('.answer_area').stop().slideDown(300);				
+	 	}
+	 });
 
 	//layer
 	$layerClose.click(function(){
