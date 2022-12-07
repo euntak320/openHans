@@ -1,7 +1,33 @@
 $(function(){
 
+  $(".fullpage").fullpage({
+    navigator:false,
+    anchor: ['itArea','supplyArea','serviceArea','healthArea'], 
+    onLeave : function(index, nextIndex , direction){				
+			$("pagnation ul li").removeClass("on");				
+			$("pagnation ul li").eq(nextIndex-1).addClass("on");
+    },
+  });	
+
+  $(".pagnation ul li").click(function(){
+
+    var $this = $(this).index();
+    $.fn.fullpage.moveTo($this + 2 );
+    
+    return false;
+  });
+
+
+  setTimeout(() => {
+    $('.bg_area').remove();
+    $('.first_swiper').addClass('on');
+  },1300)
+
+
+
+  mainBackground()
   // 상단 메인 키비 슬라이드
-	var mainFisrtSection = new Swiper(".first_area", {
+	var mainFisrtSection = new Swiper(".first_swiper", {
     // autoplay: true, // 자동재생
     navigation: {
       nextEl: ".swiper-button-next",
@@ -115,7 +141,16 @@ $(function(){
     }
   });
 
-
-
-
 });
+
+function mainBackground(){
+  var timer = 0;
+  setInterval(function(){
+      if(timer>11){
+          timer = 0;
+      }
+      $('.bg_area span').removeClass('on');
+      $('.bg_area span').eq(timer).toggleClass('on');
+      timer++;
+  },100);
+}

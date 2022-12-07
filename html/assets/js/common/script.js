@@ -52,10 +52,10 @@ $(function () {
 		$(this).parents('.layer_wrap').fadeOut();
 	});
 
-	$layerCloseTwo.click(function(){
-		$('html,body').css('overflow','visible');
-		$(this).fadeOut();
-	})
+	// $layerCloseTwo.click(function(){
+	// 	$('html,body').css('overflow','visible');
+	// 	$(this).fadeOut();
+	// })
 
 	$layerAccessibility.click(function(){
 		$('html,body').css('overflow','visible');
