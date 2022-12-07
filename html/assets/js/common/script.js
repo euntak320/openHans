@@ -6,6 +6,7 @@ $(function () {
 	var $tabView = $('.tab_area .view');
 	var $layerClose = $('.layer_wrap button');
 	var $layerAccessibility = $('.layer_accessibility');
+	// var $layerCloseTwo = $('.layer_wrap');
 	
 
 	// header
@@ -33,9 +34,6 @@ $(function () {
 		thisScroll = $(window).scrollTop()
 	});
 
-	
-
-
 	 $(document).on("click",".accordian_wrap .accordian_title",function() {	
 	 	if($(this).hasClass('on')){		
 	 		$(this).removeClass('on');
@@ -50,10 +48,17 @@ $(function () {
 
 	//layer
 	$layerClose.click(function(){
+		$('html,body').css('overflow','visible');
 		$(this).parents('.layer_wrap').fadeOut();
 	});
 
+	$layerCloseTwo.click(function(){
+		$('html,body').css('overflow','visible');
+		$(this).fadeOut();
+	})
+
 	$layerAccessibility.click(function(){
+		$('html,body').css('overflow','visible');
 		$('.layer_wrap').fadeIn();
 	});
 

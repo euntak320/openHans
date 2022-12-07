@@ -1,4 +1,3 @@
-
 /* 오픈핸즈 소개 */
 .introduce .keyvisual_area {
   background: url('../images/info/keyvisual_introduce.jpg') no-repeat;
@@ -7,13 +6,13 @@
 
 .introduce .main_title {
   display: block;
-  font-size:30px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
 
-.introduce .icon_list{
+.introduce .icon_list {
   display: flex;
   justify-content: space-evenly;
   margin-top: 80px;
@@ -30,7 +29,7 @@
 }
 
 .introduce .icon_box p {
-  margin-top:20px;
+  margin-top: 20px;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -39,7 +38,7 @@
   margin-top: 140px;
 }
 
-.introduce .business_area > .title {
+.introduce .business_area>.title {
   display: block;
   font-size: 36px;
   font-weight: 700;
@@ -47,9 +46,9 @@
   text-align: center;
 }
 
-.introduce .business_area > p {
-  margin-top:40px;
-  font-size:24px;
+.introduce .business_area>p {
+  margin-top: 40px;
+  font-size: 24px;
   text-align: center;
   line-height: 1.5;
 }
@@ -67,6 +66,7 @@
 }
 
 .introduce .slide_area .text_area {
+  position: relative;
   float: left;
   width: 50%;
   max-width: 940px;
@@ -78,7 +78,7 @@
   overflow: hidden;
   padding: 100px 0 0 260px;
   box-sizing: border-box;
- 
+
 }
 
 .introduce .slide_area .text_area .swiper-slide.one.swiper-slide-active {
@@ -88,6 +88,7 @@
 .introduce .slide_area .text_area .swiper-slide.two.swiper-slide-active {
   background: #8c55d9;
 }
+
 .introduce .slide_area .text_area .swiper-slide.three.swiper-slide-active {
   background: #26a677;
 }
@@ -110,13 +111,49 @@
 .introduce .slide_area .image_area {
   overflow: hidden;
   position: absolute;
-  right:0;
-  top:80px;
+  right: 0;
+  top: 80px;
   width: 55%;
 }
 
 .introduce .slide_area .image_area .swiper-slide {
   width: 70%;
+}
+
+.introduce .slide_area .swiper_button {
+  position: absolute;
+  bottom: 100px;
+  left: 260px;
+  display: flex;
+  z-index: 10;
+}
+
+.introduce .slide_area .swiper-button-next,
+.introduce .slide_area .swiper-button-prev {
+  position: static;
+}
+
+.introduce .slide_area .swiper-button-next,
+.introduce .slide_area .swiper-button-prev {
+  margin-top: 0;
+  width: 60px;
+  height: 60px;
+  background: green;
+}
+
+.introduce .slide_area .swiper-button-prev {
+  margin-right: 10px;
+  background: url('../images/common/com-swiper-left.png') no-repeat;
+}
+
+
+.introduce .slide_area .swiper-button-next {
+  background: url('../images/common/com-swiper-right.png') no-repeat;
+}
+
+.introduce .slide_area .swiper-button-prev:after,
+.introduce .slide_area .swiper-button-next:after {
+  display: none;
 }
 
 .introduce .ci_area {
@@ -139,8 +176,9 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.introduce .ci_area p + p {
-  margin-top: 10px;  
+
+.introduce .ci_area p+p {
+  margin-top: 10px;
 }
 
 .introduce .ci_area .button_area {
@@ -154,6 +192,7 @@
   display: inline-block;
   margin: 0 20px;
 }
+
 
 
 /* CEO 인사말 */
@@ -194,8 +233,8 @@
   display: block;
 }
 
-.ceo .ceo_coment .bold{
-  font-size:30px;
+.ceo .ceo_coment .bold {
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.7;
 }
@@ -207,12 +246,228 @@
 }
 
 .ceo .ceo_coment p {
-  font-size:20px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
-.ceo .ceo_coment p + p {
+.ceo .ceo_coment p+p {
   margin-top: 20px;
+}
+
+/* 연혁 */
+
+.history .keyvisual_area {
+  background: url('../images/info/keyvisual_hisotry.jpg') no-repeat;
+  background-size: cover;
+}
+
+.history .history_title .history_title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.history .history_list {
+  position: relative;
+  margin-top: 80px;
+}
+
+.history .history_list .line {
+  position: absolute;
+  top:0;
+  left:50%;
+  width:2px;
+  height:90%;
+  background: #ccc;
+  transform: translateX(-50%);
+
+}
+
+.history .history_list::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.history .history_list .category_area {
+  position: relative;
+}
+
+.history .history_list .category_area:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.history .history_list .category_area .left_area,
+.history .history_list .category_area .right_area {
+  width: 50%;
+}
+
+.history .history_list .category_area .left_area {
+  float: left;
+}
+
+.history .history_list .category_area .right_area {
+  position: relative;
+  top: 20px;
+  left:-23px;
+  float: right;
+  height: 400px;
+  box-sizing: border-box;
+  background: #004098;
+}
+
+.history .history_list .category_area .right_area .title {
+  display: block;
+  margin-top: 100px;
+  margin-left: 78px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.history .history_list .category_area .right_area p {
+  margin-top: 44px;
+  padding: 40px 0 103px 78px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.history .history_list .text_area {
+  position: relative;
+}
+
+.history .history_list .text_area::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.history .history_list .text_area {
+  width: 50%;
+}
+
+.history .history_list .text_area .block {
+  display: block;
+}
+
+.history .history_list .text_area.left {
+  margin-right: auto;
+}
+
+.history .history_list .text_area.left .history_text {
+  text-align: right;
+  padding-right: 100px;
+}
+
+.history .history_list .text_area.right {
+  margin-left: auto;
+}
+
+.history .history_list .text_area.right .history_text {
+  position: relative;
+  padding-left: 100px;
+}
+
+.history .history_list .text_area .history_text::before {
+  content: "";
+  position: absolute;
+  top:10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #fff;
+}
+
+.history .history_list .text_area .history_text::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top:16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #004098;
+}
+
+.history .history_list .text_area.on .history_text::after {
+  display: block;
+}
+
+.history .history_list .text_area.right .history_text::before {
+  left:-9px;
+}
+
+.history .history_list .text_area.left .history_text::before {
+  right:-9.5px;
+}
+
+.history .history_list .text_area.right .history_text::after{
+  left:-3px;
+}
+
+.history .history_list .text_area.left .history_text::after {
+  right:-3.5px
+}
+
+.history .history_list .text_area.on .history_text::before{
+  border: 2px solid #004098;
+}
+
+.history .history_list .text_area.mt80 {
+  margin-top: 80px;
+}
+
+.history .history_list .text_area.top {
+  top: -300px
+}
+
+.history .history_list .text_area .date {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.history .history_list .text_area.left .text {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+
+.history .history_list .text_area.left .text+.text {
+  margin-top: 7px;
+}
+
+.history .history_list .text_area.left .text .align_area {
+  margin-right: 30px;
+}
+
+.history .history_list .text_area.right ul li+li {
+  margin-top: 7px;
+}
+
+.history .history_list .text_area .text span {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.history .history_list .text_area.right .text .bold {
+  margin-right: 30px;
+}
+
+.history .history_list .text_area .text .bold {
+  font-weight: 700;
+}
+
+.history .history_list .text_area .img_area {
+  margin-top: 40px;
 }
 
 
@@ -224,7 +479,7 @@
 }
 
 .location .main_title {
-  display: block;   
+  display: block;
   font-weight: 700;
   font-size: 48px;
   line-height: 69px;
@@ -241,7 +496,7 @@
   width: 100%;
 }
 
-.location .info_loaction{
+.location .info_loaction {
   position: relative;
   margin-top: 80px;
 }
@@ -257,8 +512,8 @@
 
 .location .info_loaction .top_area .com_button {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
 }
 
 .location .info_loaction .bottom_area {
@@ -272,7 +527,7 @@
 }
 
 .location .info_loaction .bottom_area .bold {
-  font-size:20px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   width: 100px;
@@ -283,6 +538,6 @@
   line-height: 30px;
 }
 
-.location .info_loaction .bottom_area li + li {
+.location .info_loaction .bottom_area li+li {
   margin-top: 20px;
 }
