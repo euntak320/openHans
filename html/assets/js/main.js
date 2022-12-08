@@ -2,33 +2,46 @@ $(function(){
 
   $(".fullpage").fullpage({
     navigator:false,
-    anchor: ['itArea','supplyArea','serviceArea','healthArea'], 
     onLeave : function(index, nextIndex , direction){				
-			$("pagnation ul li").removeClass("on");				
-			$("pagnation ul li").eq(nextIndex-1).addClass("on");
-    },
-  });	
+			$(".pagnation ul li").removeClass("on");				
+			$(".pagnation ul li").eq(nextIndex-2).addClass("on");		
+
+			if( nextIndex > 1 && nextIndex < 6){
+				$(".pagnation").addClass('show')
+			}
+      else {
+        $(".pagnation").removeClass('show') 
+      }
+
+    }
+  });
 
   $(".pagnation ul li").click(function(){
-
     var $this = $(this).index();
     $.fn.fullpage.moveTo($this + 2 );
-    
     return false;
   });
 
 
+  
+
   setTimeout(() => {
     $('.bg_area').remove();
     $('.first_swiper').addClass('on');
-  },1300)
+  },1000)
+
+  setTimeout(()=> {
+    $('.first_swiper').removeClass('on')
+  }, 1500)
 
 
 
   mainBackground()
   // 상단 메인 키비 슬라이드
 	var mainFisrtSection = new Swiper(".first_swiper", {
-    // autoplay: true, // 자동재생
+    autoplay: true, // 자동재생
+    speed : 2500,
+    loop:true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -107,7 +120,8 @@ $(function(){
 
 
   var mainForthSection = new Swiper('.forth_area .swiper-area', {
-    // autoplay:true,
+    autoplay:true,
+    loop:true,
     slidesPerView: 3.5,
     spaceBetween: 37,
     navigation: {

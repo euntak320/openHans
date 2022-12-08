@@ -3,13 +3,12 @@
   padding-bottom: 0;
 }
 
-.main .left_area a,
-.main .btn_area a {
+.main .left_area a{
   overflow: hidden;
   position: relative;
   display: inline-block;
   height: 60px;
-  padding: 0 50px 0 70px;
+  padding: 0 40px 0 70px;
   margin-top: 100px;
   line-height: 60px;
   border-radius: 60px;
@@ -20,12 +19,7 @@
   color: #fff;
 }
 
-.main .btn_area a {
-  margin-top: 0;
-}
-
-.main .left_area a::before,
-.main .btn_area a::before {
+.main .left_area a::before {
   content: "";
   position: absolute;
   left: 0%;
@@ -39,13 +33,7 @@
   z-index: -1;
 }
 
-
-.main .btn_area a::before {
-  z-index: 0;
-  transform: translateX(-78%);
-}
-.main .left_area a::after,
-.main .btn_area a:after {
+.main .left_area a::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -57,12 +45,10 @@
   transition: all 0.4s;
 }
 
-.main .left_area a:hover,
-.main .btn_area a:hover{
+.main .left_area a:hover{
   color: #fff;
 }
-.main .left_area a:hover::before,
-.main .btn_area a:hover::before {
+.main .left_area a:hover::before {
   transform: translateX(0%);
 }
 
@@ -124,10 +110,10 @@
 .first_area .bg_area span:nth-child(8) {
   left: 1750px;
 }
-
 .first_area .bg_area span:nth-child(9) {
   left: 2000px;
 }
+
 
 .first_area .line {
   position: absolute;
@@ -163,28 +149,32 @@
   color: #fff;
 }
 
-.first_swiper.on .swiper-slide.one .main_text p:first-child {
-  animation: leftDiraction 1s;
-}
-
-.first_swiper.on .swiper-slide.one .main_text p:nth-child(2) {
+.first_swiper.on .swiper-slide.one .main_text p:first-child,
+.first_swiper .swiper-slide.swiper-slide-active .main_text p:first-child {
   animation: leftDiraction 2s;
 }
 
-.first_swiper.on .swiper-slide.one .main_text p:nth-child(3) {
-  animation: leftDiraction 3s;
+.first_swiper.on .swiper-slide.one .main_text p:nth-child(2),
+.first_swiper .swiper-slide.swiper-slide-active .main_text p:nth-child(2) {
+  animation: leftDiraction 2.5s;
+}
+
+.first_swiper.on .swiper-slide.one .main_text p:nth-child(3),
+.first_swiper .swiper-slide.swiper-slide-active .main_text p:nth-child(3)
+ {
+  animation: leftDiraction 3.5s;
 }
 
 .first_swiper.on .line {
-  animation: leftDiraction 3s;
+  animation: leftDiraction 3.8s;
 }
 
 .first_swiper.on .swiper-pagination {
-  animation: opacity 2.5s;
+  animation: opacity 4s;
 }
 
 .first_swiper.on .button_area {
-  animation: opacity 4.5s;
+  animation: opacity 4.2s;
 }
 
 .first_area .swiper-pagination {
@@ -285,8 +275,6 @@
   position: relative;
 }
 
-
-
 .second_area::after {
   content: "";
   display: block;
@@ -294,17 +282,22 @@
 }
 
 .pagnation {
+  display: none;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 0;
   z-index: 100000;
   transform: translateY(-50%);
 }
 
+.pagnation.show {
+  display: block
+}
+
 .pagnation ul li {
   width: 30px;
   height: 4px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   background: #fff;
   transition: all 0.5s;
   cursor: pointer;
@@ -533,13 +526,13 @@
 
 .thrid_area .stop {
   background: url('../images/main/icon-swiper-arrow-purse.png') no-repeat center;
-  background-size: 12px 20px;
+  background-size: 12px 23px;
   text-indent: -9999px;
 }
 
 .thrid_area .start {
   background: url('../images/main/icon-swiper-arrow-play.png') no-repeat center;
-  background-size: 12px 20px;
+  background-size: 12px 23px;
   text-indent: -9999px;
 }
 
@@ -549,7 +542,6 @@
   justify-content: space-between;
   width: 286px;
   line-height: 60px;
-  margin-top: 40px;
 }
 
 .thrid_area .swiper-pagination {
@@ -594,6 +586,66 @@
 
 .thrid_area .image_swiper { 
   animation: opacity 4s;
+}
+
+.thrid_area .third_area_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+
+.thrid_area .btn_area a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  padding: 0 40px 0 70px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: #0048ab;
+}
+
+.thrid_area .btn_area a::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: #0048ab;
+  transform: translateX(-70%);
+  transition: all 0.4s;
+}
+
+.thrid_area .btn_area a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  box-sizing: border-box;
+  content: "";
+  transition: all 0.4s;
+  background: url('../images/main/icon-main-arrow-right.png') no-repeat 12% center;
+  background-size: 12px;
+}
+
+.thrid_area .btn_area a:hover {
+  color: #fff;
+  z-index: 0;
+}
+
+.thrid_area .btn_area a:hover::before {
+  transform: translateX(0%);
+  z-index: -1;
 }
 
 .forth_area {
@@ -813,15 +865,98 @@
   vertical-align: middle;
 }
 
-.last_area .btn_area a:hover {
-  color: #0048ab;
+.last_area .btn_area a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  padding: 0 40px 0 70px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+}
+.last_area .btn_area a::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: #fff;
+  transform: translateX(-77%);
+  transition: all 0.4s;
+}
+
+.last_area .btn_area a:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: #fff;
+  transform: translateX(-75%);
+  transition: all 0.4s;
 }
 
 .last_area .btn_area a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  box-sizing: border-box;
+  content: "";
+  transition: all 0.4s;
   background: url('../images/main/icon-link-arrow.png') no-repeat 12% center;
+  background-size: 12px;
+}
+
+.last_area .btn_area a:hover {
+  color: #0048ab;
+  z-index: 0;
+}
+
+.last_area .btn_area a:hover::before {
+  transform: translateX(0%);
   z-index: -1;
 }
 
+
+
+/* 마우스 호버 */
+.main .button_area .swiper-button-prev:hover,
+.main .button_area button:hover,
+.main .button_area .swiper-button-next:hover {
+  border: 1px solid #004098;
+}
+
+.main .button_area .swiper-button-prev:hover {
+  background: url('../images/main/icon-swiper-arrow-left_active.png') no-repeat center;
+  background-size: 13px 23px;
+}
+
+.main .button_area button:hover {
+  background: url('../images/main/icon-swiper-arrow-purse_active.png') no-repeat center;
+  background-size: 13px 23px;
+}
+
+.main .button_area button.start:hover {
+  background: url('../images/main/icon-swiper-arrow-purse_play.png') no-repeat center;
+  background-size: 13px 23px;
+}
+
+.main .button_area .swiper-button-next:hover {
+  background: url('../images/main/icon-swiper-arrow-right_active.png') no-repeat center;
+  background-size: 13px 23px;
+}
 
 /* 애니메이션 */
 @keyframes leftDiraction {
