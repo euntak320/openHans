@@ -70,5 +70,9 @@ $(function () {
 		$tabView.eq($(this).index()).addClass('on')
 	});	
 
+	$('.com_select .title').click(function(){
+		$(this).next().toggleClass('on');
+	});
+
 
 })

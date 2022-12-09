@@ -13,7 +13,7 @@
 .main_news_area .content_area {
   position: relative;
   background: #f3f3f3;
-  height: 540px;
+  height: 400px;
 }
 
 .main_news_area .content_area:after {
@@ -24,25 +24,33 @@
 
 .main_news_area .image_area {
   float: left;
-  width: 50%;
+  width: 47%;
 }
 
 .main_news_area .image_area img {
   width: 100%;
-  max-height: 540px;
+  max-height: 400px;
 }
 
 .main_news_area .text_area {
   float: right;
-  width: 50%;
-  padding: 60px 135px 60px 60px;
+  width: 53%;
+  padding: 60px 135px 0 60px;
   box-sizing: border-box;
 }
 
 .main_news_area .swiper-button-next,
 .main_news_area .swiper-button-prev {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+.main_news_area .swiper-button-prev {
+  left: 20px;
+}
+
+.main_news_area .swiper-button-next {
+  right: 20px;
 }
 
 
@@ -53,12 +61,22 @@
 
 .main_news_area .swiper-button-prev {
   background: url('../images/common/swier-left-arrow.png') no-repeat center;
-  background-size: cover;
+  background-size: contain;
+}
+
+.main_news_area .swiper-button-prev:hover {
+  background: url('../images/common/swier-left-arrow_active.png') no-repeat center;
+  background-size: contain;
 }
 
 .main_news_area .swiper-button-next {
   background: url('../images/common/swier-right-arrow.png') no-repeat center;
-  background-size: cover;
+  background-size: contain;
+}
+
+.main_news_area .swiper-button-next:hover {
+  background: url('../images/common/swier-right-arrow_active.png') no-repeat center;
+  background-size: contain;
 }
 
 .main_news_area .swiper-pagination-bullet {
@@ -84,8 +102,6 @@
 .text_area .caution_area span {
   position: relative;
   padding-right: 10px;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .text_area .caution_area span:first-child::after {
@@ -94,26 +110,24 @@
   right: 0;
   top: 50%;
   width: 1px;
-  height: 18px;
+  height: 14px;
   background: #000;
   transform: translateY(-50%);
 }
 
 .text_area .title {
-  margin-top: 20px;
+  margin-top: 24px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 1.428
 }
 
 .text_area .normal {
-  margin-top: 40px;
-  font-size: 20px;
-  line-height: 32px;
+  margin-top: 10px;
 }
 
 .text_area .link_area {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .text_area .link_area a {
@@ -131,11 +145,6 @@
   justify-content: space-between;
 }
 
-.reault_news_list .top_area span {
-  font-size: 20px;
-  line-height: 32px;
-}
-
 .reault_news_list .top_area .search_area {
   position: relative;
   display: flex;
@@ -145,19 +154,17 @@
 
 .reault_news_list .top_area .select_area {
   position: relative;
-  border-bottom: 1px solid #000;
   width: 120px;
   margin-right: 60px;
 }
 
 .reault_news_list .top_area .select_area select {
   width: 100%;
-  padding: 10px 0;
+  padding: 14px 0;
   border:0;
   appearance: none;
   background: url('../images/common/icon-select_arrow.png') no-repeat 95% center;
   background-size: 12px;
-  font-size: 20px;
 }
 
 .reault_news_list .top_area .input_area {
@@ -167,10 +174,8 @@
 
 .reault_news_list .top_area .input_area input {
   width: 100%;
-  padding: 10px 0;
+  padding: 14px 0;
   border:0;
-  padding-right: 30px;
-  font-size: 20px;
   box-sizing: border-box;
 }
 

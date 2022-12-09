@@ -7,16 +7,16 @@
 .openhandsperson .view .title {
   display: block;
   text-align: center;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.428;
   font-weight: 700;
   color: #000;
 }
 
 .openhandsperson .icon_list {
   display: flex;
-  justify-content: center;
-  margin-top: 85px;
+  justify-content: space-around;
+  margin-top: 140px;
 }
 
 .openhandsperson .icon_list+.icon_list {
@@ -24,7 +24,6 @@
 }
 
 .openhandsperson .icon_box {
-  padding-right: 94px;
   text-align: center;
 }
 
@@ -32,24 +31,21 @@
   padding-right: 0;
 }
 
-
 .openhandsperson .icon_box .img_area img {
   text-align: center;
 }
 
 .openhandsperson .icon_box .bold {
   display: block;
-  margin-top: 40px;
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.5;
   color: #004098;
 }
 
 .openhandsperson .icon_box p {
-  margin-top: 20px;
-  line-height: 32px;
-  font-size: 20px;
+  margin-top: 10px;
 }
 
 
@@ -67,7 +63,7 @@
 .procedure_area .procedure_box {
   padding-right: 122px;
   text-align: center;
-  background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 90% 20px;
+  background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 80% 20px;
   background-size: 16px 30px;
 }
 
@@ -83,19 +79,23 @@
 .procedure_area .procedure_box .step {
   margin-top: 44px;
   color: #004098;
-  font-size: 20px;
   font-weight: 700;
 }
 
 .procedure_area .procedure_box .normal {
-  margin-top: 20px;
-  font-size: 20px;
-  line-height: 28px;
+  margin-top: 10px;
   color: #000;
 }
 
 .procedure .process_table {
-  margin-top: 160px;
+  margin-top: 140px;
+}
+
+.procedure .process_table .sub_title_text {
+  display: block;
+  font-size: 28px;
+  line-height: 1.428;
+  font-weight: 700;
 }
 
 .process_table .table_area {
@@ -107,7 +107,7 @@
 .process_table .table_area .table_cell {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: top;
   padding: 40px 0;
   border-bottom: 1px solid #ccc;
 }
@@ -117,24 +117,20 @@
 }
 
 .process_table .table_area .table_cell .step {
-  margin-right: 58px;
+  margin-right: 70px;
   color: #004098;
-  font-size: 20px;
-  line-height: 32px;
   font-weight: 700;
 }
 
 .process_table .table_area .table_cell .bold {
   width: 230px;
-  margin-right: 80px;
-  font-size: 20px;
-  line-height: 32px;
+  margin-right: 195px;
+  font-weight: 700;
 }
 
 .process_table .table_area .table_cell li {
   position: relative;
   padding-left: 15px;
-  font-size: 20px;
   line-height: 28px;
   color: #000;
 }
@@ -158,7 +154,7 @@
 
 .procedure .notication_area {
   margin-top: 80px;
-  padding: 60px 260px 60px 120px;
+  padding: 40px 80px;
   background: #f5f5f5;
 }
 
@@ -169,19 +165,33 @@
 
 .procedure .notication_area .list .bold {
   display: block;
-  margin-bottom: 30px;
-  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .procedure .notication_area .list p {
-  line-height: 32px;
-  font-size: 20px;
-  padding-left:30px;
-  text-indent: -30px;
+  padding-left:25px;
+  text-indent: -25px;
 }
 
-.procedure .notication_area .list p a {
-  font-size: 20px;
+.procedure .notication_area .list li .number span:first-child{
+  position: relative;
+  padding-right: 10px;
+}
+
+.procedure .notication_area .list li .number span:first-child:after {
+  content: '';
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: #000;
+}
+
+.procedure .notication_area .list li .number span:last-child {
+  padding-left: 10px;
 }
 
 .method_area .content_area {
@@ -322,8 +332,8 @@
 .notice .content_wrap .title {
   display: block;
   text-align: center;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.428;
   font-weight: 700;
 }
 
@@ -342,7 +352,6 @@
 .notice .notice_table .table_header span {
   display: table-cell;
   padding: 20px 0;
-  font-size: 20px;
   color: #000;
   font-weight: 700;
   text-align: center;
@@ -401,8 +410,8 @@
 
 .support .form_area .title {
   font-weight: 700;
-  font-size: 30px;
-  line-height:42px;
+  font-size: 28px;
+  line-height: 1.428;
 }
 
 .support .form_area .title>span {
@@ -438,8 +447,7 @@
 
 .support .checkbox input+label {
   position: relative;
-  font-size: 24px;
-  padding-left: 39px;
+  padding-left: 25px;
   cursor: pointer;
 }
 
@@ -448,22 +456,21 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #000;
-  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: url('../images/common/icon_check.png') no-repeat center;
   transform: translateY(-50%);
 }
 
 .support .checkbox input:checked+label::after {
   content: "";
   position: absolute;
-  top:8px;
-  left: 7px;
-  width: 24px;
+  top: 50%;
+  left: 0;
+  width: 18px;
   height: 18px;
-  background: url('../images/common/icon_check_on.png') no-repeat center left;
-  background-size: 75%;
+  background: url('../images/common/icon_check_on.png') no-repeat center;
+  background-size: cover;
 }
 
 .support .download_area {
@@ -476,15 +483,12 @@
 
 .support .download_area span {
   display: block;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
 }
 
 .support .download_area .title {
   margin-bottom: 20px;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .support .download_area .button {
@@ -496,20 +500,15 @@
   
 }
 
-.support .download_area .button a {
-  display: block;
-  font-size: 20px;
-  
-}
 
 .support .info_input_area {
-  margin-top:120px;
+  margin-top:80px;
 }
 
 .support .info_input_area .title {
   display: block;
-  font-size:30px;
-  line-height: 42px;
+  font-size:24px;
+  line-height: 1.5;
   font-weight: 700;
 }
 
@@ -517,15 +516,13 @@
   display: block;
   margin-top:10px;
   line-height: 28px;
-  font-size: 20px;
   color: #059aee;
   font-weight: 400;
-  letter-spacing: -0.03em;
 }
 
 .support .input_wrap {
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .support .input_wrap.email .input_area {
@@ -539,7 +536,7 @@
 
 .support .input_area span {
   font-size:20px;
-  line-height: 34px;
+  line-height: 1.6;
   font-weight: 700;
 }
 
@@ -550,14 +547,16 @@
 
 .support .input_area .input_box{
   width: 420px;
-  height: 80px;
+  height: 50px;
   margin-top:10px;
 }
 
 .support .input_area .input_box .ui-datepicker-trigger {
   position: absolute;
-  right:25px;
-  top:65%;
+  right:15px;
+  top:70%;
+  width: 30px;
+  height: 30px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -571,7 +570,6 @@
   width: 100%;
   height: 100%;
   border: 1px solid #999;
-  font-size:24px;
   box-sizing: border-box;
   background: #fff;
   padding-left: 20px;
@@ -579,8 +577,19 @@
 }
 
 .support .select_box{
+  position: relative;
   width: 440px;
-  height: 80px;
+  border: 1px solid #ccc;
+}
+
+.support .select_box .com_select {
+  padding: 12px 0;
+  border-bottom: 0;
+
+}
+
+.support .select_box .com_select .title {
+  font-size: 16px;
 }
 
 .support .select_box select{
@@ -611,7 +620,6 @@
 
 .support .info_text {
   margin-top: 40px;
-  font-size:20px;
   color: #059aee;
 }
 
@@ -622,12 +630,10 @@
 
 .support .input_area .file_upload > * {
   display: inline-block;
+  vertical-align: middle;
 }
 
-.support .input_area .file_upload label {
-  display: inline-block;
-  cursor: pointer;
-}
+
 .support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
   position: absolute;
   width: 1px;
@@ -653,11 +659,9 @@
 .support .input_area .file_upload label {
   display: inline-block;
   margin-left: 20px;
-  line-height: 60px;
-  font-size: 20px;
+  line-height: 50px;
   text-align: center;
   cursor: pointer;
-  
 }
 
 /* named upload */
@@ -670,23 +674,20 @@
 }
 
 .support .info_caution_text {
-  margin-top:60px;
+  margin-top:80px;
   padding: 40px 0;
   border-top:1px solid #ccc;
   border-bottom:1px solid #ccc;
 }
 
 .support .info_caution_text ul li {
-  font-size: 20px;
   color: #000;
-  line-height: 28px;
-  letter-spacing: -0.03em;
 }
 
 .support .confirm_button {
   display: block;
   width: 100%;
-  margin-top:80px;
+  margin-top:60px;
   text-align: center;
 }
 
@@ -697,31 +698,34 @@
 }
 
 .support .success_area .title {
-  font-size: 40px;
+  font-size: 28px;
   color: #004098;
+  line-height: 1.428;
   font-weight: 700;
 }
 
 .support .success_area p {
   margin-top: 40px;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.6;
   font-weight: 700;
 }
 
 .support .success_area p + p{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: inherit;
 }
 
 .support .success_area .table {
-  margin-top: 80px;
+  margin-top: 110px;
 }
 
 .support .success_area .table_title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 1.5;
 }
 
 .support .success_area table {
@@ -761,4 +765,8 @@
 
 .faq .paging_wrap {
   margin-top:50px;
+}
+
+.faq .accordian_area:first-child {
+  border-top: 1px solid #ccc;
 }

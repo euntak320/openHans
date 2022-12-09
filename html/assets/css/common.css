@@ -33,6 +33,7 @@ time, mark, audio, video, button {
   font-weight: 400;
   font-family: "NotoSans", sans-serif;
   font-size: 16px;
+  line-height: 1.75;
   color: #000;
 }
 /* HTML5 display-role reset for older browsers */
@@ -82,7 +83,7 @@ button {
 }
 
 section {
-  padding-bottom: 200px;
+  padding-bottom: 180px;
 }
 
 .content_wrap {
@@ -98,11 +99,11 @@ section {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  height: 60px;
+  height: 50px;
   padding: 0 50px;
-  line-height: 60px;
-  border-radius: 60px;
-  font-size: 20px;
+  line-height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
   text-align: center;
   color: #000;
   cursor: pointer;
@@ -164,7 +165,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   line-height: 69px;
   font-weight: 700;
@@ -175,8 +176,8 @@ section {
 .keyvisual_area .sub_title {
   display: block;
   margin-top:10px;
-  font-size:30px;
-  line-height: 42px;
+  font-size:28px;
+  line-height: 1.428;
   font-weight: 400;
   color: #fff;
 }
@@ -195,6 +196,7 @@ section {
   position: relative;
   padding: 0 10px;
   color: #fff;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -213,6 +215,10 @@ section {
   display: none;
 }
 
+.business .keyvisual_area .keyvisual_navi li::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 
 /* tab */
 .tab_area {
@@ -229,9 +235,9 @@ section {
 .tab_area .tab_list button {
   position: relative;
   padding:0 15px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 1.5;
   color: #888;
 }
 
@@ -266,7 +272,7 @@ section {
 
 .tab_area .view {
   display: none;
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .tab_area .on {
@@ -531,7 +537,7 @@ header.scroll_menu .gnb_area .menu_area .sub_menu_list.on a:hover::after {
 /* footer */
 footer {
   position: relative;
-  padding: 80px 260px;
+  padding: 60px 260px;
   background-color: #fff;
   border-top: 1px solid #eee;
 }
@@ -543,8 +549,8 @@ footer .top_area {
 }
 
 footer .footer_logo {
-  width: 220px;
-  margin-right: 60px;
+  width: 175px;
+  margin-right: 40px;
 }
 
 footer .footer_logo img {
@@ -558,35 +564,43 @@ footer .link_area {
 
 footer .link_area li {
   margin: 0 20px;
-  line-height: 28.96px;
+  line-height: 1.857;
+}
+
+footer .link_area li:first-child {
+  margin:0; 
+  margin-right: 20px;
 }
 
 footer .link_area li a {
+  font-size: 14px;
   color: #333;
 }
 
 footer .bottom_area {
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 footer .bottom_area p {
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 1.857;
 }
 
 footer .bottom_area p span {
   color: #666;
+  font-size: 14px;
 }
 
 footer .info_area {
-  margin-top: 10px;
   line-height: 30px;
 }
 
 footer .info_area .info_text {
   position: relative;
-  color: #666;
   padding: 0 10px;
+  color: #666;
+  font-size: 14px;
 }
 
 
@@ -611,26 +625,24 @@ footer .info_area .info_text:first-child:after {
 }
 
 footer .copyright {
-  margin-top: 20px;
-  line-height: 30px;
   color: #666;
 }
 
 footer .accessibility_area {
   margin-top: 22px;
   background: url("../images/common/accessibility-logo.png") no-repeat;
-  background-size: 80px;
+  background-size: 64px;
 
 }
 
 footer .accessibility_area p {
-  padding-left: 100px;
-  line-height: 26px;
+  padding-left: 84px;
+  line-height: 2.8;
   color: #666;
 }
 
 footer .accessibility_area button {
-  margin-left: 30px;
+  margin-left: 10px;
   text-decoration: underline;
 }
 
@@ -686,8 +698,9 @@ footer .accessibility_logo img {
 }
 
 .layer_wrap .layer_area .top_area span{
+  display: block;
   font-size: 36px;
-  line-height: 48px;
+  line-height: 1.3;
   font-weight: 700;
 }
 
@@ -695,8 +708,8 @@ footer .accessibility_logo img {
   position: absolute;
   top:60px;
   right:60px;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   background: url('../images/common/icon_close.png') no-repeat ;
   background-size: cover;
   text-indent: -9999px;
@@ -714,8 +727,6 @@ footer .accessibility_logo img {
 
 .layer_wrap .layer_area .content_area p {
   margin-top: 30px;
-  font-size: 20px;
-  line-height: 32px;
 }
 
 .layer_wrap .layer_area .content_area .img_area {
@@ -754,8 +765,8 @@ footer .accessibility_logo img {
 
 .layer_wrap .layer_area .img_frame .title {
   display: block;
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.6;
   text-align: left;
 }
 
@@ -778,22 +789,18 @@ footer .accessibility_logo img {
 }
 .detail_area .info_detail .category {
   color: #004098;
-  font-size: 24px;
-  line-height: 34px;
   font-weight: 700;
 }
 
 .detail_area .info_detail .detail_title {
   margin-top: 20px;
-  line-height: 52px;
-  font-size: 32px;
+  line-height: 1.428;
+  font-size: 28px;
   font-weight: 700;
   text-align: left!important;
 }
 .detail_area .info_detail .date {
   margin-top: 40px;
-  font-size: 24px;
-  line-height: 34px;
 }
 
 .detail_area .detail_content {
@@ -806,12 +813,11 @@ footer .accessibility_logo img {
   display: block;
   margin-top: 40px;
   color: #059aee;
-  font-size: 20px;
-  line-height: 29px;
+  text-decoration: underline;
 }
 
 .detail_area .paging_bar {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .detail_area .paging_bar a {
@@ -960,6 +966,10 @@ footer .accessibility_logo img {
   border-top: 1px solid #ccc;
 }
 
+.accordian_area:first-child {
+ border-top: 0;
+}
+
 .accordian_area + .accordian_area {
   margin-top:0;
 }
@@ -971,12 +981,28 @@ footer .accessibility_logo img {
 .accordian_area .accordian_title {
   position: relative;
   width: 100%;
-  height: 69px;
+  height: 70px;
+  
   padding-left: 82px;
   cursor: pointer;
   box-sizing: border-box;
   background: url('../images/common/icon-plus.png') no-repeat 97% center;
   background-size: 23px;
+}
+
+.accordian_area .accordian_title::after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom:-1px;
+  width: 0;
+  height: 1px;
+  background: #000;
+}
+
+.accordian_area .accordian_title:hover::after {
+  width: 100%;
+  transition: 0.5s;
 }
 
 .accordian_area .accordian_title.on {
@@ -987,9 +1013,8 @@ footer .accessibility_logo img {
 .accordian_area .accordian_title p {
   display: block;
   width: 100%;
-  font-size:20px;
+  line-height: 70px;
   font-weight: 700;
-  line-height: 69px;
   text-align: left;
 }
 
@@ -1013,7 +1038,46 @@ footer .accessibility_logo img {
   background-size: 19px 16px;
 }
 
-.accordian_area .answer_area p {
-  font-size: 20px;
-  line-height: 28px;
+.com_select {
+  width: 100%;
+  padding: 14px 0;
+  border-bottom: 1px solid #000;
+}
+
+.com_select .title {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+  background: url('../images/common/icon-select_arrow.png') no-repeat 95% center;
+  cursor: pointer;
+}
+
+.com_select .select_list {
+  display: none;
+  position: absolute;
+  top:50px;
+  width: 100%;
+  z-index: 10;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.com_select .select_list.on {
+  display: block;
+}
+
+.com_select .select_list li {
+  height: 50px;
+  padding: 11px 0 11px 20px;
+  border-bottom:1px solid #ccc;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.com_select .select_list li:hover {
+  background: #059aee;
+  color: #fff;
 }
