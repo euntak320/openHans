@@ -294,29 +294,28 @@
 }
 
 .right_area .info_site {
-  display: flex;
-  margin-top: 90px;
+  margin-top: 40px;
+}
+
+.right_area .info_site > * {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .right_area .info_site .title {
-  margin-right: 30px;
-  font-size: 20px;
+  margin-right: 50px;
   color: #000;
-  line-height: 28px;
   font-weight: 700;
 }
 
 .right_area .info_site .site span {
   display: inline-block;
-  width: 90px;
-  margin-right: 30px;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: -0.03em
+  width: 75px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 .right_area .info_site .site a {
-  font-size: 20px;
   text-decoration: underline;
   color: #059aee;
   letter-spacing: -0.03em
@@ -372,12 +371,19 @@
   border-bottom: 1px solid #ccc;
 }
 
-.notice .notice_table .table_body a:hover span {
+.notice .notice_table .table_body a:hover span,
+.notice .notice_table .table_body a.on span {
   font-weight: 700;
 }
 
-.notice .notice_table .table_body a:hover span:first-child {
+.notice .notice_table .table_body a:hover span:first-child,
+.notice .notice_table .table_body a.on span:first-child {
   color: #004098;
+}
+
+.notice .notice_table .table_body a.close span:first-child {
+  color: #666;
+  font-weight: 700;
 }
 
 .notice .notice_table .w20 {
@@ -606,7 +612,7 @@
 
 .support .input_wrap.email .txt {
   margin:0 -20px;
-  line-height: 85px;
+  line-height: 55px;
   font-size: 24px;
 }
 
@@ -615,7 +621,7 @@
 }
 
 .support .input_wrap.file .input_box{ 
-  width: 50%;
+  width: 100%;
 }
 
 .support .info_text {

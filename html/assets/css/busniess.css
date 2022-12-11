@@ -135,12 +135,25 @@
 
 
 .business .content_tab {
+  position: relative;
   width: 1400px;
   margin: 0 auto;
 }
 
 .business .content_tab .tab_area {
-  margin-top: 80px;
+  margin-top: 100px;
+}
+
+.business .content_tab .tab_area .tab_list.on {
+  position: sticky;
+  top: 51px;
+  width: 100%;
+  padding: 20px 0;
+  left: 0;
+  border: 1px solid #eee;
+  background: #fff;
+  z-index: 10;
+
 }
 
 .business .content_tab .accordian_area {
@@ -154,8 +167,9 @@
 }
 
 .business .content_tab .view {
+  display: block;
   position: relative;
-  margin-top: 60px;
+  padding-top: 100px;
   border-top:2px solid #000;
 }
 

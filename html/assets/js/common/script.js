@@ -112,10 +112,30 @@ function motion_scroll(){
 		var winH = $(this).height();
 		
 		$('.scroll_motion').each(function(){
-				var motion_top = $(this).offset().top;
-				if(scT > motion_top-winH/1.5){
-						$(this).addClass('on');
-				}
+			var motion_top = $(this).offset().top;
+			if(scT > motion_top-winH/1.5){
+					$(this).addClass('on');
+			}
+		});
+
+		$('.sticky').each(function(){
+			var motion_top = $(this).offset().top;
+			if(scT > motion_top-winH/4.5){
+				$(this).addClass('on');
+			}
+			else {
+				$(this).removeClass('on');
+			}
+		});
+
+		$('.text_area').each(function(){
+			var motion_top = $(this).offset().top;
+			if(scT > motion_top-winH/1.95){
+				$(this).addClass('on');
+			}
+			else {
+				$(this).removeClass('on');
+			}
 		});
 	}).scroll();
 }

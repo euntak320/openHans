@@ -306,8 +306,11 @@
   position: relative;
 }
 
-.history .history_list .category_area.fixed {
+.history .history_list .category_area.on {
   position: sticky;
+  top:200px;
+  left:0;
+  z-index: 1000;
 }
 
 .history .history_list .category_area:after {

@@ -278,9 +278,10 @@ section {
   text-align: center;
 }
 
-.tab_area .tab_list button {
+.tab_area .tab_list button,
+.tab_area .tab_list a {
   position: relative;
-  padding:0 15px;
+  padding:0 20px;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
@@ -288,20 +289,25 @@ section {
 }
 
 .tab_area .tab_list button.on,
-.tab_area .tab_list button:hover {
+.tab_area .tab_list a.on,
+.tab_area .tab_list button:hover,
+.tab_area .tab_list a:hover {
   color: #000;
   font-weight: 700;
 }
 
-.tab_area .tab_list button:first-child {
-  padding:0 15px 0 0;
+.tab_area .tab_list button:first-child,
+.tab_area .tab_list a:first-child {
+  padding:0 20px 0 0;
 }
 
-.tab_area .tab_list button:last-child {
+.tab_area .tab_list button:last-child,
+.tab_area .tab_list a:last-child {
   padding-right:0;
 }
 
-.tab_area .tab_list button::after {
+.tab_area .tab_list button::after,
+.tab_area .tab_list a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -312,7 +318,8 @@ section {
   transform: translateY(-50%);
 }
 
-.tab_area .tab_list button:last-child::after {
+.tab_area .tab_list button:last-child::after,
+.tab_area .tab_list a:last-child::after {
   display: none;
 }
 
