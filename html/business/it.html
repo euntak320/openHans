@@ -13,13 +13,19 @@
 
 	<!-- js -->
 	<script src="../assets/js/common/jquery-3.6.0.min.js"></script>
+	<script src="../assets/js/common/modernizr.js"></script>
 	<script src="../assets/js/common/script.js"></script>
 </head>
 
 <body>
+	<div class="skip_navigation">
+		<a href="#header">메뉴로 이동</a>
+		<a href="#section">본문으로 이동</a>
+		<a href="#footer">푸터로 이동</a>
+	</div>
 	<div class="wrap">
 		<!-- header : [S] -->
-		<header>
+		<header id="header">
 			<!-- gnb 메뉴  -->
 			<div class="gnb_area">
 				<h1 class="logo">
@@ -70,7 +76,7 @@
 		<!-- header : [E] -->
 
 		<!-- section : [S] -->
-		<section class="business">
+		<section class="business" id="section">
 			<div class="keyvisual_area">
 				<div class="keyvisual_navi">
 					<ul>
@@ -82,7 +88,7 @@
 			</div>
 
 			<div class="content_wrap">
-				<div class="content">
+				<div class="content scroll_motion">
 					<span class="content_title">IT 서비스</span>
 					<p class="explain_text">IT사업팀은 IT솔루션 및 서비스의 품질을 보증하는 <strong>S/W TEST,</strong>	디자인 가이드라인 및<br>사용자 사용성 등의 검증을 담당하는 <strong>UI/UX검증,</strong>사용자의 요구사항을 접수/조치하는 <br><strong>서비스데스크, </strong>중요한 정보 자산을 안전하게 보호하고 무중단 IT서비스를 보장하는 관제/모니터링, <br>물류에 대한 고객 업무를 지원하는 물류서비스로 나누어집니다.<br>지속적인 역량 강화와 축적된 Knowledge를 통해 <strong>전문적이고 안정적인 IT서비스를 제공합니다.</strong></p>
 					<div class="content_image">
@@ -90,49 +96,65 @@
 					</div>
 				</div>
 				<div class="service_list">
-					<div class="list_box">
-						<span class="service_title">S/W TEST</span>
-						<div class="service_explain">
-							<span class="explain_title">전문적 기술을 제공하여<br> 품질과 신뢰성을 확보하는 서비스</span>
-							<p>스마트폰, 태블릿 등 스마트기기의 모바일 어플리케이션부터 웹사이트, 클라우드 서비스, 시스템 통합(SI) 솔루션까지 개발 프로세스상에서 요구되는 소프트웨어의 기능/비기능 구현 검증을 담당하며, 고객이 요구하는 품질수준에 따라 개발테스트, 에자일테스트, 제3자 테스트 등 전문적 기술을 제공하여 품질과 신뢰성을 확보하는 서비스 입니다.</p>
-						</div>
-						<div class="list_image">
-							<img src="../assets/images/business/image-it_01.jpg" alt="">
-						</div>
-					</div>
-					<div class="list_box">
-						<span class="service_title">UI/UX검증</span>
-						<div class="service_explain">
-							<span class="explain_title">최적화 된 UI를 제공하는 서비스</span>
-							<p>스마트폰, 태블릿 등 스마트기기의 모바일 어플리케이션부터 웹사이트, 클라우드 서비스, 시스템 통합(SI) 솔루션까지 UI/UX 관련 산출물(화면 정의서, 디자인 시안)에 대하여 디자인 표준(OPUS)과 품질 검증 Checklist를 기반으로 표준 디자인 준수, 사용자 사용성 등 의 검증을 담당하며 최적화된 UI를 제공하는 서비스 입니다.</p>
-						</div>
-						<div class="list_image">
-							<img src="../assets/images/business/image-it_02.jpg" alt="">
-						</div>
-					</div>
-					<div class="list_box">
-						<span class="service_title">서비스데스크</span>
-						<div class="service_explain">
-							<span class="explain_title">인시던트 CSR 처리 및 관리/개선 서비스</span>
-							<p>IT업무 환경에서 발생되는 인시던트(요구사항, Infra 장애, 단순문의, 시스템 오류, 프로세스 개선 등)에 대해  전화나 Web, E-mail 등 여러 경로로 들어오는 CSR (Customer Service Request)을 접수, 분석, 배정, 결과 통보 등을 처리하고, CSR의 유형을 관리하고 개선하는 서비스 입니다.</p>
-						</div>
-						<div class="list_image">
-							<img src="../assets/images/business/image-it_03.jpg" alt="">
-						</div>
-					</div>
-					<div class="list_box">
-						<span class="service_title">관제/모니터링</span>
-						<div class="service_explain">
-							<span class="explain_title">상시 모니터링을 통해 제반 장애 이벤트 관리 및 복구 작업 훈련 지원 서비스</span>
-							<p><strong>장애현황관리</strong> : 기 구축된 정보시스템(서버, 네트워크, 어플리케이션)의 무중단 운영(Bussiness Continue Service)을 위하여 제반 장애 이벤트(진행사항 파악/조치 및 원인분석)를 관리하는 서비스 입니다.</p>
-							<p><strong>모의훈련운영</strong> : 실제 장애/재해와 유사한 상황에서 장애 영향도 확인, 장애신고, 조치 및 서비스 복구,  조치 완료 후 서비스 확인 등 장애대응 전 과정에 대한 훈련을 수행하여 장애/재해 발생 시 대응 및 복구 작업의 숙련도 향상을 통하여 복구 목표 시간 내 서비스를 정상화하기 위한 훈련 지원 서비스 입니다.</p>
-						</div>
-						<div class="list_image">
-							<img src="../assets/images/business/image-it_04.jpg" alt="">
+					<div class="content_fix_area">
+						<div class="content_sticky_area">
+							<div class="real_height">
+								<div class="fixed_scrollmotion">
+									<div class="list_box on">
+										<div class="inner">
+											<span class="service_title">S/W TEST</span>
+											<div class="service_explain">
+												<span class="explain_title">전문적 기술을 제공하여<br> 품질과 신뢰성을 확보하는 서비스</span>
+												<p>스마트폰, 태블릿 등 스마트기기의 모바일 어플리케이션부터 웹사이트, 클라우드 서비스, 시스템 통합(SI) 솔루션까지 개발 프로세스상에서 요구되는 소프트웨어의 기능/비기능 구현 검증을 담당하며, 고객이 요구하는 품질수준에 따라 개발테스트, 에자일테스트, 제3자 테스트 등 전문적 기술을 제공하여 품질과 신뢰성을 확보하는 서비스 입니다.</p>
+											</div>
+											<div class="list_image">
+												<img src="../assets/images/business/image-it_01.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="list_box">
+										<div class="inner">
+											<span class="service_title">UI/UX검증</span>
+											<div class="service_explain">
+												<span class="explain_title">최적화 된 UI를 제공하는 서비스</span>
+												<p>스마트폰, 태블릿 등 스마트기기의 모바일 어플리케이션부터 웹사이트, 클라우드 서비스, 시스템 통합(SI) 솔루션까지 UI/UX 관련 산출물(화면 정의서, 디자인 시안)에 대하여 디자인 표준(OPUS)과 품질 검증 Checklist를 기반으로 표준 디자인 준수, 사용자 사용성 등 의 검증을 담당하며 최적화된 UI를 제공하는 서비스 입니다.</p>
+											</div>
+											<div class="list_image">
+												<img src="../assets/images/business/image-it_02.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="list_box">
+										<div class="inner">
+											<span class="service_title">서비스데스크</span>
+											<div class="service_explain">
+												<span class="explain_title">인시던트 CSR 처리 및 관리/개선 서비스</span>
+												<p>IT업무 환경에서 발생되는 인시던트(요구사항, Infra 장애, 단순문의, 시스템 오류, 프로세스 개선 등)에 대해  전화나 Web, E-mail 등 여러 경로로 들어오는 CSR (Customer Service Request)을 접수, 분석, 배정, 결과 통보 등을 처리하고, CSR의 유형을 관리하고 개선하는 서비스 입니다.</p>
+											</div>
+											<div class="list_image">
+												<img src="../assets/images/business/image-it_03.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="list_box">
+										<div class="inner">
+											<span class="service_title">관제/모니터링</span>
+											<div class="service_explain">
+												<span class="explain_title">상시 모니터링을 통해 제반 장애 이벤트 관리 및 복구 작업 훈련 지원 서비스</span>
+												<p><strong>장애현황관리</strong> : 기 구축된 정보시스템(서버, 네트워크, 어플리케이션)의 무중단 운영(Bussiness Continue Service)을 위하여 제반 장애 이벤트(진행사항 파악/조치 및 원인분석)를 관리하는 서비스 입니다.</p>
+												<p><strong>모의훈련운영</strong> : 실제 장애/재해와 유사한 상황에서 장애 영향도 확인, 장애신고, 조치 및 서비스 복구,  조치 완료 후 서비스 확인 등 장애대응 전 과정에 대한 훈련을 수행하여 장애/재해 발생 시 대응 및 복구 작업의 숙련도 향상을 통하여 복구 목표 시간 내 서비스를 정상화하기 위한 훈련 지원 서비스 입니다.</p>
+											</div>
+											<div class="list_image">
+												<img src="../assets/images/business/image-it_04.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="content_tab">
+				<div class="content_tab scroll_motion">
 					<span class="tab_title">IT 서비스 Q&A</span>
 					<div class="tab_area">
 						<div class="tab_list">
@@ -333,16 +355,16 @@
 		<!-- section : [E] -->
 
 		<!-- footer : [S] -->
-		<footer>
+		<footer id="footer">
 			<div class="top_area">
 				<span class="footer_logo">
 					<img src="../assets/images/common/logo-footer.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 				</span>
 				<ul class="link_area">
-					<li><a href="">SITE MAP</a></li>
-					<li><a href="">찾아오시는길</a></li>
-					<li><a href="">개인정보취급 방침</a></li>
-					<li><a href="">한국장애인고용공단</a></li>
+					<li><a href="../sitemap.html">SITE MAP</a></li>
+					<li><a href="../info/location.html">찾아오시는길</a></li>
+					<li><a href="../privacy.html">개인정보취급 방침</a></li>
+					<li><a href="https://www.kead.or.kr/" target="_blank">한국장애인고용공단</a></li>
 				</ul>
 			</div>
 			<div class="bottom_area">
@@ -355,15 +377,127 @@
 				</div>
 				<p class="copyright">&copy; COPYRIGHT 2012 OPENHANDS  ALL RIGHTS RESERVED.</p>
 				<div class="accessibility_area">
-					<p>오픈핸즈 홈페이지는 '한국형 웹콘텐츠 웹접근성 지침'을 준수 하였습니다. 메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button">전체내용보기</button></p>
+					<p>오픈핸즈 홈페이지는 '한국형 웹콘텐츠 웹접근성 지침'을 준수 하였습니다. 메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button" class="layer_accessibility">전체내용보기</button></p>
 				</div>
 				<div class="accessibility_logo">
 					<img src="../assets/images/common/accessibility-text-logo.png" alt="한국장애인고용공단">
 				</div>
 			</div>
 		</footer>
-		<!-- footer : [E] -->
+		<!-- footer : [E] -->	
+		<div class="layer_wrap">
+			<div class="layer_area v2">
+				<div class="top_area">
+					<span>오픈핸즈 홈페이지<br>웹접근성 품질 인증 마크 인증</span>
+					<button type="button" class="close_btn">닫기</button>
+				</div>
+				<div class="content_area">
+					<p>장애인을 비롯한 모든 이용자들의 웹접근성을 높이기 위해 <strong>방송통신위원회의 한국형 웹콘텐츠 웹접근성 지침 2.1을 준수</strong>하였습니다.</p>
+					<div class="img_area">
+						<img src="../assets/images/common/image-accessibility.png" alt="과학기술정보통신부">
+					</div>
+					<div class="text_area">
+						<ul>
+							<li>01. 이미지를 인식하기 어렵거나 웹 접속 환경이 불안정한 이용자를 위해, <strong>모든 이미지에 대체 텍스트를 삽입</strong>하였습니다.</li>
+							<li>02. 마우스 사용이 불편한 장애이들을 위해, <strong>키보드만으로 홈페이지 이용이 가능합니다.</strong></li>
+							<li>03.시각장애인용 ‘스크린리더기’가 원활하게 작동할 수 있도록,<strong>홈페이지에 플래시를 사용하지 않았습니다.</strong><img src="../assets/images/common/accessibility-btn.png"></li>
+							<li>04. 홈페이지 이용을 보조하는 소프트웨어를 사용하는 이용자를 위해,
+								<strong>콘텐츠의 자동실행을 제한하였습니다.</strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer : [E] -->
 	</div>
+	<div id="top">
+		<button type="button">상단으로</button>
+	</div>
+
+	<script>
+		$(function(){
+			var scrollBody = document.querySelector(".service_list");
+			var parents = document.querySelector(".fixed_scrollmotion");
+			var wrapStyle = document.querySelector(".wrap");
+
+			var scrollHeight;
+			var sectionOffsetTop;
+			var sectionScrolTop;
+			var scrollRealHeight;
+			var winScrollTop;
+			var scrollPerecnt;
+			var percent;
+
+			var contentList = parents.children;
+
+			function changeOverlap() {
+				actionScroll ()
+			}
+
+			function actionScroll () {
+				scrollHeight = scrollBody.offsetHeight;
+				winScrollTop = window.pageYOffset;
+				sectionOffsetTop = scrollBody.getBoundingClientRect().top + window.pageYOffset;
+				scrollRealHeight = (scrollHeight - window.innerHeight);
+				sectionScrolTop = winScrollTop - sectionOffsetTop;
+				scrollPerecnt =  sectionScrolTop / scrollRealHeight;
+				percent = scrollPerecnt * 100 ;
+				
+
+				if(percent >= 0 ){
+					contentList[0].classList.add('on');
+					contentList[1].classList.remove('on');
+					contentList[2].classList.remove('on');
+					contentList[3].classList.remove('on');
+					wrapStyle.classList.add("visible");
+				}
+
+				if(percent >= 25){
+					contentList[0].classList.remove('on');
+					contentList[1].classList.add('on');
+					contentList[2].classList.remove('on');
+					contentList[3].classList.remove('on');
+					wrapStyle.classList.add("visible");
+				}
+
+				if(percent >= 50){
+					contentList[0].classList.remove('on');
+					contentList[1].classList.remove('on');
+					contentList[2].classList.add('on');
+					contentList[3].classList.remove('on');
+					wrapStyle.classList.add("visible");
+
+				if(percent >= 75){
+					contentList[0].classList.remove('on');
+					contentList[1].classList.remove('on');
+					contentList[2].classList.remove('on');
+					contentList[3].classList.add('on');
+					wrapStyle.classList.add("visible");
+				}
+
+				
+			};
+		}
+
+		function scrollStart() {
+			changeOverlap();
+			bindEvent();
+		}
+
+		function bindEvent(){
+			window.addEventListener('scroll', function() {
+				changeOverlap();
+				if (winScrollTop === 0) {
+					wrapStyle.classList.remove("visible");
+				}
+				
+			});
+		};
+			
+		scrollStart();
+		});
+
+	</script>
 </body>
 
 </html>

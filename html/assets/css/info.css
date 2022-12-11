@@ -288,7 +288,12 @@
   height:90%;
   background: #ccc;
   transform: translateX(-50%);
+  overflow: hidden;
+}
 
+.history .history_list .line span {
+  display: block;
+  background: #004098;
 }
 
 .history .history_list::after {
@@ -299,6 +304,10 @@
 
 .history .history_list .category_area {
   position: relative;
+}
+
+.history .history_list .category_area.fixed {
+  position: sticky;
 }
 
 .history .history_list .category_area:after {
@@ -411,7 +420,7 @@
 }
 
 .history .history_list .text_area.left .history_text::before {
-  right:-9.5px;
+  right:-7.5px;
 }
 
 .history .history_list .text_area.right .history_text::after{
@@ -441,6 +450,7 @@
   font-weight: 700;
   line-height: 1.5;
 }
+
 
 .history .history_list .text_area.left .text {
   display: flex;

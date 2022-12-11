@@ -1,5 +1,12 @@
 $(function () {
 
+	$("#top").click( function() {
+		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+		return false;
+	});
+
+	motion_scroll()
+	
 	var thisScroll = 20;
 	var $header = $('header');
 	var $tabButton = $('.tab_area .tab_list button');
@@ -58,7 +65,7 @@ $(function () {
 	// })
 
 	$layerAccessibility.click(function(){
-		$('html,body').css('overflow','visible');
+		$('html,body').css('overflow','hidden');
 		$('.layer_wrap').fadeIn();
 	});
 
@@ -76,3 +83,17 @@ $(function () {
 
 
 })
+
+function motion_scroll(){
+	$(window).on('scroll',function(){
+			var scT = $(this).scrollTop();
+			var winH = $(this).height();
+			
+			$('.scroll_motion').each(function(){
+					var motion_top = $(this).offset().top;
+					if(scT > motion_top-winH/1.5){
+							$(this).addClass('on');
+					}
+			});
+	}).scroll();
+}

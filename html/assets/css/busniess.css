@@ -41,19 +41,23 @@
 }
 
 .business .service_list {
-  margin-top: 260px;
   padding-right: 100px;
 }
 
 .business .service_list .list_box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.42, 0, 0.23, 1.09);
 }
 
-.business .service_list .list_box + .list_box {
-  margin-top: 512px;
+
+
+.business .service_list .list_box.on {
+  opacity: 1;
 }
+
 
 .business .service_list .list_box .service_title,
 .business .service_list .list_box .explain_title {
@@ -84,10 +88,55 @@
   margin-top: 10px;
 }
 
+.business .service_list .content_fix_area {
+  position: relative;
+  height: 5000px;
+}
+
+.business .service_list .content_sticky_area {
+  overflow: hidden; 
+  position: sticky; 
+  position: -webkit-sticky; 
+  top:0; 
+  left: 0; 
+  width: 100%;
+  height: 100vh;
+}
+
+.business .service_list .real_height {
+  position: relative;
+  height: calc(100vh - 72px);
+}
+
+.business .service_list .fixed_scrollmotion {
+  position: relative;
+  height: 100%;
+}
+
+.business .service_list .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+/* 1개만 있을경우 */
+.business .service_list.v2 {
+  margin: 260px 0 360px;
+  padding-right: 100px;
+}
+
+.business .service_list.v2 .list_box {
+  position: static;
+  opacity: 1;
+}
+
+
 
 .business .content_tab {
   width: 1400px;
-  margin: 368px auto 0 0;
+  margin: 0 auto;
 }
 
 .business .content_tab .tab_area {

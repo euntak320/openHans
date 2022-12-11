@@ -16,13 +16,18 @@
 </head>
 
 <body>
+	<div class="skip_navigation">
+		<a href="#header">메뉴로 이동</a>
+		<a href="#section">본문으로 이동</a>
+		<a href="#footer">푸터로 이동</a>
+	</div>
 	<div class="wrap">
 		<!-- header : [S] -->
-		<header>
+		<header id="header">
 			<!-- gnb 메뉴  -->
 			<div class="gnb_area">
 				<h1 class="logo">
-					<a href="../main.html">
+					<a href="/main.html">
 						<img src="assets/images/common/logo.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 					</a>
 				</h1>
@@ -30,35 +35,36 @@
 					<ul>
 						<li>
 							<a href="javascript:void()">회사소개</a>
-							<ul class="sub_menu_list on">
-								<li><a href="">회사개요</a></li> 
-								<li><a href="">CEO 인사말</a></li>
-								<li><a href="">연혁</a></li>
-								<li><a href="">찾아오시는길</a></li>
+							<ul class="sub_menu_list ">
+								<li><a href="../info/introduce.html" >회사개요</a></li>
+								<li><a href="../info/ceo.html" >CEO 인사말</a></li>
+								<li><a href="../info/history.html">연혁</a></li>
+								<li><a href="../info/location.html">찾아오시는길</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="javascript:void()">사업소개</a>
 							<ul class="sub_menu_list">
-								<li><a href="">IT 서비스</a></li>
-								<li><a href="">물류관리</a></li>
-								<li><a href="">총무지원</a></li>
-								<li><a href="">헬스키퍼</a></li>
+								<li><a href="../business/it.html" >IT 서비스</a></li>
+								<li><a href="../business/supply.html">물류관리</a></li>
+								<li><a href="../business/service.html">총무지원</a></li>
+								<li><a href="../business/health.html">헬스키퍼</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="javascript:void()">홍보센터</a>
 							<ul class="sub_menu_list">
-								<li><a href="">오픈핸즈 NEWS</a></li>
+								<li><a href="../promotion/news.html">오픈핸즈 NEWS</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="javascript:void()">채용정보</a>
-							<ul class="sub_menu_list">
-								<li><a href="">오픈핸즈 人은</a></li>
-								<li><a href="" class="on">채용절차</a></li>
-								<li><a href="">채용지원</a></li>
-								<li><a href="">오픈핸즈 FAQ</a></li>
+							<ul class="sub_menu_list ">
+								<li><a href="../recruit/openpeople.html">오픈핸즈 人은</a></li>
+								<li><a href="../recruit/procedure.html"  >채용절차</a></li>
+								<li><a href="../recruit/notice.html"  >채용공고</a></li>
+								<li><a href="../recruit/support.html">채용지원</a></li>
+								<li><a href="../recruit/faq.html" >오픈핸즈 FAQ</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -68,7 +74,7 @@
 		<!-- header : [E] -->
 
 		<!-- section : [S] -->
-		<section class="privacy">
+		<section class="privacy" id="section">
 			<div class="keyvisual_area">
 				<h2 class="title">개인정보취급방침</h2>
 				<div class="keyvisual_navi">
@@ -79,13 +85,17 @@
 				</div>
 			</div>
 
-			<div class="content_wrap">
+			<div class="content_wrap" >
 				<div class="privacy_wrap">
 					<div class="right_select">
-						<select name="" id="">
-							<option value="">V.2.0 2017년 4월 12일</option>
-							<option value=""></option>
-						</select>
+						<div class="com_select">
+							<button type="button" class="title">V.2.0 2017년 4월 12일</button>
+							<ul class="select_list">
+								<li>V.2.0 2017년 4월 12일</li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
 					</div>
 					<div class="text_wrap">
 						<div class="text_area">
@@ -270,7 +280,7 @@
 							<p class="title">개인정보·고유식별정보의 공유 및 제3자 제공</p>
 							<p>- 회사는 고객의 개인정보·고유식별정보를 가입신청서, 이용약관, 개인정보처리방침에서 명시한 범위내에서 이용하며,  명시한 범위를 넘어서 제3자에게 공유하거나 제공하지 않습니다.</p>
 							<p>- 회사는 서비스 제휴 등을 목적으로 개인정보·고유식별정보의 공유 및 제3자 제공을 하지 않습니다. 
-							<p>다만, 고객의 사전 동의를 받거나 서비스 제공에 따른 금액정산을 위하여 필요하거나 관련법령(통신비밀보호법, 전기통신사업법,국세기본법, 정보통신망이용촉진및정보보호에 관한법률, 금융실명거래및비밀보장에 관한법률, 신용정보의이용및보호에 관한법률, 소비자보호법, 형사소송법 등)의 특별한 규정이 있는 경우에는 예외로 합니다.</p>
+							<p>다만, 고객의 사전 동의를 받거나 서비스 제공에 따른 금액정산을 위하여 필요하거나 관련법령(통신비밀보호법, 전기통신사업법, 국세기본법, 정보통신망이용촉진및정보보호에 관한법률, 금융실명거래및비밀보장에 관한법률, 신용정보의 이용 및 보호에 관한법률, 소비자보호법, 형사소송법 등)의 특별한 규정이 있는 경우에는 예외로 합니다.</p>
 						</div>
 						<div class="text_area">
 							<p class="title">개인정보·고유식별정보의 파기 절차 및 방법</p>
@@ -354,16 +364,16 @@
 		<!-- section : [E] -->
 
 		<!-- footer : [S] -->
-		<footer>
+		<footer id="footer">
 			<div class="top_area">
 				<span class="footer_logo">
 					<img src="assets/images/common/logo-footer.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 				</span>
 				<ul class="link_area">
-					<li><a href="">SITE MAP</a></li>
-					<li><a href="">찾아오시는길</a></li>
-					<li><a href="">개인정보취급 방침</a></li>
-					<li><a href="">한국장애인고용공단</a></li>
+					<li><a href="sitemap.html">SITE MAP</a></li>
+					<li><a href="info/location.html">찾아오시는길</a></li>
+					<li><a href="privacy.html">개인정보취급 방침</a></li>
+					<li><a href="https://www.kead.or.kr/" target="_blank">한국장애인고용공단</a></li>
 				</ul>
 			</div>
 			<div class="bottom_area">
@@ -374,18 +384,44 @@
 					<span class="info_text">Fax. 02-6155-6451</span>
 					<span class="info_text">사업자등록번호 : 129-86-52327</span>
 				</div>
-				<p class="copyright">&copy; COPYRIGHT 2012 OPENHANDS  ALL RIGHTS RESERVED.</p>
+				<p class="copyright">© COPYRIGHT 2012 OPENHANDS  ALL RIGHTS RESERVED.</p>
 				<div class="accessibility_area">
-					<p>오픈핸즈 홈페이지는 '한국형 웹콘텐츠 웹접근성 지침'을 준수 하였습니다.</p>
-					<p>메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button">전체내용보기</button></p>
+					<p>오픈핸즈 홈페이지는 '한국형 웹콘텐츠 웹접근성 지침'을 준수 하였습니다. 메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button" class="layer_accessibility">전체내용보기</button></p>
 				</div>
 				<div class="accessibility_logo">
 					<img src="assets/images/common/accessibility-text-logo.png" alt="한국장애인고용공단">
 				</div>
 			</div>
-			
 		</footer>
 		<!-- footer : [E] -->
+		<!-- layer : [S] -->
+		<div class="layer_wrap">
+			<div class="layer_area v2">
+				<div class="top_area">
+					<span>오픈핸즈 홈페이지<br>웹접근성 품질 인증 마크 인증</span>
+					<button type="button" class="close_btn">닫기</button>
+				</div>
+				<div class="content_area">
+					<p>장애인을 비롯한 모든 이용자들의 웹접근성을 높이기 위해 <strong>방송통신위원회의 한국형 웹콘텐츠 웹접근성 지침 2.1을 준수</strong>하였습니다.</p>
+					<div class="img_area">
+						<img src="assets/images/common/image-accessibility.png" alt="과학기술정보통신부">
+					</div>
+					<div class="text_area">
+						<ul>
+							<li>01. 이미지를 인식하기 어렵거나 웹 접속 환경이 불안정한 이용자를 위해, <strong>모든 이미지에 대체 텍스트를 삽입</strong>하였습니다.</li>
+							<li>02. 마우스 사용이 불편한 장애이들을 위해, <strong>키보드만으로 홈페이지 이용이 가능합니다.</strong></li>
+							<li>03.시각장애인용 ‘스크린리더기’가 원활하게 작동할 수 있도록,<strong>홈페이지에 플래시를 사용하지 않았습니다.</strong><img src="assets/images/common/accessibility-btn.png"></li>
+							<li>04. 홈페이지 이용을 보조하는 소프트웨어를 사용하는 이용자를 위해,
+								<strong>콘텐츠의 자동실행을 제한하였습니다.</strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- layer : [E] -->
+	</div>
+	<div id="top">
+		<button type="button">상단으로</button>
 	</div>
 </body>
 
