@@ -101,7 +101,7 @@ button {
   right: 5%;
   width: 50px;
   height: 50px;
-  z-index: 100;
+  z-index: 10;
 }
 
 #top button {
@@ -118,7 +118,10 @@ button {
 .wrap {
   overflow: hidden;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   box-sizing: border-box;
+  
 }
 
 .wrap.visible {
@@ -449,14 +452,31 @@ header {
 header.open {
   height: 380px;
   transition: all 0.5s;
-  
 }
-
 
 .gnb_area {
   display: flex;
   align-items: center;
   height: 78px;
+}
+
+.gnb_area .mobile_btn {
+  display: none;
+  width: 40px;
+  height: 32px;
+  background: url('../images/common/icon-hambuger.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.gnb_area .mobile_btn.close {
+  width: 39px;
+  height: 39px;
+  background: url('../images/common/icon-closemenu.png') no-repeat;
+  background-size:cover;
+}
+
+.gnb_area .mobile_btn button {
+  text-indent: -9999px;
 }
 
 header.open .gnb_area::after {
@@ -617,7 +637,8 @@ header.scroll_menu .gnb_area .menu_area .sub_menu_list.on a.on::before {
 /* footer */
 footer {
   position: relative;
-  padding: 60px 260px;
+  max-width: 1400px;
+  padding: 60px 9.5%;
   background-color: #fff;
   border-top: 1px solid #eee;
 }
@@ -1155,4 +1176,166 @@ footer .accessibility_logo img {
 .scroll_motion.on {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+@media all and (max-width:1400px) {
+
+  .content_wrap {
+    width: auto;
+    padding:100px 20px 0 0;
+  }
+
+  .keyvisual_area .keyvisual_navi {
+    right: 5%;
+  }
+
+  footer {
+    width:auto;
+    margin: 0 auto;
+    padding:80px 60px;
+  }
+
+  footer .accessibility_logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header {
+    padding:0 20px;
+    height: 120px;
+    box-sizing: border-box;
+  }
+
+  header.fixed  {
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background: #fff;
+  }
+
+  .gnb_area {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .gnb_area .mobile_btn {
+    display: block;
+  }
+
+  .gnb_area .menu_area {
+    position: fixed;
+    right:0;
+    top:120px;
+    width: 100%;
+    background: #fff;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .gnb_area .menu_area.on {
+    transform: translateX(0);
+  }
+
+
+  .gnb_area .menu_area>ul {
+    display: block;
+  }
+
+  .gnb_area .menu_area>ul>li {
+    position: relative;
+    top:60px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  .gnb_area .menu_area>ul>li > a {
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    padding-left: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.375;
+    z-index: 100;
+  }
+
+
+  .gnb_area .menu_area>ul>li > a:after {
+    display: none;
+    content: "";
+    position: absolute;
+    right:-13px;
+    top:5%;
+    width:0;
+    height: 0;
+    transform: translateY(-50%);
+    border: 20px solid #fff;
+    border-top-width: 0;
+    border-right-color: #fff;
+    transform: rotate(45deg);
+
+  }
+  
+  .gnb_area .menu_area>ul>li.on > a,
+  .gnb_area .menu_area>ul>li:hover > a {
+    color: #004098;
+  }
+
+  .gnb_area .menu_area>ul>li:hover > a::after {
+    display: block;
+  } 
+  .gnb_area .menu_area>ul>li > .sub_menu_list {
+    display: none;
+  }
+
+  .gnb_area .menu_area>ul>li.on > .sub_menu_list {
+    display: block;
+  }
+
+  .gnb_area .menu_area .sub_menu_list {
+    position: fixed;
+    top:0;
+    right:0;
+    width: calc(100% - 30%);
+    height: 100vh;
+    padding: 60px 0 0 0;
+    background: #eee;
+    z-index: 100;
+  }
+
+  .gnb_area .menu_area .sub_menu_list li {
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+  .gnb_area .menu_area .sub_menu_list a {
+    font-size: 24px;
+    line-height: 1.428;
+  }
+
+  header.scroll_menu .gnb_area .menu_area .sub_menu_list.on {
+    display: block;
+    height: 100%;
+  }
+
+  header.scroll_menu .gnb_area .menu_area .sub_menu_list li {
+    margin: 0;
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+
+  header.scroll_menu .gnb_area .menu_area .sub_menu_list a {
+    font-size:24px;
+    line-height: 1.428;
+    color: #000;
+
+  }
+
+  .keyvisual_area .keyvisual_navi {
+    display: none;
+  }
 }

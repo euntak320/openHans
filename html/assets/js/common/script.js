@@ -7,6 +7,7 @@ $(function () {
 
 	motion_scroll()
 	
+	var windowWidth = $(window).width();
 	var thisScroll = 20;
 	var $header = $('header');
 	var $tabButton = $('.tab_area .tab_list button');
@@ -24,18 +25,25 @@ $(function () {
 	$header.mouseleave(function () {
 		$(this).removeClass('open')
 	})
+
 	
 	$(window).scroll(function(e) {
 		scrollTop = $(window).scrollTop();
 		if (scrollTop > thisScroll+5 && scrollTop>5) {
-			$("header").addClass("scroll_menu");
-			$(".main_content").addClass("off")
-		} else {
-			if(scrollTop - thisScroll < 0){
-				$(".main_content").removeClass("off")
+			if(windowWidth > 1400) {
+				$("header").addClass("scroll_menu");
 			}
+			else {
+				$("header").addClass("fixed");
+			}
+		} else {
 			if (scrollTop === 0) {
-				$("header").removeClass("scroll_menu");
+				if(windowWidth > 1400) {
+					$("header").removeClass("scroll_menu");
+				}
+				else {
+					$("header").removeClass("fixed");
+				}
 			}
 		}
 		thisScroll = $(window).scrollTop()
@@ -58,12 +66,6 @@ $(function () {
 		$('html,body').css('overflow','visible');
 		$(this).parents('.layer_wrap').fadeOut();
 	});
-
-	// $layerCloseTwo.click(function(){
-	// 	$('html,body').css('overflow','visible');
-	// 	$(this).fadeOut();
-	// })
-
 	$layerAccessibility.click(function(){
 		$('html,body').css('overflow','hidden');
 		$('.layer_wrap').fadeIn();
@@ -82,18 +84,38 @@ $(function () {
 	});
 
 
-})
+	// 반응형
+	if (windowWidth <= 1400) {
+
+		$header.mouseenter(function () {
+			$(this).removeClass('open')
+		})
+
+		$('.menu_area>ul> li > a').mouseenter(function(){
+			$(this).each(function(){
+				$('.menu_area>ul> li').removeClass('on');
+				$(this).parents('li').addClass('on');
+			})
+		});
+
+		$('.mobile_btn').click(function(){
+			$(this).toggleClass('close')
+			$(this).parents('.gnb_area').find('.menu_area').toggleClass('on');
+		})
+
+	}
+});
 
 function motion_scroll(){
 	$(window).on('scroll',function(){
-			var scT = $(this).scrollTop();
-			var winH = $(this).height();
-			
-			$('.scroll_motion').each(function(){
-					var motion_top = $(this).offset().top;
-					if(scT > motion_top-winH/1.5){
-							$(this).addClass('on');
-					}
-			});
+		var scT = $(this).scrollTop();
+		var winH = $(this).height();
+		
+		$('.scroll_motion').each(function(){
+				var motion_top = $(this).offset().top;
+				if(scT > motion_top-winH/1.5){
+						$(this).addClass('on');
+				}
+		});
 	}).scroll();
 }
