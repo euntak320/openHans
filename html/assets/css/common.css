@@ -810,17 +810,29 @@ footer .accessibility_logo img {
   margin: 40px auto 0;
 }
 
+.layer_wrap .layer_area .top_area{
+  
+  position: sticky;
+  top:-60px;
+  left: 0;
+  width: 100%;
+  padding: 60px 0  60px;
+  margin:-60px -60px 0 -60px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
 .layer_wrap .layer_area .top_area span{
   display: block;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 1.3;
   font-weight: 700;
 }
 
 .layer_wrap .layer_area .top_area button {
   position: absolute;
-  top:60px;
-  right:60px;
+  top:65px;
+  right:0;
   width: 30px;
   height: 30px;
   background: url('../images/common/icon_close.png') no-repeat ;
@@ -828,9 +840,6 @@ footer .accessibility_logo img {
   text-indent: -9999px;
 }
 
-.layer_wrap .layer_area .content_area {
-  margin-top: 74px;
-}
 
 .layer_wrap .layer_area .content_area strong {
   display: inline-block;
@@ -878,6 +887,7 @@ footer .accessibility_logo img {
   font-size: 20px;
   line-height: 1.6;
   text-align: left;
+  font-weight: 700;
 }
 
 .layer_wrap .layer_area .img_frame .img_area {
@@ -1081,8 +1091,8 @@ footer .accessibility_logo img {
   padding-left: 82px;
   cursor: pointer;
   box-sizing: border-box;
-  background: url('../images/common/icon-plus.png') no-repeat 97% center;
-  background-size: 23px;
+  /* background: url('../images/common/icon-plus.png') no-repeat 97% center;
+  background-size: 23px; */
 }
 
 .accordian_area .accordian_title::after {
@@ -1095,13 +1105,57 @@ footer .accessibility_logo img {
   background: #000;
 }
 
+.accordian_area .accordian_title .icon {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: 30px;
+  margin-top: -10px;
+}
+.accordian_area .accordian_title .icon::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+  font-size: 0;
+  transition: transform 0.4s;
+}
+
+.accordian_area .accordian_title .icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+  font-size: 0;
+  transition: transform 0.4s;
+  transform: rotate(90deg);
+}
+
+.accordian_area .accordian_title.on .icon::before{
+  transform: rotate(-180deg);
+}
+
+.accordian_area .accordian_title.on .icon:after {
+  transform: rotate(0deg);
+}
+
 .accordian_area .accordian_title:hover::after {
   width: 100%;
   transition: 0.5s;
 }
 
 .accordian_area .accordian_title.on {
-  background: url('../images/common/icon-miner.png') no-repeat 97% center;
+  /* background: url('../images/common/icon-miner.png') no-repeat 97% center; */
   background-size: 23px;
 }
 

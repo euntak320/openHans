@@ -82,6 +82,8 @@
 }
 .business .service_list .list_box .explain_title {
   margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.333;
 }
 
 .business .service_list .list_box p + p {
@@ -136,8 +138,6 @@
 
 .business .content_tab {
   position: relative;
-  width: 1400px;
-  margin: 0 auto;
 }
 
 .business .content_tab .tab_area {
@@ -169,7 +169,7 @@
 .business .content_tab .view {
   display: block;
   position: relative;
-  padding-top: 100px;
+  padding-top: 20px;
   border-top:2px solid #000;
 }
 
