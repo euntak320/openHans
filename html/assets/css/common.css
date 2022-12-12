@@ -1,5 +1,4 @@
 /* fonts */
-/* ============================== circular ============================================ */
 @font-face {
     font-family:'NotoSans';
     font-weight: 400;
@@ -31,7 +30,7 @@ time, mark, audio, video, button {
 	border: 0;
 	vertical-align: baseline;
   font-weight: 400;
-  font-family: "NotoSans", sans-serif;
+  font-family: "NotoSans";
   font-size: 16px;
   line-height: 1.75;
   color: #000;
@@ -73,6 +72,10 @@ button {
   color: inherit;
   font-size: inherit;
   cursor: pointer;
+}
+
+input:active, input:focus {
+  outline: 2px solid #004098;;
 }
 
 /* skip_navigation */
@@ -658,6 +661,7 @@ footer .top_area {
 
 footer .footer_logo {
   width: 175px;
+  height: 53px;
   margin-right: 40px;
 }
 
@@ -1149,6 +1153,7 @@ footer .accessibility_logo img {
   display: none;
   position: absolute;
   top:50px;
+  left: -1px;
   width: 100%;
   z-index: 10;
   border-left: 1px solid #ccc;
@@ -1166,6 +1171,7 @@ footer .accessibility_logo img {
   background: #fff;
   color: #000;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .com_select .select_list li:hover {

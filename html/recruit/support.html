@@ -185,9 +185,12 @@
 								<div class="com_select">
 									<button type="button" class="title">전체</button>
 									<ul class="select_list">
-										<li>전체</li>
-										<li>제목</li>
-										<li>날짜</li>
+										<li>naver.com</li>
+										<li>daum.net</li>
+										<li>hanmail.net</li>
+										<li>nate.com</li>
+										<li>gmail.com</li>
+										<li>hotmail.com</li>
 									</ul>
 								</div>
 							</div>
@@ -196,22 +199,13 @@
 							<div class="input_area">
 								<span>첨부파일<span>*</span></span>
 								<div class="input_box file">
-										<div class="file_upload">
-											<input type="text" class="upload-name" title="파일선택" value="파일선택" disabled="disabled">
-											<label for="ex_filename" class="com_button">파일첨부하기</label> 
-											<input type="file" id="ex_filename" title="파일업로드" class="upload-hidden"> 
+									<div class="file_list_area">
+										
 									</div>
-								</div>
-							</div>
-							<div class="input_area">
-								<div class="input_box file">
-										<div class="file_upload">
-											<input type="text" class="upload-name" title="파일선택" value="파일선택" disabled="disabled">
-											<label for="ex_filename" class="com_button">파일첨부하기</label> 
-											<input type="file" id="ex_filename" title="파일업로드" class="upload-hidden">
-											<button type="button" class="com_button">삭제</button> 
-									</div>
-									
+									<div class="file_upload">
+										<input type="text" class="upload-name" title="파일선택" value="파일선택" disabled="disabled">
+										<label for="ex_filename" class="com_button">파일첨부하기</label> 
+										<input type="file" id="ex_filename" title="파일업로드" class="upload-hidden"> 
 								</div>
 							</div>
 						</div>
@@ -304,18 +298,6 @@
 	</div>
 
 	<script>
-		var fileTarget = $('.file_upload .upload-hidden');
-		fileTarget.on('change', function(){  // 값이 변경되면
-			if(window.FileReader){  // modern browser
-						var filename = $(this)[0].files[0].name;
-			} 
-			else {  // old IE
-						var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
-			}
-
-			// 추출한 파일명 삽입
-			$(this).siblings('.upload-name').val(filename);
-		});
 
 		$( function() {
 			$(".datepicker").datepicker({
