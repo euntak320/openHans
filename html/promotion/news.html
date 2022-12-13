@@ -153,6 +153,9 @@
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-pagination"></div>
+					<!-- 2022-12-13 추가  [S]-->
+					<button type="button" class="stop">일시정지</button>
+					<!-- 2022-12-13 추가  [E]-->
 				</div>
 				<div class="reault_news_list ">
 					<div class="top_area scroll_motion">
@@ -409,6 +412,21 @@
 				nextSlideMessage: '다음 슬라이드',   
 				slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
 			},
+		})
+		$(function(){
+			$(".main_news_area button").on('click', function () {
+				if ($(this).hasClass("stop")) {
+					Swiper.autoplay.stop();
+					$(this).removeClass("stop");
+					$(this).addClass("start");
+					return false;
+				} else {
+					Swiper.autoplay.start();
+					$(this).removeClass("start");
+					$(this).addClass("stop");
+					return false;
+				}
+			});
 		})
 	</script>
 </body>

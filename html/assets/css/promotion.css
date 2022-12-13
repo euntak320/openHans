@@ -7,7 +7,8 @@
 .main_news_area {
   overflow: hidden;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+  height: 400px;
 }
 
 .main_news_area .content_area {
@@ -29,6 +30,7 @@
 
 .main_news_area .image_area img {
   width: 100%;
+  height: 400px;
   max-height: 400px;
 }
 
@@ -82,6 +84,8 @@
 .main_news_area .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
+  background: none;
+  border: 1px solid #000;
 }
 
 .main_news_area  .swiper-pagination-bullet-active {
@@ -96,8 +100,30 @@
 .main_news_area .swiper-horizontal>.swiper-pagination-bullets, 
 .main_news_area .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .main_news_area .swiper-pagination-custom {
-  bottom: 0;
+  bottom: -5px;
 }
+
+.main_news_area button {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 39px;
+  z-index: 100;
+  text-indent: -9999px;
+}
+
+.main_news_area button.stop {
+  background: url('../images/common/swiper-normal_purse.png') no-repeat;
+  background-size: 20px;
+}
+
+.main_news_area button.start {
+  background: url('../images/common/swiper-normal_play.png') no-repeat;
+  background-size: 20px;
+}
+
 
 .text_area .caution_area span {
   position: relative;
@@ -113,6 +139,12 @@
   height: 14px;
   background: #000;
   transform: translateY(-50%);
+}
+
+.text_area .caution_area span:last-child {
+  padding-right: 0;
+  padding-left: 10px;
+  margin-left: -5px;
 }
 
 .text_area .title {
@@ -136,13 +168,15 @@
 }
 
 .reault_news_list {
-  margin-top: 160px;
+  margin-top: 140px;
 }
 
 .reault_news_list .top_area {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .reault_news_list .top_area .search_area {
@@ -162,6 +196,10 @@
   padding:11px 0;
 }
 
+.reault_news_list .top_area .select_area .com_select ul {
+  top: 51px;
+}
+
 
 .reault_news_list .top_area .input_area {
   width: 500px;
@@ -175,6 +213,7 @@
   padding: 14px 0;
   border:0;
   box-sizing: border-box;
+  font-size: initial;
 }
 
 .reault_news_list .top_area .search_icon {
@@ -193,7 +232,7 @@
 
 .reault_news_list .list_area {
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .reault_news_list .list_area .list_box {
@@ -224,10 +263,10 @@
 
 .reault_news_list .list_area .text_area .link_area {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
 }
 
 .reault_news_list .add_btn {
-  margin-top:100px;
+  margin-top:80px;
   text-align: center;
 }

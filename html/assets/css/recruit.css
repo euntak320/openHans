@@ -19,17 +19,26 @@
   margin-top: 140px;
 }
 
-.openhandsperson .icon_list+.icon_list {
+.openhandsperson .icon_list.v2 {
   margin-top: 120px;
+  justify-content: center;
 }
 
+
 .openhandsperson .icon_box {
+  min-width: 20%;
   text-align: center;
 }
 
 .openhandsperson .icon_list .icon_box:last-child {
   padding-right: 0;
 }
+
+.openhandsperson .icon_list.v2 .icon_box,
+.openhandsperson .icon_list.v2 .icon_box:last-child {
+  padding: 0 130px;
+}
+
 
 .openhandsperson .icon_box .img_area img {
   text-align: center;
@@ -153,7 +162,6 @@
 }
 
 .procedure .notication_area {
-  margin-top: 80px;
   padding: 40px 80px;
   background: #f5f5f5;
 }
@@ -295,6 +303,7 @@
 
 .right_area .info_site {
   margin-top: 40px;
+  padding-left: 20px;
 }
 
 .right_area .info_site > * {

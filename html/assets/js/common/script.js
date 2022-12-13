@@ -134,8 +134,9 @@ $(function () {
 			$(this).toggleClass('close')
 			$(this).parents('.gnb_area').find('.menu_area').toggleClass('on');
 		})
-
 	}
+
+
 });
 
 function motion_scroll() {
@@ -149,6 +150,8 @@ function motion_scroll() {
 				$(this).addClass('on');
 			}
 		});
+
+		
 
 		$('.sticky').each(function () {
 			var motion_top = $(this).offset().top;

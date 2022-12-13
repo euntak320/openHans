@@ -1,13 +1,19 @@
 /* fonts */
 @font-face {
-    font-family:'NotoSans';
-    font-weight: 400;
-    src: url('../fonts/NotoSansKR-Regular.otf') format('truetype');
+  font-family:'NotoSans';
+  font-weight: 300;
+  src: url('../fonts/NotoSansKR-Light.otf');
+}
+
+@font-face {
+  font-family:'NotoSans';
+  font-weight: 400;
+  src: url('../fonts/NotoSansKR-Regular.otf');
 }
 @font-face {
-    font-family:'NotoSans';
-    font-weight: 700;
-    src: url('../fonts/NotoSansKR-Bold.otf') format('truetype');
+  font-family:'NotoSans';
+  font-weight: 700;
+  src: url('../fonts/NotoSansKR-Bold.otf');
 }
 
 /* ============================== reset ========================== */
@@ -281,6 +287,17 @@ section {
   text-align: center;
 }
 
+.tab_area .tab_list.on {
+  position: sticky;
+  top: 28%;
+  width: 100%;
+  left: 0;
+  padding: 15px 0;
+  border: 1px solid #eee;
+  background: #fff;
+  z-index: 10000;
+}
+
 .tab_area .tab_list button,
 .tab_area .tab_list a {
   position: relative;
@@ -457,6 +474,7 @@ header {
   border-bottom: 1px solid #eee;
   background: #fff;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 header.open {
@@ -531,6 +549,28 @@ header.open.scroll_menu  .gnb_area::after {
 .gnb_area .menu_area>ul>li {
   padding: 0 40px;
 }
+.gnb_area .menu_area>ul>li> a {
+  position: relative;
+}
+
+.gnb_area .menu_area>ul>li> a:after {
+  content: "";
+  position: absolute;
+  left:50%;
+  bottom:-27px;
+  width: 0;
+  height: 2px;
+  background: #004098;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.gnb_area .menu_area>ul>li.on > a:after,
+.gnb_area .menu_area>ul>li:hover > a:after {
+  opacity: 1;
+  width: 100%;
+  transition: 0.5s;
+}
 
 .gnb_area .menu_area>ul>li span {
   display: block;
@@ -583,6 +623,7 @@ header.scroll_menu {
   height: 128px;
   transition: 0.5s;
   background: #004098;
+  border-bottom: 0;
 }
 
 header.scroll_menu .gnb_area .menu_area .sub_menu_list {
@@ -847,7 +888,7 @@ footer .accessibility_logo img {
 }
 
 .layer_wrap .layer_area .content_area p {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .layer_wrap .layer_area .content_area .img_area {
@@ -875,6 +916,14 @@ footer .accessibility_logo img {
 
 .layer_wrap .layer_area .content_area .text_area li + li {
   margin-top: 40px;
+}
+
+.layer_wrap .layer_area .content_area .text_area li strong {
+  padding-left: 25px;
+}
+
+.layer_wrap .layer_area .content_area .text_area li:nth-child(2) strong{
+  padding: 0;
 }
 
 .layer_wrap .layer_area .img_frame {
@@ -924,8 +973,8 @@ footer .accessibility_logo img {
 }
 
 .detail_area .detail_content {
-  margin-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 40px;
+  padding-bottom: 80px;
   border-bottom: 1px solid #eee;
 }
 
@@ -941,8 +990,6 @@ footer .accessibility_logo img {
 }
 
 .detail_area .paging_bar a {
-  font-size: 20px;
-  line-height: 29px;
   padding-left: 16px;
   background: url('../images/recurit/icon-list-arrow.png') no-repeat left center;
   background-size: 7px;
@@ -956,7 +1003,7 @@ footer .accessibility_logo img {
 }
 
 .sitemap p.title {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.4;
   font-weight: 700;
   text-align: center;
@@ -974,7 +1021,7 @@ footer .accessibility_logo img {
   display: block;
   width: 160px;
   padding-bottom: 24px;
-  border-bottom:1px solid #ccc;
+  border-bottom:1px solid #eee;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
