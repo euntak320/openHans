@@ -88,6 +88,8 @@
 .procedure_area .procedure_box .step {
   margin-top: 44px;
   color: #004098;
+  font-size: 24px;
+  line-height: 1.5;
   font-weight: 700;
 }
 
@@ -133,7 +135,7 @@
 
 .process_table .table_area .table_cell .bold {
   width: 230px;
-  margin-right: 195px;
+  margin-right: 85px;
   font-weight: 700;
 }
 
@@ -162,6 +164,7 @@
 }
 
 .procedure .notication_area {
+  margin-top: 80px;
   padding: 40px 80px;
   background: #f5f5f5;
 }
@@ -270,24 +273,20 @@
 
 .method_area .step_box .step {
   margin-top: 33px;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 1.5;
   font-weight: 700;
   color: #004098;
 }
 
 .method_area .step_box .coment {
   margin-top: 20px;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .method_area .step_box .gray {
   display: block;
   margin-top:5px;
-  font-size: 20px;
   color: rgba(0,0,0,0.6);
-  line-height: 28px;
 }
 
 
@@ -303,7 +302,7 @@
 
 .right_area .info_site {
   margin-top: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .right_area .info_site > * {
@@ -380,8 +379,8 @@
   border-bottom: 1px solid #ccc;
 }
 
-.notice .notice_table .table_body a:hover span,
-.notice .notice_table .table_body a.on span {
+.notice .notice_table .table_body a:hover span:nth-child(2),
+.notice .notice_table .table_body a.on span:nth-child(2) {
   font-weight: 700;
 }
 
@@ -394,6 +393,12 @@
   color: #666;
   font-weight: 700;
 }
+
+.notice .notice_table .table_body a.on:hover > * {
+  font-weight: 700;
+}
+
+
 
 .notice .notice_table .w20 {
   width: 20%;
@@ -450,8 +455,34 @@
   margin-top: 30px;
 }
 
+.support .privacy_area .table {
+  margin-top: 30px;
+}
+
+.support .privacy_area .table table {
+  width: 100%;
+  border:1px solid #000;
+}
+
+.support .privacy_area .table th,
+.support .privacy_area .table td {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+} 
+.support .privacy_area .table th {
+  border-right: 1px solid #000;
+  background: #d9d9d9;
+}
+
+.support .privacy_area .table td {
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  background: #fff;
+}
+
 .support .checkbox {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: right;
 }
 
@@ -491,7 +522,7 @@
 
 .support .download_area {
   position: relative;
-  margin-top: 120px;
+  margin-top: 40px;
   padding:40px 0;
   border-top:1px solid #000;
   border-bottom:1px solid #000;
@@ -502,7 +533,7 @@
 }
 
 .support .download_area .title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 24px;
   line-height: 1.5;
 }
@@ -649,6 +680,11 @@
   vertical-align: middle;
 }
 
+.support .input_area .file_upload .com_button {
+  width: 200px;
+  padding: 0;
+}
+
 
 .support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
   position: absolute;
@@ -731,6 +767,15 @@
   width: 100%;
   margin-top:60px;
   text-align: center;
+}
+
+.support .confirm_button .com_button {
+  width: 200px;
+  padding: 0;
+}
+
+.support .confirm_button.scroll_motion {
+  transition: all 0.3s;
 }
 
 .support .success_area {

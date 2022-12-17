@@ -9,7 +9,7 @@
 
 .business .content_wrap {
   width: 1920px;
-  /* padding-left:260px; */
+  padding-left:260px;
   box-sizing: border-box;
 }
 
@@ -138,6 +138,7 @@
 
 .business .content_tab {
   position: relative;
+  max-width: 1400px;
 }
 
 .business .content_tab .tab_area {
@@ -146,14 +147,18 @@
 
 .business .content_tab .tab_area .tab_list.on {
   position: sticky;
-  top: 51px;
-  width: 100%;
+  top: 50px;
+  width: 1920px;
   padding: 20px 0;
-  left: 0;
+  margin-left: -260px;
   border: 1px solid #eee;
   background: #fff;
   z-index: 10;
 
+}
+
+.business .content_tab .tab_area .tab_list.on.plus {
+  top: 125px;
 }
 
 .business .content_tab .accordian_area {

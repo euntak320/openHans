@@ -30,6 +30,7 @@
 
 .introduce .icon_box p {
   margin-top: 10px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -123,6 +124,7 @@
 
 .introduce .slide_area .image_area .swiper-slide img {
   width: 100%;
+  height: 480px;
 }
 
 .introduce .slide_area .swiper_button {
@@ -197,6 +199,11 @@
   margin: 0 20px;
 }
 
+.introduce .ci_area .button_area > * {
+  width: 200px;
+  padding: 0;
+}
+
 
 
 /* CEO 인사말 */
@@ -234,6 +241,10 @@
   padding-left: 400px;
 }
 
+.ceo .ceo_coment .moblie_view {
+  display: none;
+}
+
 .ceo .ceo_coment span {
   display: block;
 }
@@ -257,6 +268,22 @@
 
 .ceo .ceo_coment p+p {
   margin-top: 40px;
+}
+
+.ceo .ceo_name {
+  margin-top:80px
+}
+
+.ceo .ceo_name > * {
+  display: inline-block!important;
+  vertical-align: bottom;
+  font-weight: 700;
+}
+
+.ceo .ceo_name .name {
+  margin-left: 18px;
+  line-height: 1.2;
+  font-size: 48px;
 }
 
 /* 연혁 */
@@ -532,6 +559,8 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  width: 200px;
+  padding: 0;
 }
 
 .location .info_loaction .bottom_area {

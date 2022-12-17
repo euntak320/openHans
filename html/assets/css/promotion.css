@@ -78,12 +78,12 @@
 
 .main_news_area .swiper-button-next:hover {
   background: url('../images/common/swier-right-arrow_active.png') no-repeat center;
-  background-size: contain;
+  background-size: contain;;
 }
 
 .main_news_area .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background: none;
   border: 1px solid #000;
 }
@@ -100,7 +100,7 @@
 .main_news_area .swiper-horizontal>.swiper-pagination-bullets, 
 .main_news_area .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .main_news_area .swiper-pagination-custom {
-  bottom: -5px;
+  bottom: -2.5px;
 }
 
 .main_news_area button {
@@ -148,7 +148,7 @@
 }
 
 .text_area .title {
-  margin-top: 24px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.428
@@ -237,6 +237,7 @@
 
 .reault_news_list .list_area .list_box {
   position: relative;
+  height: 340px;
 }
 
 .reault_news_list .list_area .list_box + .list_box {
@@ -267,6 +268,11 @@
 }
 
 .reault_news_list .add_btn {
-  margin-top:80px;
+  margin-top:60px;
   text-align: center;
+}
+
+.reault_news_list .add_btn .com_button {
+  width: 200px;
+  padding: 0;
 }
