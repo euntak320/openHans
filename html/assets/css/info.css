@@ -288,6 +288,11 @@
 
 /* 연혁 */
 
+.history.on {
+  position: relative;
+  z-index: 1000;
+}
+
 .history .keyvisual_area {
   background: url('../images/info/keyvisual_hisotry.jpg') no-repeat;
   background-size: cover;
@@ -329,14 +334,22 @@
 }
 
 .history .history_list .category_area {
-  position: relative;
+  position: absolute;
+  background: #fff;
 }
 
-.history .history_list .category_area.on {
+.history .history_list .category_area.one {
+  top:0;;
+  left: 0;
+  right:0;
+  width: 100%;
+}
+
+.history .history_list .category_area.fixed{
   position: sticky;
-  top:200px;
-  left:0;
-  z-index: 1000;
+  position: -webkit-sticky;
+  top: 230px;
+  z-index: 10;
 }
 
 .history .history_list .category_area:after {
