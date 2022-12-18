@@ -9,8 +9,12 @@
 
 .business .content_wrap {
   width: 1920px;
-  padding-left:260px;
+  /* padding-left:260px; */
   box-sizing: border-box;
+}
+
+.business .content{
+  padding-left: 260px;
 }
 
 .business .content .content_title {
@@ -42,6 +46,7 @@
 
 .business .service_list {
   padding-right: 100px;
+  transition: 1.5s;
 }
 
 .business .service_list .list_box {
@@ -69,6 +74,7 @@
 
 .business .service_list .list_box .service_title {
   width: 20%;
+  text-align: center;
 }
 
 .business .service_list .list_box .service_explain {
@@ -123,6 +129,46 @@
 }
 
 
+.business .service_list .list_box .service_title {
+  position: relative;
+  top:-50%;
+  transition: 0.5s;
+}
+
+.business .service_list .list_box.on .service_title {
+  top:0;
+}
+
+.business .service_list .list_box .service_explain {
+  position: relative;
+  top:50%;
+  transition: 0.5s;
+}
+
+.business .service_list .list_box.on .service_explain {
+  top:0;
+}
+
+.business .service_list .list_box .list_image {
+  position: relative;
+  top:-50%;
+  transition: 0.5s;
+}
+.business .service_list .list_box.on .list_image {
+  top:0;
+}
+
+
+.business .service_list .list_box.before .service_title,
+.business .service_list .list_box.before .list_image {
+  top:50%;
+}
+
+.business .service_list .list_box.before .service_explain {
+  top:-50%;
+}
+
+
 /* 1개만 있을경우 */
 .business .service_list.v2 {
   margin: 260px 0 360px;
@@ -134,11 +180,30 @@
   opacity: 1;
 }
 
+.business .content_title.on,
+.business .explain_text.on {
+  animation: leftDiraction 1.5s;
+}
 
+.content_image.on{
+  animation: leftDiraction 1s;
+}
+
+.business .content_title.right,
+.business .explain_text.right {
+  animation: rightDiraction 1.5s;
+  opacity: 0;
+}
+
+.content_image.right{
+  animation: rightDiraction 1s;
+  opacity: 0;
+}
 
 .business .content_tab {
   position: relative;
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 .business .content_tab .tab_area {
@@ -148,13 +213,10 @@
 .business .content_tab .tab_area .tab_list.on {
   position: sticky;
   top: 50px;
-  width: 1920px;
+  width: 100%;
   padding: 20px 0;
-  margin-left: -260px;
-  border: 1px solid #eee;
   background: #fff;
   z-index: 10;
-
 }
 
 .business .content_tab .tab_area .tab_list.on.plus {
@@ -178,6 +240,13 @@
   border-top:2px solid #000;
 }
 
+.business .content_tab .view.on {
+  padding-top: 120px;
+}
+
+.business .content_tab .view.on.plus {
+  padding-top: 195px;
+}
 .business .content_tab .view::after {
   display: block;
   clear: both;
@@ -200,4 +269,36 @@
 .business .content_tab .right_area {
   float: right;
   width: 75%;
+}
+
+
+/* 애니메이션 */
+@keyframes leftDiraction {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rightDiraction {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

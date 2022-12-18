@@ -32,7 +32,7 @@
 						<img src="../assets/images/common/logo.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 					</a>
 				</h1>
-				<div class="menu_area on">
+				<div class="menu_area">
 					<ul>
 						<li>
 							<a href="javascript:void()" class="menu_title">회사소개</a>
@@ -316,6 +316,17 @@
 
 	<!-- script 추가  -->
 	<script>
+		$('.wrap').css('overflow','visible');
+
+		$(window).scroll(function(){
+			if($('.content_type_menu').hasClass('plus')) {
+				$('.tab_area .tab_list').addClass('plus')
+			}
+			else {
+				$('.tab_area .tab_list').removeClass('plus')
+			}
+		});
+		
 	</script>
 </body>
 

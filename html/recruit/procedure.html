@@ -32,7 +32,7 @@
 						<img src="../assets/images/common/logo.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 					</a>
 				</h1>
-				<div class="menu_area on">
+				<div class="menu_area">
 					<ul>
 						<li>
 							<a href="javascript:void()" class="menu_title">회사소개</a>
@@ -123,7 +123,7 @@
 			</div>
 
 			<div class="content_wrap">
-				<div class="tab_area">
+				<div class="tab_area scroll_motion">
 					<div class="tab_list">
 						<button type="button "class="on">채용 프로세스</button>
 						<button type="button" >고용공단 구직 등록방법</button>
@@ -413,6 +413,19 @@
 		<button type="button">상단으로</button>
 	</div>
 
+	<script>
+		$('.wrap').css('overflow','visible');
+
+		$(window).scroll(function(){
+			if($('.content_type_menu').hasClass('plus')) {
+				$('.tab_area .tab_list').addClass('plus')
+			}
+			else {
+				$('.tab_area .tab_list').removeClass('plus')
+			}
+		});
+		
+	</script>
 	
 </body>
 

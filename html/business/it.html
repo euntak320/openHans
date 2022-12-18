@@ -33,7 +33,7 @@
 							<img src="../assets/images/common/logo.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 						</a>
 					</h1>
-					<div class="menu_area on">
+					<div class="menu_area">
 						<ul>
 							<li>
 								<a href="javascript:void()" class="menu_title">회사소개</a>
@@ -132,7 +132,7 @@
 						<img src="../assets/images/business/iamge-it.jpg" alt="">
 					</div>
 				</div>
-				<div class="service_list">
+				<div class="service_list scroll_motion">
 					<div class="content_fix_area">
 						<div class="content_sticky_area">
 							<div class="real_height">
@@ -195,7 +195,7 @@
 					<span class="tab_title">IT 서비스 Q&A</span>
 					<div class="tab_area">
 						<div class="tab_list">
-							<a href="#sw" type="button" class="on">S/W TEST</a>
+							<a href="#sw" type="button">S/W TEST</a>
 							<a href="#ui">UI/UX검증</a>
 							<a href="#service">서비스데스크</a>
 							<a href="#moniter" type="button">관제/모니터링</a>
@@ -479,17 +479,65 @@
 
 	<script>
 		$(function(){
+
+			setTimeout(()=> {
+				$('.content_title').addClass('on')
+				$('.explain_text').addClass('on')
+				$('.content_image').addClass('on')
+			}, 1500)
 			
-			var $root = $('html, body');
-			$('.tab_list a[href^="#"]').click(function() {
-				var href = $.attr(this, 'href');
-				$root.animate({
-						scrollTop: $(href).offset().top
-				}, 500, function () {
-						window.location.hash = href;
-				});
-				return false;
+			$(window).scroll(function () {
+				var thisScroll = 0;
+				var scT = $(this).scrollTop();
+				var winH = $(this).height();
+				var contentTab  = $('.content_tab ').height();
+
+				if (scrollTop > thisScroll + 5 && scrollTop > 5) {
+					$('.content_title').removeClass('on').addClass('right')
+					$('.explain_text').removeClass('on').addClass('right')
+					$('.content_image').removeClass('on').addClass('right')
+				} else {
+					if (scrollTop - thisScroll < 0) {
+						$('.content_title').removeClass('on')
+						$('.explain_text').removeClass('on')
+						$('.content_image').removeClass('on')
+						$('.tab_area .view').removeClass('pt120')
+					}
+					if (scrollTop === 0) {
+						$('.content_title').removeClass('right')
+						$('.explain_text').removeClass('right')
+						$('.content_image').removeClass('right')
+					}
+				}
+
+				if (scT > contentTab - winH / 2.5) {
+					$('.tab_list').addClass('on');
+				} else {
+					$('.tab_list').removeClass('on');
+				}
+
+				if($('.content_type_menu').hasClass('plus')) {
+					$('.tab_area .tab_list').addClass('plus');
+					$('.tab_area .view').addClass('plus');
+				}
+				else {
+					$('.tab_area .tab_list').removeClass('plus')
+					$('.tab_area .view').removeClass('plus');
+				}
+				
 			});
+
+			var $root = $('html, body');
+				$('.tab_list a[href^="#"]').click(function(e) {
+					e.preventDefault;
+					var href = $.attr(this, 'href');				
+					$root.animate({
+							scrollTop: $(href).offset().top
+					}, 500, function () {
+							window.location.hash = href;
+					});
+
+				});
 
 			var scrollBody = document.querySelector(".service_list");
 			var parents = document.querySelector(".fixed_scrollmotion");
@@ -520,15 +568,20 @@
 				
 
 				if(percent >= 0 ){
+					contentList[0].classList.remove('before');
 					contentList[0].classList.add('on');
 					contentList[1].classList.remove('on');
+					contentList[1].classList.remove('before');
 					contentList[2].classList.remove('on');
+					contentList[2].classList.remove('before');
 					contentList[3].classList.remove('on');
+					contentList[3].classList.remove('before');
 					wrapStyle.classList.add("visible");
 				}
 
 				if(percent >= 25){
 					contentList[0].classList.remove('on');
+					contentList[0].classList.add('before');
 					contentList[1].classList.add('on');
 					contentList[2].classList.remove('on');
 					contentList[3].classList.remove('on');
@@ -536,7 +589,9 @@
 				}
 
 				if(percent >= 50){
+					contentList[0].classList.remove('before');
 					contentList[0].classList.remove('on');
+					contentList[1].classList.add('before');
 					contentList[1].classList.remove('on');
 					contentList[2].classList.add('on');
 					contentList[3].classList.remove('on');
@@ -546,6 +601,7 @@
 					contentList[0].classList.remove('on');
 					contentList[1].classList.remove('on');
 					contentList[2].classList.remove('on');
+					contentList[2].classList.add('before');
 					contentList[3].classList.add('on');
 					wrapStyle.classList.add("visible");
 				}

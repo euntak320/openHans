@@ -43,20 +43,15 @@ $(function () {
 		if (scrollTop > thisScroll + 5 && scrollTop > 5) {
 			$header.addClass("up")
 			$('.content_type_menu').show().removeClass('plus').addClass('down');
-			$('.business .tab_list').removeClass('plus')
 		} else {
 			if (scrollTop - thisScroll < 0) {
 				$header.removeClass("up")
 				$('.content_type_menu').removeClass('down').addClass('plus');
-				$('.business .tab_list').addClass('plus')
 			}
 			if (scrollTop === 0) {
 				$('.content_type_menu').hide();
 			}
 		}
-
-	
-
 		
 		thisScroll = $(window).scrollTop()
 	});
@@ -133,17 +128,6 @@ $(function () {
 
 	// 반응형
 	if (windowWidth <= 1400) {
-
-		$header.mouseenter(function () {
-			$(this).removeClass('open')
-		})
-
-		$('.menu_area>ul> li > a').mouseenter(function () {
-			$(this).each(function () {
-				$('.menu_area>ul> li').removeClass('on');
-				$(this).parents('li').addClass('on');
-			})
-		});
 
 		$('.mobile_btn').click(function () {
 			$(this).toggleClass('close')
