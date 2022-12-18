@@ -127,7 +127,7 @@
 			</div>
 
 			<div class="content_wrap">
-				<div class="content scroll_motion">
+				<div class="content">
 					<span class="content_title">IT 서비스</span>
 					<p class="explain_text">IT사업팀은 IT솔루션 및 서비스의 품질을 보증하는 <strong>S/W TEST,</strong> 디자인 가이드라인 및<br>
 						사용자 사용성 등의 검증을 담당하는 <strong>UI/UX검증,</strong> 사용자의 요구사항을 접수/조치하는<br><strong>서비스데스크,</strong>
@@ -508,9 +508,9 @@
 						$('.tab_area .view').removeClass('pt120')
 					}
 					if (scrollTop === 0) {
-						$('.content_title').removeClass('right')
-						$('.explain_text').removeClass('right')
-						$('.content_image').removeClass('right')
+						$('.content_title').removeClass('right').addClass('on')
+						$('.explain_text').removeClass('right').addClass('on')
+						$('.content_image').removeClass('right').addClass('on')
 					}
 				}
 

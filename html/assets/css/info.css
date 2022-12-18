@@ -567,11 +567,10 @@
   line-height: 1.5;
 }
 
-.location .info_loaction .top_area .com_button {
+.location .info_loaction .com_button {
   position: absolute;
-  top: 50%;
+  top:0;
   right: 0;
-  transform: translateY(-50%);
   width: 200px;
   padding: 0;
 }
@@ -593,4 +592,42 @@
 
 .location .info_loaction .bottom_area li+li {
   margin-top: 20px;
+}
+
+.only-mobile {
+  display: none;
+}
+@media all and (max-width:1024px) {
+
+  .only-pc {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
+
+  .location .info_loaction{
+    margin-top: 40px;
+  }
+  .location .info_loaction .top_area .title {
+    font-size: 16px;
+  }
+  .location .info_loaction .bottom_area {
+    margin-top: 30px;
+  }
+
+  .location .info_loaction .bottom_area span {
+    display: block;
+    margin-top: 10px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .location .info_loaction .com_button {
+    position: relative;
+    top:auto;
+    left:auto;
+    display: block;
+    margin: 40px auto 0;
+  }
 }
