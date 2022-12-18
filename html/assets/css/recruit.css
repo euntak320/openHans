@@ -70,7 +70,7 @@
 }
 
 .procedure_area .procedure_box {
-  padding-right: 122px;
+  padding-right: 9%;
   text-align: center;
   background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 80% 20px;
   background-size: 16px 30px;
@@ -118,7 +118,6 @@
 .process_table .table_area .table_cell {
   position: relative;
   display: flex;
-  align-items: top;
   padding: 40px 0;
   border-bottom: 1px solid #ccc;
 }
@@ -181,11 +180,11 @@
 }
 
 .procedure .notication_area .list p {
-  padding-left:25px;
+  padding-left: 25px;
   text-indent: -25px;
 }
 
-.procedure .notication_area .list li .number span:first-child{
+.procedure .notication_area .list li .number span:first-child {
   position: relative;
   padding-right: 10px;
 }
@@ -193,8 +192,8 @@
 .procedure .notication_area .list li .number span:first-child:after {
   content: '';
   position: absolute;
-  right:0;
-  top:50%;
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 1px;
   height: 14px;
@@ -264,10 +263,10 @@
 
 .method_area .step_box:nth-child(5),
 .method_area .step_box:nth-child(6) {
-  margin-top:120px;
+  margin-top: 120px;
 }
 
-.method_area .step_box:nth-child(6)  {
+.method_area .step_box:nth-child(6) {
   background: none;
 }
 
@@ -285,8 +284,8 @@
 
 .method_area .step_box .gray {
   display: block;
-  margin-top:5px;
-  color: rgba(0,0,0,0.6);
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -296,7 +295,7 @@
   border-bottom: 0;
 }
 
-.method_area .content_area +.content_area .right_area .step_box:last-child{
+.method_area .content_area+.content_area .right_area .step_box:last-child {
   background: none;
 }
 
@@ -305,7 +304,7 @@
   padding-left: 40px;
 }
 
-.right_area .info_site > * {
+.right_area .info_site>* {
   display: inline-block;
   vertical-align: top;
 }
@@ -394,7 +393,7 @@
   font-weight: 700;
 }
 
-.notice .notice_table .table_body a.on:hover > * {
+.notice .notice_table .table_body a.on:hover>* {
   font-weight: 700;
 }
 
@@ -461,7 +460,7 @@
 
 .support .privacy_area .table table {
   width: 100%;
-  border:1px solid #000;
+  border: 1px solid #000;
 }
 
 .support .privacy_area .table th,
@@ -469,7 +468,8 @@
   height: 60px;
   line-height: 60px;
   text-align: center;
-} 
+}
+
 .support .privacy_area .table th {
   border-right: 1px solid #000;
   background: #d9d9d9;
@@ -523,9 +523,9 @@
 .support .download_area {
   position: relative;
   margin-top: 40px;
-  padding:40px 0;
-  border-top:1px solid #000;
-  border-bottom:1px solid #000;
+  padding: 40px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .support .download_area span {
@@ -540,28 +540,28 @@
 
 .support .download_area .button {
   position: absolute;
-  right:0;
-  top:50%;
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  
+
 }
 
 
 .support .info_input_area {
-  margin-top:80px;
+  margin-top: 80px;
 }
 
 .support .info_input_area .title {
   display: block;
-  font-size:24px;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 700;
 }
 
 .support .info_input_area .sub_title {
   display: block;
-  margin-top:10px;
+  margin-top: 10px;
   line-height: 28px;
   color: #059aee;
   font-weight: 400;
@@ -582,26 +582,26 @@
 }
 
 .support .input_area span {
-  font-size:20px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 700;
 }
 
-.support .input_area span > span {
+.support .input_area span>span {
   font-weight: 700;
   color: #059aee;
 }
 
-.support .input_area .input_box{
+.support .input_area .input_box {
   width: 420px;
   height: 50px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .support .input_area .input_box .ui-datepicker-trigger {
   position: absolute;
-  right:15px;
-  top:70%;
+  right: 15px;
+  top: 70%;
   width: 30px;
   height: 30px;
   transform: translateY(-50%);
@@ -623,7 +623,7 @@
   box-sizing: border-box;
 }
 
-.support .select_box{
+.support .select_box {
   position: relative;
   width: 440px;
   border: 1px solid #999;
@@ -639,7 +639,7 @@
   font-size: 16px;
 }
 
-.support .select_box select{
+.support .select_box select {
   padding: 0 0 0 20px;
   appearance: none;
   background: url('../images/common/icon-select_arrow.png') no-repeat 95% center;
@@ -652,7 +652,7 @@
 }
 
 .support .input_wrap.email .txt {
-  margin:0 -20px;
+  margin: 0 -20px;
   line-height: 55px;
   font-size: 24px;
 }
@@ -661,12 +661,12 @@
   display: block;
 }
 
-.support .input_wrap.file .input_box{ 
+.support .input_wrap.file .input_box {
   width: 100%;
   height: 100%;
 }
 
-.support .input_wrap.file .input_box > * {
+.support .input_wrap.file .input_box>* {
   display: inline-block;
   vertical-align: top;
 }
@@ -675,7 +675,8 @@
   margin-top: 40px;
   color: #059aee;
 }
-.support .input_area .file_upload > * {
+
+.support .input_area .file_upload>* {
   display: inline-block;
   vertical-align: middle;
 }
@@ -686,14 +687,15 @@
 }
 
 
-.support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
+.support .input_area .file_upload input[type="file"] {
+  /* 파일 필드 숨기기 */
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip:rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -704,7 +706,7 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip:rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -719,7 +721,8 @@
 /* named upload */
 .support .input_area .file_upload .upload-name[type="text"] {
   display: none;
-  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -webkit-appearance: none;
+  /* 네이티브 외형 감추기 */
   -moz-appearance: none;
   appearance: none;
 }
@@ -732,7 +735,7 @@
   box-sizing: border-box;
 }
 
-.support .input_area .file_list_area .file_item > * {
+.support .input_area .file_list_area .file_item>* {
   display: inline-block;
   vertical-align: middle;
 }
@@ -752,10 +755,10 @@
 }
 
 .support .info_caution_text {
-  margin-top:80px;
+  margin-top: 80px;
   padding: 40px 0;
-  border-top:1px solid #ccc;
-  border-bottom:1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .support .info_caution_text ul li {
@@ -765,7 +768,7 @@
 .support .confirm_button {
   display: block;
   width: 100%;
-  margin-top:60px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -780,7 +783,7 @@
 
 .support .success_area {
   width: 580px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -798,7 +801,7 @@
   font-weight: 700;
 }
 
-.support .success_area p + p{
+.support .success_area p+p {
   margin-top: 0;
   font-size: 16px;
   font-weight: 400;
@@ -817,12 +820,13 @@
 
 .support .success_area table {
   width: 100%;
-  margin-top:40px;
-  
-  
+  margin-top: 40px;
+
+
 }
+
 .support .success_area table thead tr {
-  border-top:1px solid #000;
+  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
@@ -833,11 +837,11 @@
 }
 
 .support .success_area table tbody tr {
-  border-bottom:  1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .support .success_area table tbody td {
-  padding : 40px 0;
+  padding: 40px 0;
 }
 
 .support .success_area .final_button {
@@ -851,7 +855,7 @@
 }
 
 .faq .paging_wrap {
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .faq .accordian_area:first-child {
@@ -860,4 +864,360 @@
 
 .support .input_wrap.file .input_area {
   margin-right: 0;
+}
+
+@media all and (max-width:1400px) {
+  .process_table .table_area a {
+    position: relative;
+    margin-left: 2%;
+  }
+}
+
+@media all and (max-width:1200px) {
+  .procedure_area .procedure_box {
+    padding-right: 4%;
+    background-position: 100% 20px;
+  }
+}
+
+
+@media all and (max-width:1024px) {
+  .faq .keyvisual_area {
+    background: url('../images/recurit/mobile_keyvisual_faq.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .support .keyvisual_area {
+    background: url('../images/recurit/mobile_keyvisual_support.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .support .form_area .title,
+  .support .form_area .title>span {
+    font-size: 16px;
+  }
+
+  .support .privacy_area {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .support .privacy_area span,
+  .support .privacy_area p,
+  .support .privacy_area li,
+  .support .privacy_area .text_box {
+    font-size: 14px;
+  }
+
+  .support .privacy_area .table th,
+  .support .privacy_area .table td {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .support .input_wrap {
+    margin-top: 20px;
+  }
+
+  .support .info_input_area {
+    margin-top: 50px;
+  }
+
+  .support .download_area {
+    margin-top: 30px;
+    padding: 30px 0;
+  }
+
+  .support .download_area .button {
+    position: static;
+    margin-top: 40px;
+    font-size: 14px;
+    transform: none;
+  }
+  
+
+  .support .input_wrap {
+    position: relative;
+    display: block;
+  }
+  .support .input_area {
+    margin-right: 0;
+  }
+
+  .support .input_area + .input_area {
+    margin-top: 25px;
+  }
+  
+  .support .email .input_area .input_box {
+    width: 90%;
+  }
+
+  .support .input_area .input_box,
+  .support .input_area .input_box.v2,
+  .support .select_box {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+  }
+
+  .support .input_wrap.email .txt {
+    position: absolute;
+    top:28%;
+    right:0;
+    margin: 0;
+    line-height: 1;
+    font-size: 20px;
+    transform: translateY(-50%);
+  }
+  .support .select_box {
+    margin-top: 20px;
+  }
+
+  .support .input_area span {
+    font-size: 16px;
+  }
+
+  .support .input_area .file_list_area {
+    width: 100%;
+  }
+
+  .support .input_area .input_box .ui-datepicker-trigger {
+    width: 20px;
+    height: 20px;
+  }
+
+  .support .input_area .file_upload label {
+    margin:0 auto;
+  }
+
+  .support .info_text {
+    margin-top:20px;
+    font-size: 14px;
+    color: #888;
+  }
+  .support .info_caution_text {
+    margin-top:30px;
+    padding:20px 0;
+  }
+
+  .support .input_area .file_upload .com_button {
+    position: relative;
+    margin-top: 30px;
+    left:35%;
+  }
+  .support .info_caution_text ul li {
+    font-size: 14px;
+    padding-left: 10px;
+    text-indent: -10px;
+  }
+  .support .confirm_button {
+    margin-top: 25px;
+  }
+  .support .input_area .file_upload label {
+    line-height: 45px;
+  }
+
+  .support .success_area {
+    width: 100%;
+  }
+
+  .support .success_area .title {
+    font-size: 24px;
+  }
+  .support .success_area p {
+    font-size: 14px!important;
+  }
+  .support .success_area .table {
+    margin-top: 40px;
+  }
+  .support .success_area .table_title {
+    font-size: 14px;
+  }
+  .support .success_area table {
+    margin-top: 20px;
+  }
+  .support .success_area table thead th {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .support .success_area table tbody td {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .support .success_area .final_button {
+    margin-top: 40px;
+  }
+
+  .procedure_area {
+    display: block;
+  }
+  .procedure_area .procedure_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    padding-bottom: 75px;
+    background: url('../images/common/mobile_down_arrow.png') no-repeat;
+    background-position: 8% 80%; 
+    background-size: 20px 11px;
+  }
+
+  .procedure_area .procedure_box .img_area {
+    display: block;
+    width: 90px;
+    max-width: 90px;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .procedure_area .procedure_box .img_area img {
+    width: 100%;
+    max-width: 90px;
+    height: 100%;
+  }
+
+  .procedure_area .procedure_box > div {
+    margin-left: 34px;
+    text-align: left;
+  }
+
+  .procedure_area .procedure_box > div br {
+    display: none;
+  }
+
+  .procedure_area .procedure_box .step {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .procedure_area .procedure_box:last-child {
+    padding-bottom: 0;
+  }
+  .procedure .process_table {
+    margin-top: 75px;
+  }
+  .procedure .process_table .sub_title_text {
+    font-size: 16px;
+  }
+  .process_table .table_area{
+    margin-top: 10px;
+  }
+  .process_table .table_area .table_cell {
+    display: block;
+    padding: 30px 0;
+  }
+  .process_table .table_area .table_cell .bold {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .process_table .table_area .table_cell .bold br {
+    display: none;
+  }
+  .process_table .table_area .table_cell .step {
+    margin-right: 30px;
+  }
+
+  .process_table .table_area .table_cell ul {
+    margin-top: 16px;
+    margin-left: 90px;
+  }
+  .process_table .table_area .table_cell li {
+    font-size: 14px;
+  }
+  .process_table .table_area a {
+    margin-top: 40px;
+    margin-left:90px;
+  }
+
+  .procedure .notication_area {
+    display: block;
+    margin-top: 50px;
+    padding: 20px;
+
+  }
+  .procedure .notication_area .list {
+    display: block;
+  }
+
+  .procedure .notication_area .list span,
+  .procedure .notication_area .list p {
+    font-size: 14px;
+  }
+  .procedure .notication_area .list p {
+    padding-left: 17px;
+    text-indent: -17px;
+  }
+
+  .procedure .notication_area .list p br {
+    display: none;
+  }
+  .procedure .notication_area .list .bold {
+    margin-bottom: 0;
+  }
+  .procedure .notication_area .list .bold > span {
+    display: block;
+  }
+
+  .procedure .notication_area .list li + li {
+    margin-top: 10px;
+  }
+
+  .procedure .notication_area .list li .number span {
+    display: block;
+  }
+
+  .procedure .notication_area .list li .number span:first-child:after {
+    display: none;
+  }
+
+  .procedure .notication_area .list li .number span:last-child {
+    padding-left: 0;
+  }
+
+  .notice .keyvisual_area {
+    background: url('../images/recurit/mobile_keyvisual_notice.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .notice .content_wrap .title {
+    font-size: 18px;
+  }
+
+  .notice .notice_table {
+    margin-top: 50px;
+  }
+  .notice .notice_table .table_header {
+    display: none;
+  }
+  .notice .notice_table .table_body a {
+    display: block;
+    padding: 30px 10px;
+    border-bottom: 1px solid #000;
+    background: url('../images/common/mobile_right_arrow.png') no-repeat 99% center;
+    background-size: 13px;
+    box-sizing: border-box;
+  }
+  .notice .notice_table .table_body a:first-child {
+    border-top: 1px solid #000;
+  }
+  .notice .notice_table .table_body span {
+    padding: 0;
+    display: block;
+    text-align: left;
+  }
+
+  .notice .notice_table .table_body span:last-child {
+    display: none;
+  }
+  .notice .notice_table .w20,
+  .notice .notice_table .w50,
+  .notice .notice_table .w15{
+    width: 100%;
+    text-align: left;
+  }
+
 }

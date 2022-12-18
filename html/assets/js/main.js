@@ -2,6 +2,7 @@ $(function(){
 
   $(".fullpage").fullpage({
     navigator:false,
+    scrollOverflow: true,
     onLeave : function(index, nextIndex , direction){				
 			$(".pagnation ul li").removeClass("on");				
 			$(".pagnation ul li").eq(nextIndex-2).addClass("on");		
@@ -22,8 +23,6 @@ $(function(){
     return false;
   });
 
-
-  
 
   setTimeout(() => {
     $('.bg_area').remove();
