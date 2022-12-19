@@ -47,6 +47,17 @@ $(function () {
 	});
 
 
+	var $root = $('html, body');
+	$('.tab_list a[href^="#"]').click(function(e) {
+		e.preventDefault;
+		var href = $.attr(this, 'href');				
+		$root.animate({
+			scrollTop: $(href).offset().top
+		}, 500, function () {
+			window.location.hash = href;
+		});
+	});
+
 
 	$(window).scroll(function () {
 		scrollTop = $(window).scrollTop();
@@ -130,15 +141,9 @@ $(function () {
 		$(this).parents(".input_box").find('.file_list_area').append("<div class='file_item'><span class='file-value'>" + event.target.files[0].name + "</span> <span class='close'>닫기</span></div>");
 
 		$('.file_list_area .close').click(function () {
-			console.log('클릭')
 			$(this).parents('.file_item').hide();
 		});
 	});
-
-
-
-	
-
 
 });
 

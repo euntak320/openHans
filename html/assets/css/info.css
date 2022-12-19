@@ -335,7 +335,6 @@
 
 .history .history_list .category_area {
   position: absolute;
-  background: #fff;
 }
 
 .history .history_list .category_area.one {
@@ -348,8 +347,12 @@
 .history .history_list .category_area.fixed{
   position: sticky;
   position: -webkit-sticky;
-  top: 230px;
+  top: 50px;
   z-index: 10;
+}
+
+.history .history_list .category_area.fixed.top{
+  top:128px;
 }
 
 .history .history_list .category_area:after {

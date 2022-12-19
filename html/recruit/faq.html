@@ -128,13 +128,13 @@
 			</div>
 
 			<div class="content_wrap">
-				<div class="tab_area">
-					<div class="tab_list scroll_motion">
-						<button type="button "class="on">채용정보</button>
-						<button type="button" >사업군</button>
+				<div class="tab_area scroll_motion">
+					<div class="tab_list ">
+						<a href="#info" class="on">채용정보</a>
+						<a href="#biz">사업군</a>
 					</div>
 					<!-- 채용정보 : [S] -->
-					<div class="view on">
+					<div class="view on" id="info">
 						<div class="accordian_wrap scroll_motion">
 							<div class="accordian_area">
 								<div class="accordian_title ">
@@ -230,7 +230,7 @@
 					<!-- 채용정보 : [E] -->
 
 					<!-- 사업군 : [S] -->
-					<div class="view">
+					<div class="view" id="biz">
 						<div class="accordian_wrap">
 							<div class="accordian_area">
 								<div class="accordian_title">
@@ -351,6 +351,20 @@
 	<div id="top">
 		<button type="button">상단으로</button>
 	</div>
+
+	<script>
+		$('.wrap').css('overflow','visible');
+
+		$(window).scroll(function(){
+			if($('.content_type_menu').hasClass('plus')) {
+				$('.tab_area .tab_list').addClass('plus')
+			}
+			else {
+				$('.tab_area .tab_list').removeClass('plus')
+			}
+		});
+		
+	</script>
 
 </body>
 

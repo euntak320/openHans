@@ -295,7 +295,7 @@ section {
   z-index: 100;
 }
 .scroll_motion.on .tab_list.plus {
-  top:130px;
+  top:128px;
 }
 
 
@@ -497,7 +497,7 @@ header {
   padding: 0 50px;
   border-bottom: 1px solid #eee;
   background: #fff;
-  z-index: 100;
+  z-index: 1000;
   box-sizing: border-box;
 }
 

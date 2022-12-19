@@ -266,7 +266,7 @@
 												<span class="icon"></span>
 											</div>
 											<div class="answer_area">
-												<p>S/W TEST는 기능적인 측면을 위주로 검증 하며, UX/UI검증은 디자인적인 측면을 중심으로 서비스표준 및 사용성에 대한 검증을 진행 합니다.</p>
+												<p>S/W TEST는 기능적인 측면을 위주로 검증하며, UX/UI검증은 디자인적인 측면을 중심으로 서비스표준 및 사용성에 대한 검증을 진행 합니다.</p>
 											</div>
 										</div>
 										<div class="accordian_area">
@@ -531,17 +531,7 @@
 				
 			});
 
-			var $root = $('html, body');
-				$('.tab_list a[href^="#"]').click(function(e) {
-					e.preventDefault;
-					var href = $.attr(this, 'href');				
-					$root.animate({
-							scrollTop: $(href).offset().top
-					}, 500, function () {
-							window.location.hash = href;
-					});
-
-				});
+			
 
 			var scrollBody = document.querySelector(".service_list");
 			var parents = document.querySelector(".fixed_scrollmotion");

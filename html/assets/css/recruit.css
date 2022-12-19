@@ -386,6 +386,7 @@
 .notice .notice_table .table_body a:hover span:first-child,
 .notice .notice_table .table_body a.on span:first-child {
   color: #004098;
+  font-weight: 700;
 }
 
 .notice .notice_table .table_body a.close span:first-child {
@@ -393,7 +394,7 @@
   font-weight: 700;
 }
 
-.notice .notice_table .table_body a.on:hover>* {
+.notice .notice_table .table_body a.on >* {
   font-weight: 700;
 }
 
