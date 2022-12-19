@@ -394,10 +394,9 @@
   font-weight: 700;
 }
 
-.notice .notice_table .table_body a.on >* {
+.notice .notice_table .table_body a.on>* {
   font-weight: 700;
 }
-
 
 
 .notice .notice_table .w20 {
@@ -918,6 +917,7 @@
     line-height: 30px;
     font-size: 14px;
   }
+
   .support .input_wrap {
     margin-top: 20px;
   }
@@ -937,20 +937,21 @@
     font-size: 14px;
     transform: none;
   }
-  
+
 
   .support .input_wrap {
     position: relative;
     display: block;
   }
+
   .support .input_area {
     margin-right: 0;
   }
 
-  .support .input_area + .input_area {
+  .support .input_area+.input_area {
     margin-top: 25px;
   }
-  
+
   .support .email .input_area .input_box {
     width: 90%;
   }
@@ -965,13 +966,14 @@
 
   .support .input_wrap.email .txt {
     position: absolute;
-    top:28%;
-    right:0;
+    top: 28%;
+    right: 0;
     margin: 0;
     line-height: 1;
     font-size: 20px;
     transform: translateY(-50%);
   }
+
   .support .select_box {
     margin-top: 20px;
   }
@@ -990,32 +992,36 @@
   }
 
   .support .input_area .file_upload label {
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .support .info_text {
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 14px;
     color: #888;
   }
+
   .support .info_caution_text {
-    margin-top:30px;
-    padding:20px 0;
+    margin-top: 30px;
+    padding: 20px 0;
   }
 
   .support .input_area .file_upload .com_button {
     position: relative;
     margin-top: 30px;
-    left:35%;
+    left: 35%;
   }
+
   .support .info_caution_text ul li {
     font-size: 14px;
     padding-left: 10px;
     text-indent: -10px;
   }
+
   .support .confirm_button {
     margin-top: 25px;
   }
+
   .support .input_area .file_upload label {
     line-height: 45px;
   }
@@ -1027,26 +1033,33 @@
   .support .success_area .title {
     font-size: 24px;
   }
+
   .support .success_area p {
-    font-size: 14px!important;
+    font-size: 14px !important;
   }
+
   .support .success_area .table {
     margin-top: 40px;
   }
+
   .support .success_area .table_title {
     font-size: 14px;
   }
+
   .support .success_area table {
     margin-top: 20px;
   }
+
   .support .success_area table thead th {
     padding: 10px 0;
     font-size: 14px;
   }
+
   .support .success_area table tbody td {
     padding: 20px 0;
     font-size: 14px;
   }
+
   .support .success_area .final_button {
     margin-top: 40px;
   }
@@ -1054,6 +1067,7 @@
   .procedure_area {
     display: block;
   }
+
   .procedure_area .procedure_box {
     position: relative;
     display: flex;
@@ -1061,7 +1075,7 @@
     padding-right: 0;
     padding-bottom: 75px;
     background: url('../images/common/mobile_down_arrow.png') no-repeat;
-    background-position: 8% 80%; 
+    background-position: 8% 80%;
     background-size: 20px 11px;
   }
 
@@ -1080,12 +1094,12 @@
     height: 100%;
   }
 
-  .procedure_area .procedure_box > div {
+  .procedure_area .procedure_box>div {
     margin-left: 34px;
     text-align: left;
   }
 
-  .procedure_area .procedure_box > div br {
+  .procedure_area .procedure_box>div br {
     display: none;
   }
 
@@ -1097,19 +1111,24 @@
   .procedure_area .procedure_box:last-child {
     padding-bottom: 0;
   }
+
   .procedure .process_table {
     margin-top: 75px;
   }
+
   .procedure .process_table .sub_title_text {
     font-size: 16px;
   }
-  .process_table .table_area{
+
+  .process_table .table_area {
     margin-top: 10px;
   }
+
   .process_table .table_area .table_cell {
     display: block;
     padding: 30px 0;
   }
+
   .process_table .table_area .table_cell .bold {
     margin-right: 0;
     font-size: 14px;
@@ -1118,6 +1137,7 @@
   .process_table .table_area .table_cell .bold br {
     display: none;
   }
+
   .process_table .table_area .table_cell .step {
     margin-right: 30px;
   }
@@ -1126,12 +1146,14 @@
     margin-top: 16px;
     margin-left: 90px;
   }
+
   .process_table .table_area .table_cell li {
     font-size: 14px;
   }
+
   .process_table .table_area a {
     margin-top: 40px;
-    margin-left:90px;
+    margin-left: 90px;
   }
 
   .procedure .notication_area {
@@ -1140,6 +1162,7 @@
     padding: 20px;
 
   }
+
   .procedure .notication_area .list {
     display: block;
   }
@@ -1148,6 +1171,7 @@
   .procedure .notication_area .list p {
     font-size: 14px;
   }
+
   .procedure .notication_area .list p {
     padding-left: 17px;
     text-indent: -17px;
@@ -1156,14 +1180,16 @@
   .procedure .notication_area .list p br {
     display: none;
   }
+
   .procedure .notication_area .list .bold {
     margin-bottom: 0;
   }
-  .procedure .notication_area .list .bold > span {
+
+  .procedure .notication_area .list .bold>span {
     display: block;
   }
 
-  .procedure .notication_area .list li + li {
+  .procedure .notication_area .list li+li {
     margin-top: 10px;
   }
 
@@ -1191,9 +1217,11 @@
   .notice .notice_table {
     margin-top: 50px;
   }
+
   .notice .notice_table .table_header {
     display: none;
   }
+
   .notice .notice_table .table_body a {
     display: block;
     padding: 30px 10px;
@@ -1202,9 +1230,11 @@
     background-size: 13px;
     box-sizing: border-box;
   }
+
   .notice .notice_table .table_body a:first-child {
     border-top: 1px solid #000;
   }
+
   .notice .notice_table .table_body span {
     padding: 0;
     display: block;
@@ -1214,11 +1244,186 @@
   .notice .notice_table .table_body span:last-child {
     display: none;
   }
+
   .notice .notice_table .w20,
   .notice .notice_table .w50,
-  .notice .notice_table .w15{
+  .notice .notice_table .w15 {
     width: 100%;
     text-align: left;
+  }
+
+  .procedure .keyvisual_area {
+    background: url('../images/recurit/mobile_keyvisual_career.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .method_area .left_area,
+  .method_area .right_area {
+    float: none;
+    width: 100%;
+  }
+
+  .method_area .left_area .bold {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+  }
+
+  .method_area .step_list {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .method_area .step_box {
+    float: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 75px;
+    background: url(../images/common/mobile_down_arrow.png) no-repeat;
+    background-position: 8% 80%;
+    background-size: 20px 11px;
+    text-align: left;
+  }
+
+  .method_area .step_box .step {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .method_area .step_box .coment {
+    margin-top: 0;
+  }
+
+  .method_area .step_box:nth-child(5),
+  .method_area .step_box:nth-child(6) {
+    margin-top: 0;
+  }
+
+  .method_area .step_box>div {
+    margin-left: 35px;
+  }
+
+  .method_area .step_list span img {
+    max-width: 90px;
+    height: 100%;
+  }
+
+  .procedure_area .procedure_box .img_area img {
+    text-align: center;
+  }
+
+  .method_area .step_box:nth-child(6) {
+    padding-bottom: 0;
+  }
+
+  .right_area .info_site {
+    margin-top: 25px;
+    padding-left: 0;
+  }
+
+  .right_area .info_site>* {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .right_area .info_site .site span {
+    display: block;
+    font-size: 14px;
+  }
+
+  .right_area .info_site .site div+div {
+    margin-top: 20px;
+  }
+
+  .method_area .step_box .coment {
+    font-size: 14px;
+  }
+
+  .method_area .content_area {
+    border-bottom: 35px;
+  }
+
+  .method_area .content_area+.content_area {
+    padding: 0 0;
+  }
+
+  .method_area .content_area+.content_area .right_area .step_box:last-child {
+    padding-bottom: 0;
+  }
+
+  .openhandsperson .keyvisual_area {
+    background: url('../images/recurit/mobile_keyvisual_openhands.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .openhandsperson .view .title {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+
+  }
+  .openhandsperson .view .title br {
+    display: none;
+  }
+
+  .openhandsperson .icon_list {
+    display: block;
+    margin-top: 70px;
+  }
+  .openhandsperson .icon_list + .icon_list {
+    margin-top: 0;
+  }
+
+  .openhandsperson .icon_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .openhandsperson .icon_box .img_area {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .openhandsperson .icon_box .img_area img {
+    max-width: 90px;
+    height: 100%;
+  }
+
+  .openhandsperson .icon_box>div {
+    margin-left: 35px;
+    text-align: left;
+  }
+
+  .openhandsperson .icon_box>div br {
+    display: none;
+  }
+
+  .openhandsperson .icon_box .bold {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .openhandsperson .icon_box p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .openhandsperson .icon_list.v2 {
+    margin-top: 0;
+  }
+
+  .openhandsperson .icon_list.v2 .icon_box,
+  .openhandsperson .icon_list.v2 .icon_box:last-child {
+    padding: 30px 0;
   }
 
 }
