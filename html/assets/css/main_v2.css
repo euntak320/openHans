@@ -310,29 +310,14 @@
   transition: all 0.5s;
 }
 
-.second_area .left_area {
+.two_area .second_area {
   position: relative;
   /* padding: 298px 0 202px 258px; */
-  float: left;
-  width: 50%;
+  /* float: left; */
+  width: 100%;
   height: 100vh;
   box-sizing: border-box;
 }
-
-.second_area .left_area,
-.second_area .right_area {
-  opacity: 0;
-}
-
-.second_area.active .left_area {
- opacity: 1;
- transition: 1s;
-}
-
-.second_area.active .right_area {
-  opacity: 1;
-  transition: 1s;
- }
 
 .second_area.it {
   background: #059aee;
@@ -350,26 +335,25 @@
   background: #26a677;
 }
 
-.second_area .left_area .text_area {
+.two_area .second_area .text_area {
   position: absolute;
-  top:50%;
-  left:50%;
-  width: 60%;
-  transform: translate(-50%, -50%);
+  top:100px;
+  left:300px;
+  width: 50%;
 }
 
-.second_area .left_area .text_area span {
+.two_area .second_area .text_area span {
   display: block
 }
 
-.second_area .left_area .text_area .title {
+.two_area .second_area .text_area .title {
   line-height: 36px;
   font-weight: 400;
   font-size: 24px;
   color: #fff;
 }
 
-.second_area .left_area .main_title {
+.two_area .second_area .main_title {
   margin-top: 120px;
   font-size: 48px;
   line-height: 60px;
@@ -377,7 +361,7 @@
   color: #fff;
 }
 
-.second_area .left_area p {
+.two_area .second_area p {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 400;
@@ -385,66 +369,80 @@
   color: #fff;
 }
 
-.second_area .left_area .text_area.it a:hover {
+.two_area .second_area .text_area.it a:hover {
   color: #059aee ;
 }
 
-.second_area .left_area .text_area.supply a:hover {
+.second_area .second_area .text_area.supply a:hover {
   color: #f2622e ;
 }
-.second_area .left_area .text_area.service a:hover {
+.two_area .second_area .text_area.service a:hover {
   color: #8C55d9 ;
 }
 
-.second_area .left_area .text_area.health a:hover {
+.two_area .second_area .text_area.health a:hover {
   color: #26a677 ;
 }
 
-.second_area .left_area .text_area.it a:after {
+.two_area .second_area .text_area.it a:after {
   background: url('../images/main/icon-it-arrow.png') no-repeat 12% center;
   background-size: 13px;
   z-index: -1;
 }
 
-.second_area .left_area .text_area.supply a::after {
+.two_area .second_area .text_area.supply a::after {
   background: url('../images/main/icon-supply-arrow.png') no-repeat 12% center;
   background-size: 13px;
   z-index: -1;
 }
 
-.second_area .left_area .text_area.service a::after {
+.two_area .second_area .text_area.service a::after {
   background: url('../images/main/icon-service-arrow.png') no-repeat 12% center;
   background-size: 13px;
   z-index: -1;
 }
 
-.second_area .left_area .text_area.health a::after {
+.two_area .second_area .text_area.health a::after {
   background: url('../images/main/icon-health-arrow.png') no-repeat 12% center;
   background-size: 13px;
   z-index: -1;
 }
 
-.second_area .right_area {
-  position: fixed;
-  right: 0;
-  float: right;
-  width: 50%;
-  height: 100%;
-}
-
-.second_area .right_area img {
+.two_area .right_area {
   width: 100%;
   height: 100%;
 }
 
-.second_area .text_area  {
-  opacity: 0;
+.two_area .right_area img {
+  width: 100%;
+  height: 100%;
+}
+
+.two_area .text_area  {
+  opacity: 1;
   transition: 2s;
 }
 
-.second_area.active .text_area  {
+.two_area.active .text_area  {
   opacity: 1;
   transition: 2s;
+}
+
+.two_area .image_area {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 50%;
+  height: 100vh;
+}
+
+.two_area .image_area .right_area {
+  
+}
+
+.two_area .image_area .right_area  img {
+  width: 100%;
+  height: 100%;
 }
 
 .thrid_area {
@@ -995,3 +993,4 @@
     opacity: 1;
   }
 }
+

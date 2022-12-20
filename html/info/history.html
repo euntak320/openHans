@@ -436,18 +436,10 @@
 
 <script>
 	$(function(){
-		$('.wrap').css('overflow','visible')
 		$(window).on('scroll', function() {
 			var wintop = $(window).scrollTop(), docheight = $('.history_list').height(), winheight = $(window).height();
 			var totalScroll = (wintop/(docheight-winheight))*80;
 			$('.line span').css("height",totalScroll+"%");
-
-			if($('.content_type_menu').hasClass('plus')) {
-				$('.history .category_area.fixed').addClass('top')
-			}
-			else {
-				$('.history .category_area.fixed').removeClass('top')
-			}
 
 		});
 	});

@@ -1,7 +1,6 @@
 $(function(){
 
   $(".fullpage").fullpage({
-    navigator:false,
     scrollOverflow: true,
     onLeave : function(index, nextIndex , direction){				
 			$(".pagnation ul li").removeClass("on");				
@@ -13,7 +12,6 @@ $(function(){
       else {
         $(".pagnation").removeClass('show') 
       }
-
     }
   });
 
@@ -22,6 +20,10 @@ $(function(){
     $.fn.fullpage.moveTo($this + 2 );
     return false;
   });
+
+  $('#top').click(function(){
+    $.fn.fullpage.moveTo(1, 1);
+  })
 
 
   setTimeout(() => {
@@ -32,7 +34,6 @@ $(function(){
   setTimeout(()=> {
     $('.first_swiper').removeClass('on')
   }, 1500)
-
 
 
   mainBackground()
@@ -75,14 +76,17 @@ $(function(){
   });
 
 
+
+
+
   var mainThridImageSection = new Swiper('.image_swiper', {
-    // autoplay: true, // 자동재생
+    autoplay: true, // 자동재생
     slidesPerView: 1,
     watchSlidesProgress :true,
   });
 
   var mainThridTextSection = new Swiper('.text_swiper', {
-    // autoplay: true, // 자동재생
+    autoplay: true, // 자동재생
     slidesPerView: 1,
     navigation: {
       nextEl: ".swiper-button-next",
