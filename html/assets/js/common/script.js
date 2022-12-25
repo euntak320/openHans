@@ -155,7 +155,7 @@ function motion_scroll() {
 
 		$('.scroll_motion').each(function () {
 			var motion_top = $(this).offset().top;
-			if (scT > motion_top - winH / 1.5) {
+			if (scT > motion_top - winH / 1.3) {
 				$(this).addClass('on');
 			}
 		});
@@ -171,7 +171,7 @@ function motion_scroll() {
 
 		$('.text_area').each(function () {
 			var motion_top = $(this).offset().top;
-			if (scT > motion_top - winH / 1.5) {
+			if (scT > motion_top - winH / 1.3) {
 				$(this).addClass('on');
 			} else {
 				$(this).removeClass('on');
@@ -180,8 +180,8 @@ function motion_scroll() {
 
 		$('.category_area').each(function() {
 			var motion_top = $(this).offset().top;
-			if(scT > motion_top -winH / 1.5) {
-				if (scT > motion_top - winH / 1.5) {
+			if(scT > motion_top -winH / 1.3) {
+				if (scT > motion_top - winH / 1.3) {
 					$(this).addClass('fixed');
 				} else {
 					$(this).removeClass('fixed');

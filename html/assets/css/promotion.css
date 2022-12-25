@@ -64,22 +64,22 @@
 }
 
 .main_news_area .swiper-button-prev {
-  background: url('../images/common/swier-left-arrow.png') no-repeat center;
+  background: url('../images/common/swier-left-arrow.svg') no-repeat center;
   background-size: contain;
 }
 
 .main_news_area .swiper-button-prev:hover {
-  background: url('../images/common/swier-left-arrow_active.png') no-repeat center;
+  background: url('../images/common/swier-left-arrow_active.svg') no-repeat center;
   background-size: contain;
 }
 
 .main_news_area .swiper-button-next {
-  background: url('../images/common/swier-right-arrow.png') no-repeat center;
+  background: url('../images/common/swier-right-arrow.svg') no-repeat center;
   background-size: contain;
 }
 
 .main_news_area .swiper-button-next:hover {
-  background: url('../images/common/swier-right-arrow_active.png') no-repeat center;
+  background: url('../images/common/swier-right-arrow_active.svg') no-repeat center;
   background-size: contain;;
 }
 
@@ -117,12 +117,12 @@
 }
 
 .main_news_area button.stop {
-  background: url('../images/common/swiper-normal_purse.png') no-repeat;
+  background: url('../images/common/swiper-normal_purse.svg') no-repeat;
   background-size: 20px;
 }
 
 .main_news_area button.start {
-  background: url('../images/common/swiper-normal_play.png') no-repeat;
+  background: url('../images/common/swiper-normal_play.svg') no-repeat;
   background-size: 20px;
 }
 
@@ -225,7 +225,7 @@
   top:50%;
   width: 27px;
   height: 27px;
-  background: url('../images/common/icon-search.png') no-repeat top center;
+  background: url('../images/common/icon-search.svg') no-repeat top center;
   background-size: cover;
   text-indent: -9999px;
   z-index: 10;
@@ -349,7 +349,7 @@
     margin-top: 30px;
   }
   .reault_news_list .list_area .left_area {
-    height: 200px;
+    height: auto;
   }
 
   .reault_news_list .list_area .right_area {

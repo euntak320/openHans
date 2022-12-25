@@ -507,7 +507,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url('../images/common/icon_check.png') no-repeat center;
+  background: url('../images/common/icon_check.svg') no-repeat center;
   transform: translateY(-50%);
 }
 
@@ -518,7 +518,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url('../images/common/icon_check_on.png') no-repeat center;
+  background: url('../images/common/icon_check_on.svg') no-repeat center;
   background-size: cover;
   transform: translateY(-50%);
 }
@@ -976,6 +976,10 @@
     display: block;
   }
 
+  .support .input_wrap.file .input_box>* {
+    width: 100%;
+    text-align: center;
+  }
   .support .input_area {
     margin-right: 0;
   }
@@ -985,7 +989,7 @@
   }
 
   .support .email .input_area .input_box {
-    width: 90%;
+    width: 95%;
   }
 
   .support .input_area .input_box,
@@ -1003,7 +1007,7 @@
     right: 0;
     margin: 0;
     line-height: 1;
-    font-size: 20px;
+    font-size: 16px;
     transform: translateY(-50%);
   }
 
@@ -1042,7 +1046,6 @@
   .support .input_area .file_upload .com_button {
     position: relative;
     margin-top: 40px;
-    left: 35%;
   }
   .support .select_box .com_select {
     padding: 10px 0;
@@ -1118,9 +1121,9 @@
     display: flex;
     align-items: center;
     padding-right: 0;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     background: url('../images/common/mobile_down_arrow.png') no-repeat;
-    background-position: 8% 80%;
+    background-position: 40px 95px;
     background-size: 20px 11px;
   }
 
@@ -1128,6 +1131,7 @@
     display: block;
     width: 50px;
     height: 50px;
+    margin-left: 30px;
     box-sizing: border-box;
   }
 
@@ -1174,17 +1178,14 @@
   }
 
   .process_table .table_area .table_cell {
-    display: block;
+    display: flex;
     padding: 30px 0;
   }
 
   .process_table .table_area .table_cell .bold {
     margin-right: 0;
     font-size: 14px;
-    display: flex;
-    width: 230px;
     margin-top: -27px;
-    margin-left: auto;
   }
 
   .process_table .table_area .table_cell .bold br {
@@ -1197,11 +1198,11 @@
 
   .process_table .table_area .table_cell ul {
     margin-top: 5px;
-    margin-left: 90px;
   }
 
   .process_table .table_area .table_cell li {
     font-size: 14px;
+    line-height: 1.4;
   }
   .process_table .table_area .table_cell li + li {
     margin-top: 5px;
@@ -1209,7 +1210,6 @@
 
   .process_table .table_area a {
     margin-top: 40px;
-    margin-left: 90px;
   }
 
   .procedure .notication_area {
@@ -1322,6 +1322,9 @@
     float: none;
     width: 100%;
   }
+  .method_area .step_list .img_area {
+    margin-left: 30px;
+  }
 
   .method_area .left_area .bold {
     display: block;
@@ -1347,9 +1350,9 @@
     align-items: center;
     width: 100%;
     padding-right: 0;
-    padding-bottom: 75px;
-    background: url(../images/common/mobile_down_arrow.png) no-repeat;
-    background-position: 4% 75%;
+    padding-bottom: 70px;
+    background: url(../images/common/mobile_down_arrow.svg) no-repeat;
+    background-position:45px 105px;
     background-size: 20px 11px;
     text-align: left;
   }
@@ -1383,6 +1386,10 @@
 
   .method_area .step_box:nth-child(6) {
     padding-bottom: 0;
+  }
+
+  .method_area .step_box.other {
+    background-position: 45px 145px;
   }
 
   .right_area .info_site {
@@ -1457,6 +1464,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
+    margin-left: 25px;
     box-sizing: border-box;
   }
 

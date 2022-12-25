@@ -237,12 +237,48 @@
   font-size: 28px;
 }
 
-.ceo .text_area {
-  margin-top: 52px;
+.ceo .image_area {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #eee;
+}
+
+.ceo .image_area::after {
+  content: "";
+  position: absolute;
+  bottom:-80px;
+  width: 320px;
+  height: 80px;
+  background: #eee;
+}
+
+.ceo .image_area .pc_area {
+  position: relative;
+}
+
+.ceo .image_area .pc_area .text_area {
+  padding: 137px 0 137px 120px;
+  box-sizing: border-box;
+}
+
+.ceo .image_area .pc_area .img_area {
+  position: absolute;
+  right:55px;
+  bottom:-7px;
+}
+
+.ceo .image_area .pc_area .text_area p {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ceo .image_area .pc_area .text_area p + p {
+  margin-top: 30px;
 }
 
 .ceo .ceo_coment {
-  margin-top: -20px;
+  margin-top: 80px;
   padding-left: 400px;
 }
 
@@ -276,7 +312,8 @@
 }
 
 .ceo .ceo_name {
-  margin-top: 80px
+  margin-top: 80px;
+  text-align: right;
 }
 
 .ceo .ceo_name>* {
@@ -286,9 +323,9 @@
 }
 
 .ceo .ceo_name .name {
-  margin-left: 18px;
+  margin-left: 9px;
   line-height: 1.2;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 /* 연혁 */
@@ -339,26 +376,7 @@
 }
 
 .history .history_list .category_area {
-  position: absolute;
-}
-
-.history .history_list .category_area.one {
-  top: 0;
-  ;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-
-.history .history_list .category_area.fixed {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 50px;
-  z-index: 10;
-}
-
-.history .history_list .category_area.fixed.top {
-  top: 128px;
+  position: relative;  
 }
 
 .history .history_list .category_area:after {
@@ -621,6 +639,13 @@
 
 @media all and (max-width:1400px) {
 
+  .ceo .image_area .pc_area .text_area {
+    padding-left: 4%;
+  }
+  .ceo .image_area .pc_area .img_area {
+    right: 0;
+  }
+
   .history .history_list .category_area .right_area .title {
     margin-top: 60px;
   }
@@ -689,6 +714,13 @@
   .introduce .slide_area .swiper_button {
     bottom: 80px;
   }
+  .ceo .image_area .pc_area .text_area p {
+    font-size: 24px;
+  }
+
+  .ceo .ceo_coment {
+    padding-left: 15%;
+  }
 
 }
 @media all and (max-width:1024px) {
@@ -710,8 +742,13 @@
   }
 
   .location .location_map {
+    overflow: auto;
     margin-top: 50px;
     padding-bottom: 50px;
+  }
+  .location .location_map img {
+    width: 800px;
+    height: 400px;
   }
 
   .location .info_loaction .top_area .title {
@@ -755,19 +792,36 @@
   }
 
   .ceo .text_area {
-    margin:0;
-  }
-
-  .ceo .text_area .image_area {
-    margin: 0 -30px;
+    margin:0 -30px;
   }
   .ceo .text_area img{
     width: 100%;
   }
   .ceo .ceo_coment {
-    margin-top: -30px;
-    margin-left: -10px;
+    margin-top: 30px;
     padding-left: 30px;
+  }
+
+  .ceo .text_area .image_area {
+    height: 300px;
+  }
+
+  .ceo .text_area .image_area .mobile {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .ceo .text_area .image_area .mobile img {
+    width: auto;
+    max-height: 282px;
+  }
+
+  .ceo .image_area::after {
+    width: 20px;
+    height: 60px;
+    bottom: -60px;
   }
   .ceo .mobile_view {
     display: block;
@@ -799,7 +853,7 @@
     vertical-align: middle;
   }
   .ceo .ceo_name span {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
   }
   .ceo .ceo_name .name{
@@ -829,9 +883,12 @@
     margin-top: 0;
   }
 
-  .history .history_list .category_area.fixed {
-    width: 70%;
-    margin: 0 auto;
+  .history .history_list .category_area {
+    position: relative;
+    width: 100%;
+  }
+  .history .history_list .category_area .right_area {
+    position: static;
   }
   .history .history_list .category_area .right_area .title{
     padding-top: 15px;
@@ -986,12 +1043,14 @@
   .introduce .ci_area .button_area a {
     margin: 20px auto 0;
   }
-  .history .history_list .category_area.fixed {
-    width: 100%;
-  }
+
   .history .history_list .line {
     left:0;
     transform: none;
+  }
+  
+  .history .history_list .category_area {
+    position: relative;  
   }
 
   .history .history_list .category_area .right_area .title {
