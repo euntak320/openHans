@@ -1946,6 +1946,8 @@ br.mobile {
   
   .sitemap .menu_list {
     position: relative;
+    display: flex;
+    align-items: baseline;
   }
   .sitemap .link_sitemap ul li {
     margin-top: 18px;
@@ -1971,6 +1973,7 @@ br.mobile {
     width: 140px;
     border-bottom: 0;
     font-size: 16px;
+    line-height: initial;
   }
 
   .sitemap .link_sitemap ul {
