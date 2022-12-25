@@ -40,6 +40,7 @@ $(function () {
 	$('.gnb_area .mobile_btn').click(function () {
 		$(this).toggleClass('close')
 		$(this).parents('.gnb_area').find('.menu_area').toggleClass('on');
+		$('html, body').toggleClass('overflow')
 	})
 
 	$('.content_type_menu .mobile_title').click(function(){

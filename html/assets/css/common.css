@@ -49,6 +49,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+body.overflow {
+  overflow: hidden;
+}
 ol, ul {
 	list-style: none;
 }
@@ -68,6 +71,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 button {
@@ -134,8 +141,6 @@ input:active, input:focus {
 .wrap {
   overflow: hidden;
   position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
   box-sizing: border-box;
   
 }
@@ -218,7 +223,6 @@ section {
 /* keyvisual */
 .keyvisual_area {
   position: relative;
-  max-width: 1920px;
   margin: 78px auto 0;
   height: 280px;
 }
@@ -524,8 +528,8 @@ header.up {
   cursor: pointer;
 }
 .gnb_area .mobile_btn.close {
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   background: url('../images/common/icon-closemenu.png') no-repeat;
   background-size:cover;
 }
@@ -1178,7 +1182,7 @@ footer .accessibility_logo img {
 }
 
 .accordian_area {
-  margin-top:80px;
+  /* margin-top:80px; */
   border-top: 1px solid #ccc;
 }
 
@@ -1361,7 +1365,23 @@ footer .accessibility_logo img {
 }
 
 
+br.pc {
+  display: block!important;
+}
+
+br.mobile {
+  display: none!important;
+}
+
 @media all and (max-width:1400px) {
+
+  br.pc {
+    display: none;
+  }
+  
+  br.mobile {
+    display: block!important;
+  }
 
   .content_wrap {
     width: auto;
@@ -1389,11 +1409,17 @@ footer .accessibility_logo img {
   .support .input_wrap.email .txt{
     margin:0!important;
   }
+  .layer_wrap .layer_area .img_frame .img_area {
+    margin-top: 10px;
+  }
 }
 
 @media all and (max-width: 1024px) {
+  .content_wrap {
+    padding: 50px 30px 0 30px;
+  }
   header {
-    padding:0 20px;
+    padding:0 30px;
     height: 50px;
     box-sizing: border-box;
   }
@@ -1423,6 +1449,7 @@ footer .accessibility_logo img {
     background: #fff;
     transform: translateX(100%);
     transition: 0.5s;
+    z-index: 100;
   }
 
   .gnb_area .menu_area.on {
@@ -1441,7 +1468,7 @@ footer .accessibility_logo img {
   .gnb_area .menu_area>ul>li> a {
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 700;
   }
 
@@ -1456,16 +1483,16 @@ footer .accessibility_logo img {
     position: absolute;
     top:50%;
     left: auto;
-    right: -60px;
+    right: -50px;
     width: 0;
     height: 0;
-    border: 20px solid #fff;
+    border: 15px solid #fff;
     /* border-left: 20px solid transparent; */
     /* border-right: 20px solid transparent; */
-    border-top: 20px solid transparent;
+    border-top: 15px solid transparent;
     /* border-bottom: 20px solid transparent; */
-    transform: none;
-    transform: translateY(-60%) rotate(45deg);
+    transition: none;
+    transform: translateY(-50%) rotate(45deg);
     z-index: 1000;
     background: #fff;
   }
@@ -1479,7 +1506,7 @@ footer .accessibility_logo img {
     position: absolute;
     right: 0;
     top: 0;
-    width: 55%;
+    width: calc(100% - 50%);
     height: 100vh;
     padding: 30px;
     background: #eee; 
@@ -1509,24 +1536,31 @@ footer .accessibility_logo img {
     transform: none;
     width: 100%;
     background: #fff;
+    border-bottom: 1px solid #eee;
   }
 
   .content_type_menu .mobile_title {
     display: block;
     width: 100%;
-    height: 45px;
+    height: 44px;
     padding-left: 30px;
     line-height: 45px;
     font-weight: 700;
-    border-bottom: 1px solid #eee;
-    background: url('../images/common/icon-arrow.png') no-repeat 23%;
-    background-size: 15px;
+    
+    background: url('../images/common/icon-arrow.png') no-repeat 100px;
+    background-size: 10px 5px;
     font-size: 16px;
+  }
+
+  .content_type_menu .promotion .mobile_title {
+    background-position: 150px center ;
   }
 
   .content_type_menu .menu_list ul {
     display: none;
+    padding-top: 30px;
     padding-left: 30px;
+
   }
 
   .content_type_menu .menu_list ul.on {
@@ -1536,11 +1570,19 @@ footer .accessibility_logo img {
 
   .content_type_menu .menu_list ul li {
     float: none;
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+
+  .content_type_menu .menu_list ul li:first-child {
+    margin: 0;
   }
 
   .content_type_menu .menu_list ul li a {
     color: #000;
+  }
+  .content_type_menu .menu_list ul li a.on {
+    color: #004098;
+    text-decoration: underline;
   }
 
   .content_type_menu.plus {
@@ -1563,20 +1605,26 @@ footer .accessibility_logo img {
     display: none;
   }
 
-  .accordian_area,
+  .accordian_area {
+    margin-top: 0;
+  }
   .tab_area .view {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .accordian_area .accordian_title {
-    padding:20px 50px 20px;
+    padding:20px 30px 20px 25px;
     height: auto;
   }
   .accordian_area .accordian_title p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .accordian_area .accordian_title::before {
+    top: 23px;
     left: 5px;
+    width: 14px;
+    height: 14px;
+    transform: none;
   }
   .accordian_area .accordian_title .icon {
     right:0;
@@ -1593,19 +1641,27 @@ footer .accessibility_logo img {
   .tab_area .tab_list a:first-child{
     padding: 0 10px 0 0;
   }
-  .tab_area .tab_list button::after, 
+.tab_area .tab_list button::after, 
   .tab_area .tab_list a::after {
     height: 13px;
   }
   .accordian_area .answer_area {
-    padding:30px 40px;
-    background-position: 13px 35px;
+    padding:20px 40px;
+    background-position: 13px 25px;
+    background-size: 14px 12px;
   } 
+
+  .accordian_area .answer_area p {
+    font-size: 14px;
+  }
 
   .wrap .com_button {
     height: 45px;
     line-height: 45px;
     font-size: 14px;
+  }
+  .scroll_motion.on .tab_list {
+    padding: 10px 0;
   }
 
   .scroll_motion.on .tab_list.plus {
@@ -1619,7 +1675,7 @@ footer .accessibility_logo img {
   }
   .detail_area .info_detail .detail_title {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .detail_area .info_detail .date {
     margin-top: 20px;
@@ -1628,8 +1684,11 @@ footer .accessibility_logo img {
   .detail_area .detail_content {
     padding-bottom: 40px;
   }
+  .detail_area .detail_content p {
+    font-size: 14px;
+  }
   .detail_area .detail_content a {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 14px;
   }
   .detail_area .paging_bar {
@@ -1674,12 +1733,16 @@ footer .accessibility_logo img {
     font-size: 14px;
   }
 
+  .com_select.on {
+    border-bottom: 0;
+  }
+
 }
 
 
 @media all and (max-width : 766px) {
   section {
-    padding-bottom: 90px;
+    padding-bottom: 100px;
   }
 
   .com_select .select_list li {
@@ -1691,6 +1754,7 @@ footer .accessibility_logo img {
 
   .com_select .title {
     font-size: 14px;
+    background-size: 10px 5px;
   }
 
 .keyvisual_area {
@@ -1698,7 +1762,7 @@ footer .accessibility_logo img {
   }
 
   .keyvisual_area h2 {
-    font-size: 32px;
+    font-size: 23px;
   }
 
   .keyvisual_area .sub_title {
@@ -1807,6 +1871,11 @@ footer .accessibility_logo img {
     margin-top: 20px;
   }
 
+  .privacy .com_select .select_list {
+    left: -0.5px;
+    top: 47px;
+  }
+
   .privacy .keyvisual_area {
     background: url("../images/common/mobile_keyvisual_privacy.jpg") no-repeat center;
     background-size: cover;
@@ -1819,6 +1888,7 @@ footer .accessibility_logo img {
     border-bottom: 0;
   }
   .privacy .right_select .com_select {
+    padding: 10px 0;
     font-size: 14px;
   }
   .privacy .text_wrap  {
@@ -1853,6 +1923,12 @@ footer .accessibility_logo img {
     font-size: 14px;
     line-height:40px;
   }
+  .privacy .text_wrap .text_area .title {
+    margin-bottom: 10px;
+  }
+  .privacy .text_wrap .text_area p + p {
+    margin-top: 10px;
+  }
 
   .sitemap .keyvisual_area {
     background: url('../images/common/mobile_keyvisual_sitemap.jpg') no-repeat center;
@@ -1862,12 +1938,15 @@ footer .accessibility_logo img {
   .sitemap .link_sitemap {
     position: relative;
     display: block;
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: 40px;
+    padding-top: 40px;
   }
   
   .sitemap .menu_list {
     position: relative;
+  }
+  .sitemap .link_sitemap ul li {
+    margin-top: 18px;
   }
 
   .sitemap .menu_list + .menu_list {
@@ -1881,13 +1960,13 @@ footer .accessibility_logo img {
   }
 
   .sitemap p.title {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.3;
   }
 
   .sitemap .link_sitemap .title {
     float: left;
-    width: 170px;
+    width: 140px;
     border-bottom: 0;
     font-size: 16px;
   }
@@ -1902,5 +1981,10 @@ footer .accessibility_logo img {
 
   .sitemap .link_sitemap ul li a {
     font-size: 14px;
+  }
+
+  #top {
+    width: 35px;
+    height: 35px;
   }
 }

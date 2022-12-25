@@ -224,7 +224,7 @@
 .method_area .left_area .bold {
   font-size: 30px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.4;
   color: #000;
 }
 
@@ -457,6 +457,9 @@
 .support .privacy_area .table {
   margin-top: 30px;
 }
+.support .privacy_area .table.mobile {
+  display: none;
+}
 
 .support .privacy_area .table table {
   width: 100%;
@@ -654,7 +657,7 @@
 .support .input_wrap.email .txt {
   margin: 0 -20px;
   line-height: 55px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .support .input_wrap.file {
@@ -862,6 +865,10 @@
   border-top: 1px solid #ccc;
 }
 
+.faq .tab_area .view.on {
+  margin-top: 0;
+}
+
 .support .input_wrap.file .input_area {
   margin-right: 0;
 }
@@ -877,6 +884,12 @@
   .procedure_area .procedure_box {
     padding-right: 4%;
     background-position: 100% 20px;
+  }
+  .support .select_box .com_select .title {
+    font-size: 14px;
+  }
+  .support .download_area span {
+    font-size: 14px;
   }
 }
 
@@ -894,7 +907,7 @@
 
   .support .form_area .title,
   .support .form_area .title>span {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .support .privacy_area {
@@ -911,6 +924,25 @@
     font-size: 14px;
   }
 
+  .support .privacy_area .table.pc {
+    display: none;
+  }
+
+  .support .privacy_area .table.mobile {
+    display: block;
+  }
+
+  .support .privacy_area .table.mobile table {
+    border: 1px solid #666;
+    margin-top: 5px;
+  }
+
+  .support .privacy_area .table.mobile td {
+    border-top:1px solid #666;
+    border-right: 1px solid #666;
+
+  }
+
   .support .privacy_area .table th,
   .support .privacy_area .table td {
     height: 30px;
@@ -919,7 +951,7 @@
   }
 
   .support .input_wrap {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .support .info_input_area {
@@ -962,6 +994,7 @@
     width: 100%;
     height: 45px;
     box-sizing: border-box;
+    margin-top: 5px;
   }
 
   .support .input_wrap.email .txt {
@@ -975,7 +1008,7 @@
   }
 
   .support .select_box {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   .support .input_area span {
@@ -1008,8 +1041,15 @@
 
   .support .input_area .file_upload .com_button {
     position: relative;
-    margin-top: 30px;
+    margin-top: 40px;
     left: 35%;
+  }
+  .support .select_box .com_select {
+    padding: 10px 0;
+  }
+
+  .support  .com_select .select_list {
+    top:47px;
   }
 
   .support .info_caution_text ul li {
@@ -1031,7 +1071,7 @@
   }
 
   .support .success_area .title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .support .success_area p {
@@ -1064,6 +1104,11 @@
     margin-top: 40px;
   }
 
+  .support .info_input_area .sub_title {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
   .procedure_area {
     display: block;
   }
@@ -1081,18 +1126,17 @@
 
   .procedure_area .procedure_box .img_area {
     display: block;
-    width: 90px;
-    max-width: 90px;
-    height: 90px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
   }
 
   .procedure_area .procedure_box .img_area img {
-    width: 100%;
-    max-width: 90px;
-    height: 100%;
+    width:50px;
+    max-width: 50px;
   }
+
+
 
   .procedure_area .procedure_box>div {
     margin-left: 34px;
@@ -1105,6 +1149,9 @@
 
   .procedure_area .procedure_box .step {
     margin-top: 0;
+    font-size: 16px;
+  }
+  .procedure_area .procedure_box .normal {
     font-size: 14px;
   }
 
@@ -1121,7 +1168,9 @@
   }
 
   .process_table .table_area {
-    margin-top: 10px;
+    margin-top: 5px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
   }
 
   .process_table .table_area .table_cell {
@@ -1132,6 +1181,10 @@
   .process_table .table_area .table_cell .bold {
     margin-right: 0;
     font-size: 14px;
+    display: flex;
+    width: 230px;
+    margin-top: -27px;
+    margin-left: auto;
   }
 
   .process_table .table_area .table_cell .bold br {
@@ -1143,12 +1196,15 @@
   }
 
   .process_table .table_area .table_cell ul {
-    margin-top: 16px;
+    margin-top: 5px;
     margin-left: 90px;
   }
 
   .process_table .table_area .table_cell li {
     font-size: 14px;
+  }
+  .process_table .table_area .table_cell li + li {
+    margin-top: 5px;
   }
 
   .process_table .table_area a {
@@ -1213,6 +1269,9 @@
   .notice .content_wrap .title {
     font-size: 18px;
   }
+  .notice .content_wrap .title br {
+    display: none;
+  }
 
   .notice .notice_table {
     margin-top: 50px;
@@ -1239,6 +1298,7 @@
     padding: 0;
     display: block;
     text-align: left;
+    font-size: 14px;
   }
 
   .notice .notice_table .table_body span:last-child {
@@ -1266,16 +1326,22 @@
   .method_area .left_area .bold {
     display: block;
     width: 100%;
+    padding-bottom: 5px;
     border-bottom: 1px solid #000;
     font-size: 16px;
+  }
+  .method_area .step_box .gray {
+    font-size: 14px;
+    padding-left: 10px;
+    text-indent: -10px;
   }
 
   .method_area .step_list {
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 
-  .method_area .step_box {
+  .method_area .step_box,.method_area .step_box:nth-child(4) {
     float: none;
     display: flex;
     align-items: center;
@@ -1283,14 +1349,14 @@
     padding-right: 0;
     padding-bottom: 75px;
     background: url(../images/common/mobile_down_arrow.png) no-repeat;
-    background-position: 8% 80%;
+    background-position: 4% 75%;
     background-size: 20px 11px;
     text-align: left;
   }
 
   .method_area .step_box .step {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .method_area .step_box .coment {
@@ -1307,8 +1373,8 @@
   }
 
   .method_area .step_list span img {
-    max-width: 90px;
-    height: 100%;
+    width: 50px;
+    max-width: 50px;
   }
 
   .procedure_area .procedure_box .img_area img {
@@ -1327,6 +1393,9 @@
   .right_area .info_site>* {
     display: block;
     margin-top: 5px;
+  }
+  .right_area .info_site .title, .right_area .info_site .site a {
+    font-size: 14px;
   }
 
   .right_area .info_site .site span {
@@ -1360,7 +1429,6 @@
   }
 
   .openhandsperson .view .title {
-    width: 70%;
     margin: 0 auto;
     font-size: 18px;
 
@@ -1408,7 +1476,7 @@
 
   .openhandsperson .icon_box .bold {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .openhandsperson .icon_box p {
