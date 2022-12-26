@@ -271,6 +271,7 @@
 .ceo .image_area .pc_area .text_area p {
   font-size: 28px;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 .ceo .image_area .pc_area .text_area p + p {
@@ -282,7 +283,7 @@
   padding-left: 400px;
 }
 
-.ceo .ceo_coment .moblie_view {
+.ceo .ceo_coment .mobile_view {
   display: none;
 }
 
@@ -744,7 +745,7 @@
   .location .location_map {
     overflow: auto;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .location .location_map img {
     width: 800px;
@@ -758,12 +759,18 @@
   .location .info_loaction .bottom_area {
     margin-top: 30px;
   }
+  .location .info_loaction .bottom_area .bold {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: initial;
+
+  }
 
   .location .info_loaction .bottom_area span {
     display: block;
-    margin-top: 10px;
     margin-right: 0;
     font-size: 14px;
+    line-height: initial;
   }
 
   .location .info_loaction .com_button {
@@ -782,6 +789,7 @@
   .introduce .keyvisual_area .sub_title {
     display: block;
     font-size: 14px;
+    line-height: 1.5714;
   }
   .introduce .main_title br {
     display: none;
@@ -789,6 +797,9 @@
   .ceo .keyvisual_area {
     background: url('../images/info/mobile_keyvisual_ceo.jpg') no-repeat;
     background-size: cover;
+  }
+  .introduce .business_area>.title {
+    font-size: 18px;
   }
 
   .ceo .text_area {
@@ -836,6 +847,7 @@
   }
   .ceo .ceo_coment p {
     font-size: 14px;
+    line-height: 1.5714;
 
   }
   .ceo .ceo_coment p,
@@ -855,6 +867,7 @@
   .ceo .ceo_name span {
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.5714;
   }
   .ceo .ceo_name .name{
     margin-left: 10px;
@@ -914,7 +927,7 @@
   .introduce .main_title {
     margin: 0 auto;
     font-size: 18px;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.1em;
   }
 
   .introduce .icon_list {
@@ -943,7 +956,7 @@
   }
 
   .introduce .icon_list .icon_box .image_area img {
-    max-width: 60px;
+    max-width: 50px;
   }
 
   .introduce .icon_box .date {
@@ -953,10 +966,11 @@
 
   .introduce .icon_box p {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .introduce .business_area {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
  
@@ -982,6 +996,7 @@
   .introduce .slide_area .text_area p {
     margin-top: 15px;
     font-size: 14px;
+    line-height: 1.5714;
   }
   .introduce .slide_area .text_area p br {
     display: none;
@@ -1019,12 +1034,14 @@
   .introduce .business_area>p {
     margin-top: 15px;
     font-size: 14px;
+    line-height: 1.5714;
   }
   .introduce .ci_area .title {
     font-size: 18px;
   }
   .introduce .ci_area p {
     font-size: 14px;
+    line-height: 1.5714;
   }
   .introduce .ci_area p br {
     display: none;
@@ -1045,7 +1062,7 @@
   }
 
   .history .history_list .line {
-    left:0;
+    left:0.5px;
     transform: none;
   }
   
@@ -1062,6 +1079,7 @@
     padding: 20px;
     margin-top: 20px;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .history .history_list .text_area.mt80,
@@ -1126,10 +1144,12 @@
     display: block;
     width: 20%;
     font-size: 14px;
+    line-height: 1.5714;
   }
   .history .history_list .text_area .text span {
     width:100%;
     font-size: 14px;
+    line-height: 1.5714;
     letter-spacing: -0.05em;
   }
   .history .history_list .text_area.left .text .align_area {

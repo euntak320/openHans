@@ -390,6 +390,7 @@
   .business .content strong {
     margin-top: 21px;
     font-size: 14px;
+    line-height: 1.5714;
   }
   .business .content .explain_text br {
     display: none;
@@ -422,6 +423,7 @@
 
   .business .service_list .list_box .service_explain p {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .business .service_list .list_box .service_title br {
@@ -474,6 +476,7 @@
   }
   .business .service_list .list_box .service_explain strong {
     font-size: 14px;
+    line-height: 1.5714;
   }
   .business .service_list .list_box .service_explain br {
     display: none;

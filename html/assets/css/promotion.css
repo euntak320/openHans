@@ -201,6 +201,7 @@
 
 .reault_news_list .top_area .select_area .com_select ul {
   top: 51px;
+  left: -1.5px;
 }
 
 
@@ -308,6 +309,17 @@
     -webkit-box-orient: vertical;
   }
 
+  .main_news_area button.stop {
+    background: url('../images/common/mobile-swiper-normal_purse.svg') no-repeat;
+    background-size: 20px;
+  }
+  
+  .main_news_area button.start {
+    background: url('../images/common/mobile-swiper-normal_play.svg') no-repeat;
+    background-size: 20px;
+  }
+  
+
   .reault_news_list {
     margin-top: 50px;
   }
@@ -318,11 +330,18 @@
   .text_area .normal {
     margin-top: 5px;
     font-size: 14px;
+    line-height: 1.5714;
 
   }
   .text_area .link_area {
     margin-top: 30px;
   }
+
+  .reault_news_list  .com_select .title {
+    background: url('../images/common/mobile-icon-select_arrow_v2.svg') no-repeat 95% center;
+    background-size: 10px 5px;
+  }
+
   .reault_news_list .list_area {
     margin-top: 40px;
   }
@@ -336,6 +355,7 @@
 
   .text_area .caution_area span {
     font-size: 14px;
+    line-height: 1.5714;
   }
   
   .text_area .link_area a {
@@ -346,7 +366,7 @@
   }
 
   .reault_news_list .list_area .list_box + .list_box {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .reault_news_list .list_area .left_area {
     height: auto;
@@ -412,7 +432,7 @@
   }
 
   .main_news_area button{
-    bottom: 17px;
+    bottom: 19px;
   }
   .main_news_area .swiper-pagination-bullet {
     border: 1px solid #fff;
@@ -426,6 +446,7 @@
   }
   .reault_news_list .top_area .input_area input {
     font-size: 14px;
+    line-height: 1.5714;
   }
   .reault_news_list .top_area .select_area {
     width: 100px;
@@ -434,15 +455,22 @@
   
 
   .reault_news_list .top_area .select_area .com_select {
-    padding: 13px 0;
+    padding: 14.5px 0;
   }
 
   .reault_news_list .top_area .select_area .com_select ul {
-    top: 53px;
+    top: 49px;
   }
 
   .reault_news_list .top_area .search_icon {
     width: 16px;
     height: 16px;
+  }
+  .reault_news_list .com_select .title {
+    padding-left: 0;
+  }
+
+  .reault_news_list .add_btn {
+    margin-top: 40px;
   }
 }

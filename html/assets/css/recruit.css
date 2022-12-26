@@ -122,6 +122,10 @@
   border-bottom: 1px solid #ccc;
 }
 
+.process_table .table_area .table_cell > div {
+  display: flex;
+}
+
 .process_table .table_area .table_cell:last-child {
   border-bottom: 0;
 }
@@ -158,8 +162,10 @@
 
 .process_table .table_area a {
   position: absolute;
+  top:40px;
   right: 0;
-  padding: 0 50px;
+  padding: 0;
+  width: 200px;
 }
 
 .procedure .notication_area {
@@ -251,7 +257,7 @@
   float: left;
   width: 22%;
   padding-right: 4%;
-  background: url(../images/recurit/icon-procedure-arrow.png) no-repeat 95% 20px;
+  background: url(../images/recurit/icon-procedure-arrow.png) no-repeat 95% 35px;
   background-size: 16px 30px;
   text-align: center;
 }
@@ -414,8 +420,8 @@
 .notice .caution {
   display: block;
   margin-top: 60px;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 1.75;
   text-align: center;
 }
 
@@ -684,6 +690,10 @@
   vertical-align: middle;
 }
 
+.support .input_area .file_upload> *.only-mobile {
+  display: none;
+}
+
 .support .input_area .file_upload .com_button {
   width: 200px;
   padding: 0;
@@ -857,8 +867,27 @@
   background-size: cover;
 }
 
+.faq .main_title {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.428;
+  text-align: center;
+}
+
+.faq .sub_title {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
 .faq .paging_wrap {
   margin-top: 50px;
+}
+
+.faq .accordian_wrap {
+  margin-top: 80px;
 }
 
 .faq .accordian_area:first-child {
@@ -871,6 +900,10 @@
 
 .support .input_wrap.file .input_area {
   margin-right: 0;
+}
+
+.only-mobile {
+  display: none;
 }
 
 @media all and (max-width:1400px) {
@@ -887,9 +920,11 @@
   }
   .support .select_box .com_select .title {
     font-size: 14px;
+    line-height: 1.5714;
   }
   .support .download_area span {
     font-size: 14px;
+    line-height: 1.5714;
   }
 }
 
@@ -900,21 +935,39 @@
     background-size: cover;
   }
 
+  .faq .main_title {
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+  }
+  .faq .main_title br {
+    display: none;
+  }
+
+  .faq .sub_title {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+
+  .faq .accordian_wrap {
+    margin-top: 50px;
+  }
+
   .support .keyvisual_area {
     background: url('../images/recurit/mobile_keyvisual_support.jpg') no-repeat center;
     background-size: cover;
   }
-
   .support .form_area .title,
   .support .form_area .title>span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .support .privacy_area {
     margin-top: 30px;
     padding: 20px;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.5714;
   }
 
   .support .privacy_area span,
@@ -922,6 +975,7 @@
   .support .privacy_area li,
   .support .privacy_area .text_box {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .support .privacy_area .table.pc {
@@ -948,6 +1002,7 @@
     height: 30px;
     line-height: 30px;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .support .input_wrap {
@@ -959,7 +1014,7 @@
   }
 
   .support .download_area {
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 30px 0;
   }
 
@@ -968,6 +1023,11 @@
     margin-top: 40px;
     font-size: 14px;
     transform: none;
+    line-height: 1.5714;
+  }
+
+  .support .download_area .button a {
+    padding: 0;
   }
 
 
@@ -1033,8 +1093,10 @@
   }
 
   .support .info_text {
-    margin-top: 20px;
+    margin-top: 5px;
+    text-align: left;
     font-size: 14px;
+    line-height: 1.5714;
     color: #888;
   }
 
@@ -1051,14 +1113,15 @@
     padding: 10px 0;
   }
 
-  .support  .com_select .select_list {
-    top:47px;
+  .support .com_select .select_list {
+    top:43px;
   }
 
   .support .info_caution_text ul li {
     font-size: 14px;
     padding-left: 10px;
     text-indent: -10px;
+    line-height: 1.5714;
   }
 
   .support .confirm_button {
@@ -1087,6 +1150,7 @@
 
   .support .success_area .table_title {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .support .success_area table {
@@ -1096,11 +1160,13 @@
   .support .success_area table thead th {
     padding: 10px 0;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .support .success_area table tbody td {
     padding: 20px 0;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .support .success_area .final_button {
@@ -1110,6 +1176,7 @@
   .support .info_input_area .sub_title {
     margin-top: 5px;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .procedure_area {
@@ -1123,7 +1190,7 @@
     padding-right: 0;
     padding-bottom: 70px;
     background: url('../images/common/mobile_down_arrow.png') no-repeat;
-    background-position: 40px 95px;
+    background-position: 30px 90px;
     background-size: 20px 11px;
   }
 
@@ -1131,7 +1198,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    margin-left: 30px;
+    margin: 0 15px;
     box-sizing: border-box;
   }
 
@@ -1157,6 +1224,7 @@
   }
   .procedure_area .procedure_box .normal {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .procedure_area .procedure_box:last-child {
@@ -1182,10 +1250,15 @@
     padding: 30px 0;
   }
 
+
+  .process_table .table_area .table_cell > div {
+    display: inline;
+  }
   .process_table .table_area .table_cell .bold {
+    display: block;
     margin-right: 0;
     font-size: 14px;
-    margin-top: -27px;
+    line-height: 1.5714;
   }
 
   .process_table .table_area .table_cell .bold br {
@@ -1202,14 +1275,17 @@
 
   .process_table .table_area .table_cell li {
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.5714;
   }
   .process_table .table_area .table_cell li + li {
     margin-top: 5px;
   }
 
   .process_table .table_area a {
+    top:0;
     margin-top: 40px;
+    margin-left: 0;
+    padding: 0;
   }
 
   .procedure .notication_area {
@@ -1226,6 +1302,7 @@
   .procedure .notication_area .list span,
   .procedure .notication_area .list p {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .procedure .notication_area .list p {
@@ -1299,6 +1376,7 @@
     display: block;
     text-align: left;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .notice .notice_table .table_body span:last-child {
@@ -1323,7 +1401,7 @@
     width: 100%;
   }
   .method_area .step_list .img_area {
-    margin-left: 30px;
+    margin: 0 15px;
   }
 
   .method_area .left_area .bold {
@@ -1337,6 +1415,7 @@
     font-size: 14px;
     padding-left: 10px;
     text-indent: -10px;
+    line-height: 1.5714;
   }
 
   .method_area .step_list {
@@ -1352,7 +1431,7 @@
     padding-right: 0;
     padding-bottom: 70px;
     background: url(../images/common/mobile_down_arrow.svg) no-repeat;
-    background-position:45px 105px;
+    background-position:30px 90px;
     background-size: 20px 11px;
     text-align: left;
   }
@@ -1403,11 +1482,13 @@
   }
   .right_area .info_site .title, .right_area .info_site .site a {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .right_area .info_site .site span {
     display: block;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .right_area .info_site .site div+div {
@@ -1416,9 +1497,11 @@
 
   .method_area .step_box .coment {
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .method_area .content_area {
+    padding-bottom: 70px;
     border-bottom: 35px;
   }
 
@@ -1460,6 +1543,11 @@
     border-bottom: 1px solid #ccc;
   }
 
+  .openhandsperson .icon_box:first-child {
+    padding: 0 0 30px 0;
+
+  }
+
   .openhandsperson .icon_box .img_area {
     display: inline-block;
     width: 50px;
@@ -1490,6 +1578,7 @@
   .openhandsperson .icon_box p {
     margin-top: 0;
     font-size: 14px;
+    line-height: 1.5714;
   }
 
   .openhandsperson .icon_list.v2 {
@@ -1499,6 +1588,27 @@
   .openhandsperson .icon_list.v2 .icon_box,
   .openhandsperson .icon_list.v2 .icon_box:last-child {
     padding: 30px 0;
+  }
+
+  .process_table .table_area .table_cell li::before {
+    top:8px;
+  }
+
+  .only-pc {
+    display: none;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+  .support .success_area p+p {
+    letter-spacing: -0.05em;
+  }
+
+  .notice .caution {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.57;
   }
 
 }
