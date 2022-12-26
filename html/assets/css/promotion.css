@@ -459,15 +459,12 @@
   }
 
   .reault_news_list .top_area .select_area .com_select ul {
-    top: 49px;
+    top: 52px;
   }
 
   .reault_news_list .top_area .search_icon {
     width: 16px;
     height: 16px;
-  }
-  .reault_news_list .com_select .title {
-    padding-left: 0;
   }
 
   .reault_news_list .add_btn {

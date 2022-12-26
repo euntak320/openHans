@@ -1125,7 +1125,7 @@
   }
 
   .support .confirm_button {
-    margin-top: 25px;
+    margin-top: 50px;
   }
 
   .support .input_area .file_upload label {
@@ -1535,6 +1535,10 @@
     margin-top: 0;
   }
 
+  .openhandsperson .icon_list + .icon_list .icon_box:first-child{
+    padding: 30px 0;
+  } 
+
   .openhandsperson .icon_box {
     display: flex;
     align-items: center;
@@ -1545,8 +1549,10 @@
 
   .openhandsperson .icon_box:first-child {
     padding: 0 0 30px 0;
-
   }
+
+  
+
 
   .openhandsperson .icon_box .img_area {
     display: inline-block;
@@ -1598,7 +1604,7 @@
     display: none;
   }
 
-  .only-mobile {
+  .support .input_area .file_upload> *.only-mobile {
     display: block;
   }
   .support .success_area p+p {

@@ -228,6 +228,13 @@ section {
   height: 280px;
 }
 
+.keyvisual_area .keyvisual_width {
+  position: relative;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .keyvisual_area h2 {
   position: absolute;
   top: 50%;
@@ -252,7 +259,7 @@ section {
 
 .keyvisual_area .keyvisual_navi {
   position: absolute;
-  left: calc(1920px - 260px);
+  right: 260px;
   top: 30px;
 }
 
@@ -495,17 +502,14 @@ section {
 header {
   position: fixed;
   top: 0;
-  left: 50%;
+  width: 100%;
   overflow: hidden;
-  width: 1920px;
   margin: 0 auto;
   height: 78px;
   padding: 0 50px;
   border-bottom: 1px solid #eee;
   background: #fff;
   z-index: 1000;
-  box-sizing: border-box;
-  transform: translateX(-50%);
 }
 
 header.open {
@@ -520,6 +524,8 @@ header.up {
   display: flex;
   align-items: center;
   height: 78px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .gnb_area .mobile_btn {
@@ -665,16 +671,24 @@ header.open.scroll_menu .gnb_area::after {
   width: 100%;
   transition: 0.5s;
 }
-
 .content_type_menu {
   position: fixed;
   top:-50px;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 50px;
-  background: #004098;
   z-index: 10;
+  
+  background: #004098;
 }
+
+.content_type_menu .content_type_area {
+  position: relative;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .content_type_menu .mobile_title {
   display: none;
 }
@@ -730,19 +744,19 @@ header.open.scroll_menu .gnb_area::after {
 }
 
 .content_type_menu .menu_list.introduce {
-  left: 260px;
+  padding-left: 260px;
 }
 
 .content_type_menu .menu_list.buiness {
-  left: 400px;
+  padding-left: 400px;
 }
 
 .content_type_menu .menu_list.promotion {
-  left: 540px;
+  padding-left: 540px;
 }
 
 .content_type_menu .menu_list.recruit {
-  left: 680px;
+  padding-left: 680px;
 }
 
 
@@ -1452,7 +1466,7 @@ br.mobile {
   header {
     left: auto;
     padding:0 30px;
-    width: auto;
+    width: 100%;
     height: 50px;
     box-sizing: border-box;
     transform: unset;
@@ -1917,7 +1931,7 @@ br.mobile {
     margin-top: 20px;
   }
 
-  .privacy .com_select .select_list {
+  .privacy .right_select .com_select ul {
     left: -1.5px;
     top: 43px;
   }
