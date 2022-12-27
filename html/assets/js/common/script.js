@@ -138,12 +138,28 @@ $(function () {
 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
 	});
 
+	// var fileTarget = $('.file_upload .upload-hidden');
+	// 	fileTarget.on('change', function(){  // 값이 변경되면
+	// 		if(window.FileReader){  // modern browser
+	// 			var filename = $(this)[0].files[0].name;
+	// 		} 
+	// 		else {  // old IE
+	// 			var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
+	// 		}
+
+	// 		// 추출한 파일명 삽입
+	// 		$(this).siblings('.upload-name').val(filename);
+	// });
+	
 	$(".file_upload input[type='file']").on("change", function (event) {
 		$(this).parents(".input_box").find('.file_list_area').append("<div class='file_item'><span class='file-value'>" + event.target.files[0].name + "</span> <span class='close'>닫기</span></div>");
+		$(this).attr('disabled', true);
 
 		$('.file_list_area .close').click(function () {
 			$(this).parents('.file_item').hide();
+			$(".file_upload input[type='file']").attr('disabled', false);
 		});
+		
 	});
 
 });

@@ -775,6 +775,11 @@ footer::before {
   top:0;
 }
 
+footer .footer_width {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 footer .top_area {
   display: flex;
   align-items: center;
@@ -923,10 +928,18 @@ footer .accessibility_logo img {
   display: block;
   width: 30.5%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  line-height: 32px;
 }
+
+.layer_wrap .layer_area.v2 {
+  max-width: 300px;
+}
+
+.layer_wrap .layer_area.v2 .normal_text {
+  width: 100%;
+}
+
 
 .layer_wrap .layer_area .com_button {
   display: block;
@@ -1424,9 +1437,7 @@ br.mobile {
   br.mobile {
     display: block!important;
   }
-  .privacy_wrap {
-    padding-top: 0;
-  }
+ 
 
   .content_wrap {
     width: auto;
@@ -1579,6 +1590,20 @@ br.mobile {
     background: #fff;
   }
 
+  .content_type_menu .content_type_area {
+    width: 100%;
+    max-width: unset;
+  }
+  
+  .content_type_menu .menu_list.introduce,
+  .content_type_menu .menu_list.buiness,
+  .content_type_menu .menu_list.promotion,
+  .content_type_menu .menu_list.recruit {
+    padding-left: 0;
+  }
+
+
+
   .content_type_menu .menu_list {
     left: 0!important;
     top: auto;
@@ -1690,7 +1715,7 @@ br.mobile {
   .tab_area .tab_list a:first-child{
     padding: 0 10px 0 0;
   }
-.tab_area .tab_list button::after, 
+  .tab_area .tab_list button::after, 
   .tab_area .tab_list a::after {
     height: 13px;
   }
@@ -1804,6 +1829,10 @@ br.mobile {
     padding-bottom: 100px;
   }
 
+  .privacy_wrap {
+    padding-top: 0;
+  }
+
   .com_select .select_list li {
     padding: 0 0 0 20px;
     height: 45px;
@@ -1814,7 +1843,6 @@ br.mobile {
   .com_select .title {
     font-size: 14px;
     line-height: 1.5714;
-    background-size: 10px 5px;
   }
 
 .keyvisual_area {
@@ -2031,6 +2059,7 @@ br.mobile {
   .sitemap .link_sitemap .title {
     float: left;
     width: 140px;
+    padding-bottom: 0;
     border-bottom: 0;
     font-size: 16px;
     line-height: initial;
@@ -2052,5 +2081,23 @@ br.mobile {
   #top {
     width: 35px;
     height: 35px;
+  }
+  .layer_wrap .layer_area .com_button {
+    margin-top: 20px;
+  }
+
+  .layer_wrap .layer_area .normal_text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.57;
+  }
+
+  .com_select .title {
+    background: url(../images/common/icon-arrow.png) no-repeat 97% center;
+    background-size: 10px 5px;
+  }
+  .com_select.on .title {
+    background: url(../images/common/icon-arrow_up.png) no-repeat 97% center;
+    background-size: 10px 5px;
   }
 }

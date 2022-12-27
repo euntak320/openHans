@@ -311,12 +311,12 @@
 
   .main_news_area button.stop {
     background: url('../images/common/mobile-swiper-normal_purse.svg') no-repeat;
-    background-size: 20px;
+    background-size: 15px;
   }
   
   .main_news_area button.start {
     background: url('../images/common/mobile-swiper-normal_play.svg') no-repeat;
-    background-size: 20px;
+    background-size: 15px;
   }
   
 
@@ -337,10 +337,6 @@
     margin-top: 30px;
   }
 
-  .reault_news_list  .com_select .title {
-    background: url('../images/common/mobile-icon-select_arrow_v2.svg') no-repeat 95% center;
-    background-size: 10px 5px;
-  }
 
   .reault_news_list .list_area {
     margin-top: 40px;
@@ -432,9 +428,14 @@
   }
 
   .main_news_area button{
-    bottom: 19px;
+    width: 15px;
+    height: 15px;
+    bottom: 20px;
+    margin-left: 25px;
   }
   .main_news_area .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
     border: 1px solid #fff;
   }
   .main_news_area .swiper-pagination-bullet-active {
@@ -469,5 +470,9 @@
 
   .reault_news_list .add_btn {
     margin-top: 40px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: 97%;
   }
 }

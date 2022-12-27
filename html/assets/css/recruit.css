@@ -72,7 +72,7 @@
 .procedure_area .procedure_box {
   padding-right: 9%;
   text-align: center;
-  background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 80% 20px;
+  background: url('../images/recurit/icon-procedure-arrow.png') no-repeat 80% 35px;
   background-size: 16px 30px;
 }
 
@@ -556,6 +556,11 @@
 
 }
 
+.support .download_area .button a {
+  width: 200px;
+  padding:0;
+}
+
 
 .support .info_input_area {
   margin-top: 80px;
@@ -681,8 +686,11 @@
 }
 
 .support .info_text {
-  margin-top: 40px;
+  margin-top: 10px;
   color: #059aee;
+}
+.support .info_text span {
+  display: block;
 }
 
 .support .input_area .file_upload>* {
@@ -690,25 +698,18 @@
   vertical-align: middle;
 }
 
-.support .input_area .file_upload> *.only-mobile {
-  display: none;
+.support .input_area .file_upload label {
+  display: inline-block;
+  cursor: pointer;
 }
-
-.support .input_area .file_upload .com_button {
-  width: 200px;
-  padding: 0;
-}
-
-
-.support .input_area .file_upload input[type="file"] {
-  /* 파일 필드 숨기기 */
+.support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip:rect(0,0,0,0);
   border: 0;
 }
 
@@ -719,16 +720,22 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip:rect(0,0,0,0);
   border: 0;
 }
 
 .support .input_area .file_upload label {
   display: inline-block;
+  width: 200px;
+  padding:0;
   margin-left: 20px;
-  line-height: 50px;
   text-align: center;
   cursor: pointer;
+  
+}
+
+.support .input_area .file_upload  .only-mobile {
+  display: none;
 }
 
 /* named upload */
@@ -738,33 +745,6 @@
   /* 네이티브 외형 감추기 */
   -moz-appearance: none;
   appearance: none;
-}
-
-.support .input_area .file_list_area {
-  width: 840px;
-  min-height: 50px;
-  padding: 11px 20px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.support .input_area .file_list_area .file_item>* {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.support .input_area .file_list_area span {
-  font-size: initial;
-  font-weight: initial;
-}
-
-.support .input_area .file_list_area .close {
-  width: 30px;
-  height: 30px;
-  background: url('../images/common/file_delect.png') no-repeat;
-  background-size: cover;
-  text-indent: -9999px;
-  cursor: pointer;
 }
 
 .support .info_caution_text {
@@ -906,6 +886,33 @@
   display: none;
 }
 
+.support .input_area .file_list_area {
+  width: 840px;
+  min-height: 50px;
+  padding: 11px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.support .input_area .file_list_area .file_item>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.support .input_area .file_list_area span {
+  font-size: initial;
+  font-weight: initial;
+}
+
+.support .input_area .file_list_area .close {
+  width: 30px;
+  height: 30px;
+  background: url('../images/common/file_delect.png') no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
 @media all and (max-width:1400px) {
   .process_table .table_area a {
     position: relative;
@@ -960,7 +967,7 @@
   }
   .support .form_area .title,
   .support .form_area .title>span {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .support .privacy_area {
@@ -1079,8 +1086,13 @@
     font-size: 16px;
   }
 
-  .support .input_area .file_list_area {
+  .support .input_area .file_list_area .file_item {
     width: 100%;
+    text-align: left;
+  }
+
+  .support .input_area .file_list_area span {
+    font-size: 14px;
   }
 
   .support .input_area .input_box .ui-datepicker-trigger {
@@ -1090,14 +1102,18 @@
 
   .support .input_area .file_upload label {
     margin: 0 auto;
+    padding: 0;
   }
 
-  .support .info_text {
+  .support .info_text span {
     margin-top: 5px;
     text-align: left;
     font-size: 14px;
     line-height: 1.5714;
     color: #888;
+    font-weight: 400;
+    padding-left:17px;
+    text-indent: -17px;
   }
 
   .support .info_caution_text {
@@ -1467,8 +1483,12 @@
     padding-bottom: 0;
   }
 
+  .method_area .content_area+.content_area .right_area .step_list .step_box:first-child {
+    background-position: 30px 110px;
+  }
+
   .method_area .step_box.other {
-    background-position: 45px 145px;
+    background-position: 30px 145px;
   }
 
   .right_area .info_site {
@@ -1599,6 +1619,9 @@
   .process_table .table_area .table_cell li::before {
     top:8px;
   }
+  .support .input_area .file_upload  .only-mobile  {
+    display: block;
+  }
 
   .only-pc {
     display: none;
@@ -1606,6 +1629,7 @@
 
   .support .input_area .file_upload> *.only-mobile {
     display: block;
+    margin-top: 5px;
   }
   .support .success_area p+p {
     letter-spacing: -0.05em;
@@ -1615,6 +1639,10 @@
     margin-top: 30px;
     font-size: 14px;
     line-height: 1.57;
+  }
+
+  .support .input_area .file_upload .upload-name[type="text"] {
+    width: 100%;
   }
 
 }

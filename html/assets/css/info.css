@@ -265,7 +265,7 @@
 .ceo .image_area .pc_area .img_area {
   position: absolute;
   right:55px;
-  bottom:-7px;
+  bottom:-45px;
 }
 
 .ceo .image_area .pc_area .text_area p {
@@ -1062,7 +1062,7 @@
   }
 
   .history .history_list .line {
-    left:0.5px;
+    left:4.5px;
     transform: none;
   }
   
@@ -1158,12 +1158,12 @@
   }
   .history .history_list .text_area.left .history_text::before,
   .history .history_list .text_area.right .history_text::before {
-    left: -5.5px;
+    left:0;
     right: auto;
   }
   .history .history_list .text_area.right .history_text::after,
   .history .history_list .text_area.left .history_text::after {
-    left:-1.225px;
+    left:4px;
     right: auto;
   }
   .history .history_list .text_area.right .text .bold {
