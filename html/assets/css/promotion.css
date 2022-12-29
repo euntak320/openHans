@@ -196,12 +196,17 @@
 }
 
 .reault_news_list .top_area .select_area .com_select {
-  padding:11px 0;
+  height: 51px;
+  padding:0;
+}
+
+.reault_news_list .top_area .select_area .com_select > button {
+  line-height: 50px;
 }
 
 .reault_news_list .top_area .select_area .com_select ul {
-  top: 51px;
-  left: -1.5px;
+  top: 53px;
+  left: 0;
 }
 
 
@@ -453,15 +458,6 @@
     width: 100px;
     margin-right: 0;
   }
-  
-
-  .reault_news_list .top_area .select_area .com_select {
-    padding: 14.5px 0;
-  }
-
-  .reault_news_list .top_area .select_area .com_select ul {
-    top: 52px;
-  }
 
   .reault_news_list .top_area .search_icon {
     width: 16px;
@@ -474,5 +470,13 @@
 
   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     width: 97%;
+  }
+
+ 
+}
+
+@media all and (max-width:764px) {
+  .reault_news_list .top_area .select_area .com_select ul {
+    left:0;
   }
 }

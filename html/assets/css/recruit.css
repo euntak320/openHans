@@ -646,7 +646,10 @@
 .support .select_box .com_select {
   padding: 12px 0;
   border-bottom: 0;
+}
 
+.support .select_box .com_select:after {
+  display: none;
 }
 
 .support .select_box .com_select .title {
@@ -862,6 +865,11 @@
   line-height: 1.6;
   text-align: center;
 }
+
+.faq .sub_title a {
+  font-size: 20px;
+  line-height: 1,6;
+}
 .faq .paging_wrap {
   margin-top: 50px;
 }
@@ -918,6 +926,10 @@
     position: relative;
     margin-left: 2%;
   }
+  .support .select_box {
+    margin-left: 2%;
+  }
+
 }
 
 @media all and (max-width:1200px) {
@@ -951,7 +963,7 @@
     display: none;
   }
 
-  .faq .sub_title {
+  .faq .sub_title, .faq .sub_title a {
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.57;
@@ -1066,6 +1078,9 @@
     height: 45px;
     box-sizing: border-box;
     margin-top: 5px;
+  }
+  .support .select_box {
+    margin-left: 0;
   }
 
   .support .input_wrap.email .txt {

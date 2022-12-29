@@ -9,6 +9,7 @@ $(function () {
 
 	motion_scroll()
 
+
 	var windowWidth = $(window).width();
 	var thisScroll = 0;
 	var $header = $('header');
@@ -44,20 +45,22 @@ $(function () {
 	})
 
 	$('.content_type_menu .mobile_title').click(function(){
+		$(this).toggleClass('on');
 		$(this).next('ul').toggleClass('on');
 	});
 
 
-	var $root = $('html, body');
-	$('.tab_list a[href^="#"]').click(function(e) {
-		e.preventDefault;
-		var href = $.attr(this, 'href');				
-		$root.animate({
-			scrollTop: $(href).offset().top
-		}, 500, function () {
-			window.location.hash = href;
-		});
-	});
+	// 상단으로 팅기는거
+	// var $root = $('html, body');
+	// $('.tab_list a[href^="#"]').click(function(e) {
+	// 	e.preventDefault;
+	// 	var href = $.attr(this, 'href');				
+	// 	$root.animate({
+	// 		scrollTop: $(href).offset().top
+	// 	}, 500, function () {
+	// 		window.location.hash = href;
+	// 	});
+	// });
 
 
 	$(window).scroll(function () {
@@ -104,7 +107,8 @@ $(function () {
 	});
 
 	//  tab	
-	$tabButton.click(function () {
+	$tabButton.click(function (e) {
+		e.preventDefault();
 		$tabButton.removeClass('on');
 		$tabButton.eq($(this).index()).addClass('on')
 		$tabView.removeClass('on');
@@ -115,6 +119,14 @@ $(function () {
 		$(this).parents('.com_select').toggleClass('on');
 		$(this).next().toggleClass('on');
 	});
+
+	// $('#section').click(function(){
+	// 	if($('.com_select').hasClass('on')) {
+	// 		$('.com_select .title').removeClass('on');
+	// 		$('.com_select').removeClass('on');
+	// 	}
+		
+	// })
 
 	//  달력
 	$(".datepicker").datepicker({
@@ -137,19 +149,6 @@ $(function () {
 		dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
 	});
-
-	// var fileTarget = $('.file_upload .upload-hidden');
-	// 	fileTarget.on('change', function(){  // 값이 변경되면
-	// 		if(window.FileReader){  // modern browser
-	// 			var filename = $(this)[0].files[0].name;
-	// 		} 
-	// 		else {  // old IE
-	// 			var filename = $(this).val().split('/').pop().split('\\').pop();  // 파일명만 추출
-	// 		}
-
-	// 		// 추출한 파일명 삽입
-	// 		$(this).siblings('.upload-name').val(filename);
-	// });
 	
 	$(".file_upload input[type='file']").on("change", function (event) {
 		$(this).parents(".input_box").find('.file_list_area').append("<div class='file_item'><span class='file-value'>" + event.target.files[0].name + "</span> <span class='close'>닫기</span></div>");
