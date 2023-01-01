@@ -62,6 +62,17 @@ $(function () {
 	// 	});
 	// });
 
+	$('.tab_list button').click(function(e) {
+		window.scrollTo({ top: 150, behavior: 'smooth' });
+	});
+
+
+	$('.com_select').focusout(function() {
+		$(this).removeClass('on')
+		$('.select_list').removeClass('on')
+	});
+
+
 
 	$(window).scroll(function () {
 		scrollTop = $(window).scrollTop();
@@ -115,18 +126,10 @@ $(function () {
 		$tabView.eq($(this).index()).addClass('on')
 	});
 
-	$('.com_select .title').click(function () {
-		$(this).parents('.com_select').toggleClass('on');
-		$(this).next().toggleClass('on');
+	$('.com_select').click(function () {
+		$(this).toggleClass('on');
+		$('.select_list').toggleClass('on');
 	});
-
-	// $('#section').click(function(){
-	// 	if($('.com_select').hasClass('on')) {
-	// 		$('.com_select .title').removeClass('on');
-	// 		$('.com_select').removeClass('on');
-	// 	}
-		
-	// })
 
 	//  달력
 	$(".datepicker").datepicker({

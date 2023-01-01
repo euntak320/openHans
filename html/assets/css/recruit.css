@@ -652,6 +652,10 @@
   display: none;
 }
 
+.support .select_box .com_select.on:after {
+  display: block;
+}
+
 .support .select_box .com_select .title {
   font-size: 16px;
 }
