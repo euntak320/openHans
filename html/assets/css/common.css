@@ -79,6 +79,7 @@ input {
 }
 
 input:focus {
+  border-width: 0;
   outline: 1px solid #059aee;
 }
 
@@ -339,7 +340,7 @@ section {
   position: relative;
   padding:0 20px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5;
   color: #888;
 }
@@ -369,7 +370,7 @@ section {
   top: 50%;
   right: 0;
   width: 1px;
-  height: 27px;
+  height: 20px;
   background: #000;
   transform: translateY(-50%);
 }
@@ -913,8 +914,8 @@ footer .accessibility_logo img {
   z-index: 1000;
 }
 
-.layer_wrap .layer_area {
-  overflow: auto;
+.layer_wrap .layer_area{
+  overflow: hidden auto;
   position: absolute;
   top:50%;
   left:50%;
@@ -925,7 +926,7 @@ footer .accessibility_logo img {
   transform: translate(-50%, -50%);
 }
 
-.layer_wrap .layer_area .normal_text {
+.layer_wrap .layer_area .normal_text{
   display: block;
   width: 30.5%;
   margin: 0 auto;
@@ -947,7 +948,6 @@ footer .accessibility_logo img {
   width: 200px;
   margin: 40px auto 0;
   padding: 0;
-  
 }
 
 .layer_wrap .layer_area .top_area{
@@ -979,7 +979,6 @@ footer .accessibility_logo img {
   background-size: cover;
   text-indent: -9999px;
 }
-
 
 .layer_wrap .layer_area .content_area strong {
   display: inline-block;
@@ -1048,6 +1047,12 @@ footer .accessibility_logo img {
   max-width: none;
 }
 
+.layer_wrap .layer_area.v2 .com_button {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  border:1px solid #000;
+}
 
 
 
@@ -1342,6 +1347,7 @@ footer .accessibility_logo img {
 
 .accordian_area .answer_area {
   display: none;
+  margin-top: -1px;
   padding: 40px 82px;
   background: #f5f5f5 url('../images/common/icon-answer.svg') no-repeat 40px 46px;
   background-size: 19px 16px;
@@ -1350,7 +1356,7 @@ footer .accessibility_logo img {
 .com_select {
   position: relative;
   width: 100%;
-  padding: 14px 0;
+  height: 50px;
   z-index: 10;
 }
 .com_select:after {
@@ -1380,21 +1386,30 @@ footer .accessibility_logo img {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   padding-left: 20px;
   text-align: left;
   background: url('../images/common/icon-select_arrow.svg') no-repeat 95% center;
   cursor: pointer;
 }
 
+.com_select .title:focus-visible {
+  outline: 1px solid #059aee;
+}
+
 .com_select.on .title {
   background: url('../images/common/icon-select_arrow_up.svg') no-repeat 95% center;
+}
+
+.com_select.on .title:focus-visible {
+  outline: 0;
 }
 
 .com_select .select_list {
   display: none;
   position: absolute;
   top:50px;
-  left: -1px;
+  left: 0;
   width: 100%;
   z-index: 10;
   border-left: 1px solid #ccc;
@@ -1413,6 +1428,15 @@ footer .accessibility_logo img {
   color: #000;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.com_select .select_list button {
+  width: 100%;
+  text-align: left;
+}
+
+.com_select .select_list button:focus-visible {
+  outline: 1px solid #059aee;
 }
 
 .com_select .select_list li:hover {
@@ -2006,7 +2030,6 @@ br.mobile {
     border-bottom: 0;
   }
   .privacy .right_select .com_select {
-    padding: 10px 0;
     font-size: 14px;
     line-height: 1.5714;
   }
@@ -2040,8 +2063,8 @@ br.mobile {
   .privacy .table thead th,
   .privacy .table tbody td {
     height: 40px;
+    line-height: 40px;
     font-size: 14px;
-    line-height: 1.5714;
   }
   .privacy .text_wrap .text_area .title {
     margin-bottom: 10px;
@@ -2129,5 +2152,9 @@ br.mobile {
   .com_select.on .title {
     background: url(../images/common/icon-arrow_up.png) no-repeat 97% center;
     background-size: 10px 5px;
+  }
+
+  .accordian_area .accordian_title:hover::after {
+    display: none;
   }
 }

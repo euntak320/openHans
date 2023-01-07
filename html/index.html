@@ -9,17 +9,17 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="assets/css/common.css">
-	<link rel="stylesheet" href="assets/css/fullpage.css">
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
-	
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<!-- js -->
 	<script src="assets/js/common/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/common/fullpage.min.js"></script>
 	<script src="assets/js/common/swiper.min.js"></script>
+	<script src="assets/js/common/gsap.min.js"></script>
+	<script src="assets/js/common/ScrollTrigger.js"></script>
 	<script src="assets/js/common/script.js"></script>
 	<script src="assets/js/main.js"></script>
+	
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 			<!-- gnb 메뉴  -->
 			<div class="gnb_area">
 				<h1 class="logo">
-					<a href="main.html">
+					<a href="index.html">
 						<img src="assets/images/common/logo.png" alt="삼성 SDS 자회사형 표준사업장 openhands">
 					</a>
 				</h1>
@@ -80,346 +80,285 @@
 					<button type="button">모바일버튼</button>
 				</div>
 			</div>
-			<div class="content_type_menu">
-				<div class="menu_list introduce ">	
-					<ul>
-						<li><a href="info/introduce.html">회사개요</a></li>
-						<li><a href="info/ceo.html" >CEO 인사말</a></li>
-						<li><a href="info/history.html">연혁</a></li>
-						<li><a href="info/location.html">찾아오시는길</a></li>
-					</ul>
-				</div>
-				<div class="menu_list buiness">	
-					<ul >
-						<li><a href="business/it.html">IT 서비스</a></li>
-						<li><a href="business/supply.html">물류관리</a></li>
-						<li><a href="business/service.html">총무지원</a></li>
-						<li><a href="business/health.html">헬스케어</a></li>
-					</ul>
-				</div>
-				<div class="menu_list promotion">	
-					<ul >
-						<li><a href="promotion/news.html" >오픈핸즈 NEWS</a></li>
-					</ul>
-				</div>
-				<div class="menu_list recruit on">	
-					<ul >
-						<li><a href="recruit/openpeople.html" >오픈핸즈 人은</a></li>
-						<li><a href="recruit/procedure.html"  class="on">채용절차</a></li>
-						<li><a href="recruit/notice.html">채용공고</a></li>
-						<li><a href="recruit/support.html">채용지원</a></li>
-						<li><a href="recruit/faq.html">오픈핸즈 FAQ</a></li>
-					</ul>
-				</div>
-			</div>
+			
 		</header>
 		<!-- header : [E] -->
 
 		<!-- section : [S] -->
-		<section class="main">
-			<div class="pagnation">
-				<ul>
-					<li class="on"><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-				</ul>
+		<section class="main" id="section">
+			<div class="section first_area scroll">
+				<div class="first_swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide one">
+							<div class="main_text">
+								<p>오픈핸즈는 직원과</p>
+								<p>회사가 함께 열린마음으로</p>
+								<p>“더 나은 세상”을 만들어 갑니다.</p>
+							</div>
+						</div>
+						<div class="swiper-slide two">
+							<div class="main_text">
+								<p>오픈핸즈는 신뢰와 사랑</p>
+								<p>그 무한한 가치를 항상 생각하며</p>
+								<p>함께 성장할 수 있는 발판을 마련하겠습니다.</p>
+							</div>
+						</div>
+					</div>
+					<span class="line"></span>
+					<div class="button_area">
+						<div class="swiper-button-prev"></div>
+						<button type="button" class="stop">일시정지</button>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
-			<div class="fullpage" id="section">
-				
-				<div class="section first_area">
-					<div class="bg_area on">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
+
+			<div class="second_area scroll">
+				<div class="pagnation">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="panel it">
+					<div class="text_area it">
+						<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
+						<span class="main_title">IT서비스</span>
+						<p>고객의 IT 솔루션 개발 및 운영 안정화를 위한<br> 전문적인 서비스를 제공합니다.</p>
+						<a href="./business/it.html">자세히 보기</a>
 					</div>
-					<div class="first_swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide one">
-								<div class="main_text">
-									<p>오픈핸즈는 직원과</p>
-									<p>회사가 함께 열린마음으로</p>
-									<p>“더 나은 세상”을 만들어 갑니다.</p>
-								</div>
-							</div>
-							<div class="swiper-slide two">
-								<div class="main_text">
-									<p>오픈핸즈는 신뢰와 사랑</p>
-									<p>그 무한한 가치를 항상 생각하며</p>
-									<p>함께 성장할 수 있는 발판을 마련하겠습니다.</p>
-								</div>
+					<div class="right_area">
+						<img src="assets/images/main/main-it-section-bg.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="panel supply">
+					<div class="text_area supply">
+						<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
+						<span class="main_title">물류지원</span>
+						<p>물류 운영/정산에 대한 지원 및 물류의 입출고/재고관리,<br> 운송관리를 지원하는 서비스를 제공합니다.</p>
+						<a href="./business/supply.html">자세히 보기</a>
+					</div>
+					<div class="right_area">
+						<img src="assets/images/main/main-supply-section-bg.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="panel service">
+					<div class="text_area service">
+						<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
+						<span class="main_title">총무지원 서비스</span>
+						<p>고객의 쾌적한 사무환경 조성 및<br> 시설에 대한 유지보수 서비스를 제공합니다.</p>
+						<a href="./business/service.html">자세히 보기</a>
+					</div>
+					<div class="right_area">
+						<img src="assets/images/main/main-service-section-bg.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="panel health">
+					<div class="text_area health">
+						<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
+						<span class="main_title">헬스케어</span>
+						<p>고객사 임직원의 근골격계 질환을 예방하는<br> 전문 건강 관리 서비스를 제공합니다.</p>
+						<a href="./business/health.html">자세히 보기</a>
+					</div>
+					<div class="right_area">
+						<img src="assets/images/main/main-health-section-bg.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="section thrid_area scroll">
+				<span class="line"></span>
+				<div class="text_swiper">
+					<div class="swiper-wrapper">
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈는<br>어떤일을 하는 회사 인가요?</p>
+							<p class="normal">삼성SDS가 100% 출자한 자회사형 표준사업장으로 IT 및 
+								총무지원 분야를 종합적으로 서비스하고 있습니다.</p>
+							<div class="btn_area">
+								<a href="./info/introduce.html">자세히보기</a>
 							</div>
 						</div>
-						<span class="line"></span>
-						<div class="button_area">
-							<div class="swiper-button-prev"></div>
-							<button type="button" class="stop">일시정지</button>
-							<div class="swiper-button-next"></div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈에<br>지원할려면 어떻게 해야하나요?</p>
+							<p class="normal">회사 홈페이지 및 채용사이트 공고를 참고하여 지원하거나 수시지원도 가능합니다.</p>
+							<div class="btn_area">
+								<a href="./recruit/support.html">자세히보기</a>
+							</div>
 						</div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈에는<br>어떤 복리후생을 지원하나요?</p>
+							<p class="normal">복지포인트, 경조사, 건강검진, 단체상해보험, 식대지원등
+								장애인표준사업장에 필요한 다양한 복리후생 제도를 운영중에 있습니다. </p>
+							<div class="btn_area">
+								<a href="./recruit/openpeople#wellife.html">자세히보기</a>
+							</div>
+						</div>
+						<div class="text_area swiper-slide">
+							<p class="main_title">오픈핸즈에는<br>어떤 직원들이 근무하나요?</p>
+							<p class="normal">오픈핸즈는 90% 이상 장애인 직원으로 구성되어 있으며, 직무에 적합할 경우 장애유형 상관없이 채용하고 있어 다양한 연령과 다양한 장애유형의 직원들이 근무하고 있습니다.</p>
+							<div class="btn_area">
+								<a href="./recruit/openpeople.html">자세히보기</a>
+							</div>
+						</div>
+					</div>
+					<div class="button_area">
 						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<button type="button" class="stop">일시정지</button>
+						<div class="swiper-button-next"></div>
 					</div>
-					
 				</div>
+				<div class="image_swiper">
+					<div class="swiper-wrapper">
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/image-job-01.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/image-job-02.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/image-job-03.jpg" alt="">
+						</div>
+						<div class="img_area swiper-slide">
+							<img src="assets/images/main/image-job-04.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
 
-					
-				<div class="section second_area it">
-					<div class="left_area">
-						<div class="text_area it">
-							<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
-							<span class="main_title">IT서비스</span>
-							<p>고객의 IT 솔루션 개발 및 운영 안정화를 위한 전문적인 서비스를 제공합니다.</p>
-							<a href="">자세히 보기</a>
+			<div class="section forth_area scroll">
+				<span class="line"></span>
+				<p class="main_title">오픈핸즈는 “더 나은 세상”을 위해<br> 끊임없이 노력하고 있습니다.</p>
+				<a href="./promotion/news.html" class="news_link">오픈핸즈 NEWS 바로가기 </a>
+				<div class="swiper-area">
+					<div class="swiper-wrapper">
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_02.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
+								<span>2022.01.04</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_03.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[공지] 오픈핸즈 제 12기 결산공고</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_02.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
+								<span>2022.01.04</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_03.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="swiper_warp swiper-slide">
+							<a href="" class="">
+								<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
+								<span>2022.03.16</span>
+								<div class="img_area">
+									<img src="assets/images/main/@dummy_small_01.jpg" alt="">
+								</div>
+							</a>
 						</div>
 					</div>
-					<div class="right_area">
-						<div class="section_bg">
-							<img src="assets/images/main/main-it-section-bg.jpg" alt="">
-						</div>
+					<div class="button_area">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<button type="button" class="stop">일시정지</button>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
-				<div class="section second_area supply">
-					<div class="left_area">
-						<div class="text_area supply">
-							<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
-							<span class="main_title">물류지원</span>
-							<p>물류 운영/정산에 대한 지원 및 물류의 입출고/재고관리, 운송관리를 지원하는 서비스를 제공합니다.</p>
-							<a href="">자세히 보기</a>
-						</div>
-					</div>
-					<div class="right_area">
-						<div class="section_bg">
-							<img src="assets/images/main/main-supply-section-bg.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="section second_area service">
-					<div class="left_area">
-						<div class="text_area service">
-							<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
-							<span class="main_title">총무지원 서비스</span>
-							<p>고객의 쾌적한 사무환경 조성 및 시설에 대한 유지보수 서비스를 제공합니다.</p>
-							<a href="">자세히 보기</a>
-						</div>
-					</div>
-					<div class="right_area">
-						<div class="section_bg ">
-							<img src="assets/images/main/main-service-section-bg.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="section second_area health">
-					<div class="left_area">
-						<div class="text_area health">
-							<span class="title">“더 나은 세상”을 만들어가는 오픈핸즈의 서비스를 만나보세요.</span>
-							<span class="main_title">헬스케어</span>
-							<p>고객사 임직원의 근골격계 질환을 예방하는 전문 건강 관리 서비스를 제공합니다.</p>
-							<a href="">자세히 보기</a>
-						</div>
-					</div>
-					<div class="right_area">
-						<div class="section_bg">
-							<img src="assets/images/main/main-health-section-bg.jpg" alt="">
-						</div>
-					</div>
-				</div>
+			</div>
 
-				<div class="section thrid_area">
-					<span class="line"></span>
-					<div class="text_swiper">
-						<div class="swiper-wrapper">
-							<div class="text_area swiper-slide">
-								<p class="main_title">오픈핸즈는<br>어떤일을 하는 회사 인가요?</p>
-								<p class="normal">삼성SDS가 100% 출자한 자회사형 표준사업장으로 IT 및 
-									총무지원 분야를 종합적으로 서비스하고 있습니다.</p>
-								<div class="btn_area">
-									<a href="">자세히보기</a>
-								</div>
-							</div>
-							<div class="text_area swiper-slide">
-								<p class="main_title">오픈핸즈는<br>어떤일을 하는 회사 인가요?</p>
-								<p class="normal">삼성SDS가 100% 출자한 자회사형 표준사업장으로 IT 및 
-									총무지원 분야를 종합적으로 서비스하고 있습니다.</p>
-								<div class="btn_area">
-									<a href="">자세히보기</a>
-								</div>
-							</div>
-							<div class="text_area swiper-slide">
-								<p class="main_title">오픈핸즈에는<br>어떤 복리후생을 지원하나요?</p>
-								<p class="normal">복지포인트, 경조사, 건강검진, 단체상해보험, 식대지원등
-									장애인표준사업장에 필요한 다양한 복리후생 제도를 운영중에 있습니다. </p>
-								<div class="btn_area">
-									<a href="">자세히보기</a>
-								</div>
-							</div>
-							<div class="text_area swiper-slide">
-								<p class="main_title">오픈핸즈에는<br>어떤 직원들이 근무하나요?</p>
-								<p class="normal">오픈핸즈는 90% 이상 장애인 직원으로 구성되어 있으며, 직무에 적합할 경우 장애유형 상관없이 채용하고 있어 다양한 연령과 다양한 장애유형의 직원들이 근무하고 있습니다.</p>
-								<div class="btn_area">
-									<a href="">자세히보기</a>
-								</div>
-							</div>
-						</div>
-						<div class="button_area">
-							<div class="swiper-pagination"></div>
-							<div class="swiper-button-prev"></div>
-							<button type="button" class="stop">일시정지</button>
-							<div class="swiper-button-next"></div>
-						</div>
-					</div>
-					<div class="image_swiper">
-						<div class="swiper-wrapper">
-							<div class="img_area swiper-slide">
-								<img src="assets/images/main/image-job-01.jpg" alt="">
-							</div>
-							<div class="img_area swiper-slide">
-								<img src="assets/images/main/image-job-02.jpg" alt="">
-							</div>
-							<div class="img_area swiper-slide">
-								<img src="assets/images/main/image-job-03.jpg" alt="">
-							</div>
-							<div class="img_area swiper-slide">
-								<img src="assets/images/main/image-job-04.jpg" alt="">
-							</div>
-						</div>
-					</div>
+			<div class="section last_area scroll">
+				<p>오픈핸즈와 “더 나은 세상”을  함께하세요.</p>
+				<div class="btn_area">
+					<a href="./recruit/notice.html">채용정보 바로가기</a>
+					<a href="./info/location.html">CONTACT US</a>
 				</div>
-
-				<div class="section forth_area">
-					<span class="line"></span>
-					<p class="main_title">오픈핸즈는 “더 나은 세상”을 위해<br> 끊임없이 노력하고 있습니다.</p>
-					<a href="" class="news_link">오픈핸즈 NEWS 바로가기 </a>
-					<div class="swiper-area">
-						<div class="swiper-wrapper">
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[공지] 오픈핸즈 제 12기 결산공고</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_01.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[공지] 오픈핸즈 제 12기 결산공고</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_02.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
-									<span>2022.01.04</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_03.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_01.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[공지] 오픈핸즈 제 12기 결산공고</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_01.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[공지] 오픈핸즈 제 12기 결산공고</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_02.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[영상] 장애인고용공단 장애인식불편준비과정</p>
-									<span>2022.01.04</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_03.jpg" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="swiper_warp swiper-slide">
-								<a href="" class="">
-									<p>[보도] ‘장문현답’ 1회차, 장애인식불편준비과정</p>
-									<span>2022.03.16</span>
-									<div class="img_area">
-										<img src="assets/images/main/@dummy_small_01.jpg" alt="">
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="button_area">
-							<div class="swiper-pagination"></div>
-							<div class="swiper-button-prev"></div>
-							<button type="button" class="stop">일시정지</button>
-							<div class="swiper-button-next"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section last_area fp-auto-height">
-					<p>오픈핸즈와 “더 나은 세상”을  함께하세요.</p>
-					<div class="btn_area">
-						<a href="">채용정보 바로가기</a>
-						<a href="">CONTACT US</a>
-					</div>
-				</div>
-			
-				<!-- footer : [S] -->
-				<footer class="section fp-auto-height" id="footer">
-					<div class="top_area">
-						<span class="footer_logo">
-							<img src="assets/images/common/logo-footer.svg" alt="삼성 SDS 자회사형 표준사업장 openhands">
-						</span>
-						<ul class="link_area">
-							<li><a href="sitemap.html">SITE MAP</a></li>
-							<li><a href="info/location.html">찾아오시는길</a></li>
-							<li><a href="privacy.html">개인정보취급 방침</a></li>
-							<li><a href="https://www.kead.or.kr/" target="_blank">한국장애인고용공단</a></li>
-						</ul>
-					</div>
-					<div class="bottom_area">
-						<p><span>오픈핸즈㈜</span> <span class="mb_none">:</span> <span>05510 서울특별시 송파구 올림픽대로 35길 123(신청동) East Campus 16층</span></p>
-						<div class="info_area">
-							<span class="info_text">대표이사 : 전종민</span>
-							<span class="info_text">Tel. 02-6155-6450</span>
-							<span class="info_text">Fax. 02-6155-6451</span>
-							<span class="info_text">사업자등록번호 : 129-86-52327</span>
-						</div>
-						<p class="copyright">&copy; COPYRIGHT 2012 OPENHANDS  ALL RIGHTS RESERVED.</p>
-						<div class="accessibility_area">
-							<p>오픈핸즈 홈페이지는 ‘한국형 웹콘텐츠 웹접근성 지침’을 준수 하였습니다. 메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button" class="layer_accessibility">전체내용보기</button></p>
-						</div>
-						<div class="accessibility_logo">
-							<img src="assets/images/common/accessibility-text-logo.png" alt="한국장애인고용공단">
-						</div>
-					</div>
-					
-				</footer>
 			</div>
 
 		</section>
+		<footer id="footer">
+			<div class="top_area">
+				<span class="footer_logo">
+					<img src="assets/images/common/logo-footer.svg" alt="삼성 SDS 자회사형 표준사업장 openhands">
+				</span>
+				<ul class="link_area">
+					<li><a href="sitemap.html">SITE MAP</a></li>
+					<li><a href="info/location.html">찾아오시는길</a></li>
+					<li><a href="privacy.html">개인정보취급 방침</a></li>
+					<li><a href="https://www.kead.or.kr/" target="_blank">한국장애인고용공단</a></li>
+				</ul>
+			</div>
+			<div class="bottom_area">
+				<p><span>오픈핸즈㈜</span> <span class="mb_none">:</span> <span>05510 서울특별시 송파구 올림픽대로 35길 123(신청동) East Campus 16층</span></p>
+				<div class="info_area">
+					<span class="info_text">대표이사 : 전종민</span>
+					<span class="info_text">Tel. 02-6155-6450</span>
+					<span class="info_text">Fax. 02-6155-6451</span>
+					<span class="info_text">사업자등록번호 : 129-86-52327</span>
+				</div>
+				<p class="copyright">&copy; COPYRIGHT 2012 OPENHANDS  ALL RIGHTS RESERVED.</p>
+				<div class="accessibility_area">
+					<p>오픈핸즈 홈페이지는 ‘한국형 웹콘텐츠 웹접근성 지침’을 준수 하였습니다. 메뉴 및 화면은 Tab + Enter 로 이동이 가능합니다.<button type="button" class="layer_accessibility">전체내용보기</button></p>
+				</div>
+				<div class="accessibility_logo">
+					<img src="assets/images/common/accessibility-text-logo.png" alt="한국장애인고용공단">
+				</div>
+			</div>
+			
+		</footer>
 		<!-- layer : [S] -->
 		<div class="layer_wrap">
 			<div class="layer_area">
@@ -446,7 +385,7 @@
 		</div>
 		<!-- layer : [E] -->	
 	</div>
-	<div id="top" class="main">
+	<div id="top">
 		<button type="button">상단으로</button>
 	</div>
 		

@@ -49,27 +49,24 @@ $(function () {
 		$(this).next('ul').toggleClass('on');
 	});
 
-
-	// 상단으로 팅기는거
-	// var $root = $('html, body');
-	// $('.tab_list a[href^="#"]').click(function(e) {
-	// 	e.preventDefault;
-	// 	var href = $.attr(this, 'href');				
-	// 	$root.animate({
-	// 		scrollTop: $(href).offset().top
-	// 	}, 500, function () {
-	// 		window.location.hash = href;
-	// 	});
-	// });
-
 	$('.tab_list button').click(function(e) {
 		window.scrollTo({ top: 150, behavior: 'smooth' });
 	});
 
 
-	$('.com_select').focusout(function() {
-		$(this).removeClass('on')
-		$('.select_list').removeClass('on')
+	$(".com_select").on({
+		click : function () {
+			$(this).toggleClass('on');
+			$('.select_list').toggleClass('on');
+		},	
+
+		keydown: function(key) {
+			if(key.keyCode == 13){
+				$(this).toggleClass('on');
+				$('.select_list').toggleClass('on')
+			}
+		}
+	
 	});
 
 
@@ -109,11 +106,9 @@ $(function () {
 
 	//layer
 	$layerClose.click(function () {
-		$('html,body').css('overflow', 'visible');
 		$(this).parents('.layer_wrap').fadeOut();
 	});
 	$layerAccessibility.click(function () {
-		$('html,body').css('overflow', 'hidden');
 		$('.layer_wrap').fadeIn();
 	});
 
@@ -126,10 +121,6 @@ $(function () {
 		$tabView.eq($(this).index()).addClass('on')
 	});
 
-	$('.com_select').click(function () {
-		$(this).toggleClass('on');
-		$('.select_list').toggleClass('on');
-	});
 
 	//  달력
 	$(".datepicker").datepicker({
@@ -173,7 +164,7 @@ function motion_scroll() {
 
 		$('.scroll_motion').each(function () {
 			var motion_top = $(this).offset().top;
-			if (scT > motion_top - winH / 1.3) {
+			if (scT > motion_top - winH / 1.5) {
 				$(this).addClass('on');
 			}
 		});

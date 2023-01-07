@@ -1,41 +1,14 @@
 $(function(){
 
-  $(".fullpage").fullpage({
-    scrollOverflow: true,
-    onLeave : function(index, nextIndex , direction){				
-			$(".pagnation ul li").removeClass("on");				
-			$(".pagnation ul li").eq(nextIndex-2).addClass("on");		
-
-			if( nextIndex > 1 && nextIndex < 6){
-				$(".pagnation").addClass('show')
-			}
-      else {
-        $(".pagnation").removeClass('show') 
-      }
-    }
-  });
-
-  $(".pagnation ul li").click(function(){
-    var $this = $(this).index();
-    $.fn.fullpage.moveTo($this + 2 );
-    return false;
-  });
-
-  $('#top').click(function(){
-    $.fn.fullpage.moveTo(1, 1);
-  })
-
   setTimeout(() => {
-    $('.bg_area').remove();
     $('.first_swiper').addClass('on');
   },1000)
 
-
-
   mainBackground()
+
   // 상단 메인 키비 슬라이드
 	var mainFisrtSection = new Swiper(".first_swiper", {
-    autoplay: true, // 자동재생
+    autoplay: true,
     speed : 2500,
     loop:true,
     navigation: {
@@ -46,7 +19,7 @@ $(function(){
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + '<span>0'+(index + 1) + '</span>' + '</span>';
+        return '<span class="' + className + '">' + '<span>0'+(index +1 ) +  + '</span>' + '</span>';
       },
     },
     a11y: { 
@@ -55,6 +28,12 @@ $(function(){
       nextSlideMessage: '다음 슬라이드',   
       slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
+    on : {
+      slideChangeTransitionEnd :function (){
+        var activeIndex = this.activeIndex
+        activeIndex
+      }
+    }
   })
 
   $(".first_area button").on('click', function () {
@@ -70,6 +49,32 @@ $(function(){
       return false;
     }
   });
+
+  // Slide Change Event
+  mainFisrtSection.on('slideChange', function () {
+    var timer = 0;
+    setInterval(function(){
+      if(timer>11){
+        timer = 0;
+      }
+      $('.bg_area span').removeClass('on');
+      $('.bg_area span').eq(timer).toggleClass('on');
+      timer++;
+    },100);
+  });
+
+
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray(".panel").forEach((panel, i) => {
+    ScrollTrigger.create({
+      trigger: panel,
+      start: "top top", 
+      pin: true, 
+      pinSpacing: false,
+    });
+  });
+
+
   var mainThridImageSection = new Swiper('.thrid_area .image_swiper', {
     loop:true,
     autoplay: true, // 자동재생
@@ -120,7 +125,7 @@ $(function(){
 
 
   var mainForthSection = new Swiper('.forth_area .swiper-area', {
-    autoplay:true,
+    autoplay:false,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -142,7 +147,7 @@ $(function(){
       nextSlideMessage: '다음 슬라이드',   
       slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
-  })
+  });
 
   
   $(".forth_area button").on('click', function () {
@@ -159,7 +164,61 @@ $(function(){
     }
   });
 
+  $(window).scroll(function(){
+    var scT = $(this).scrollTop();
+		var winH = $(this).height();
+    var businessArea  = $('.second_area').offset().top;
+    var itArea  = $('.it').offset().top;
+    var supArea  = $('.supply').offset().top;
+    var serArea  = $('.service').offset().top;
+    var helArea  = $('.health').offset().top;
+    var qnaArea = $('.thrid_area').offset().top;
+    var newArea = $('.forth_area').offset().top;
+
+    if (scT > businessArea - winH / 1.2) {
+      $('.pagnation').fadeIn();
+
+    } 
+    else if (scT == qnaArea  )  {
+      $('.pagnation').hide();
+    }
+    else {
+      $('.pagnation').hide();
+    }
+		
+    if( scT > itArea - winH / 1.5) {
+      $('.pagnation ul li').removeClass('on');
+      $('.pagnation ul li:nth-child(1)').addClass('on')
+    }
+
+    if( scT > supArea - winH / 1.5) {
+      $('.pagnation ul li').removeClass('on');
+      $('.pagnation ul li:nth-child(2)').addClass('on')
+    }
+    if( scT > serArea - winH / 1.5) {
+      $('.pagnation ul li').removeClass('on');
+      $('.pagnation ul li:nth-child(3)').addClass('on')
+    }
+
+    if( scT > helArea - winH / 1.5) {
+      $('.pagnation ul li').removeClass('on');
+      $('.pagnation ul li:nth-child(4)').addClass('on')
+    }
+
+    if (scT > qnaArea - winH / 1) {
+      mainThridTextSection.autoplay.start();
+      $('.thrid_area').addClass('on');
+
+    } 
+    if (scT > newArea - winH / 1.3) {
+      mainForthSection.autoplay.start();
+      $('.forth_area').addClass('on');
+    } 
+  });
+
 });
+
+
 
 function mainBackground(){
   var timer = 0;
