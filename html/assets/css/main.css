@@ -141,36 +141,38 @@
 .first_area .swiper-slide::before {
   content: '';
   position: absolute;
-  width: 100%;
   height: 100%;
-  background: #fff;
   top: 0;
   right: 0;
-  transition: 2s;
-  opacity: 0.4;
+  background: #fff;
+  transition: 1s;
+  opacity: 0;
   z-index: -1;
 }
 .first_area .swiper-slide::after {
   content: '';
   position: absolute;
-  width: 100%;
   height: 100%;
-  background: #fff;
   top: 0;
   right: 0;
-  transition: 2s;
-  opacity: 0.4;
-  transition-delay: 1.3s;
+  background: #fff;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1;
 }
 
-.first_area .swiper-slide.swiper-slide-active::before {
-  width: 0;
-  opacity: 0;
+.first_area .swiper-slide.on::before {
+  animation: mainWidthDiraction;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  opacity: 1;
 }
 
-.first_area .swiper-slide.swiper-slide-active::after {
-  width: 0;
-  opacity: 0;
+.first_area .swiper-slide.on::after {
+  animation: mainWidthDiraction;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  opacity: 1;
 }
 
 .first_area .swiper-slide.one {
@@ -196,17 +198,22 @@
   color: #fff;
 }
 
+.first_area .swiper-slide.swiper-slide-active .main_text {
+  animation: opacity 3s;
+}
+
 .first_swiper .swiper-slide.swiper-slide-active .main_text p:first-child {
-  animation: leftDiraction 2s;
+  animation: leftDiraction 3s;
 }
 
 .first_swiper .swiper-slide.swiper-slide-active .main_text p:nth-child(2) {
-  animation: leftDiraction 2.5s;
+  animation: leftDiraction 3.5s;
+  opacity: 1;
 }
 
-.first_swiper .swiper-slide.swiper-slide-active .main_text p:nth-child(3)
- {
-  animation: leftDiraction 3.5s;
+.first_swiper .swiper-slide.swiper-slide-active .main_text p:nth-child(3){
+  animation: leftDiraction 4s;
+  opacity: 1;
 }
 
 .first_swiper.on .line {
@@ -356,6 +363,17 @@
 }
 
 
+.second_area .text_area {
+  width: 50%;
+  height: 1080px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.second_area .text_area.on {
+  opacity: 1;
+}
+
 .second_area .it {
   background: #059aee;
 }
@@ -372,19 +390,26 @@
   background: #26a677;
 }
 
-.second_area .text_area {
+
+.second_area .text_bg {
   position: absolute;
   top:50%;
   left:260px;
   width: 50%;
   transform: translateY(-50%);
+  opacity: 0;
+  transition: 1s;
 }
 
-.second_area .text_area span {
+.second_area .text_bg {
+  opacity: 1;
+}
+
+.second_area .text_bg span {
   display: block
 }
 
-.second_area .text_area .title {
+.second_area .text_bg .title {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
@@ -468,7 +493,7 @@
 .thrid_area .line {
   position: absolute;
   left: 0;
-  top: calc(100vh - 58%);
+  top: 285px;
   width: 100%;
   height: 2px;
   background: #eee;
@@ -693,7 +718,7 @@
   z-index: 100;
 }
 
-.forth_area .line {
+/* .forth_area .line {
   position: absolute;
   left: 0;
   top: calc(100% - 61%);
@@ -701,7 +726,7 @@
   height: 2px;
   background: #ccc;
   z-index: 0;
-}
+} */
 
 .forth_area .main_title {
   font-size: 40px;
@@ -793,6 +818,17 @@
   padding-top: 100px;
 }
 
+.forth_area .swiper-wrapper::before {
+  content: "";
+  top:0;
+  left: -1000px;
+  right: 0;
+  position: absolute;
+  width: 100000px;
+  height: 1px;
+  background: #ccc;
+}
+
 .forth_area .button_area {
   position: absolute;
   top: 35px;
@@ -805,10 +841,20 @@
 }
 
 .forth_area .swiper-pagination {
-  position: static;
-  text-align: center;
-  width: 46px;
-  font-weight: 700;
+  position: absolute;
+  top:100px;
+  left:0;
+  width: 100%;
+  height: 1px;
+  max-width: 1400px;
+}
+.forth_area .swiper-pagination-progressbar {
+  background: #ccc;
+}
+.forth_area  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  height: 2px;
+  background: #004098;
+  transition: 0.5s;
 }
 
 .forth_area .swiper-pagination span {
@@ -857,9 +903,6 @@
   transform: translateX(-50%);
 }
 
-.forth_area .swiper_warp.swiper-slide-active::before {
-  width: 100%;
-}
 
 .forth_area .swiper-slide-active p {
   color: #0048ab;
@@ -1003,6 +1046,24 @@
 }
 
 /* 애니메이션 */
+
+@keyframes mainWidthDiraction {
+  0%{
+    width: 110%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+    visibility: visible;
+  }
+  
+}
+
 @keyframes leftDiraction {
   0% {
     opacity: 0;

@@ -1,4 +1,4 @@
-$(function(){
+  $(function(){
 
   setTimeout(() => {
     $('.first_swiper').addClass('on');
@@ -19,7 +19,7 @@ $(function(){
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + '<span>0'+(index +1 ) +  + '</span>' + '</span>';
+        return '<span class="' + className + '">' + '<span>0'+(index + 1) + '</span>' + '</span>';
       },
     },
     a11y: { 
@@ -28,12 +28,20 @@ $(function(){
       nextSlideMessage: '다음 슬라이드',   
       slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
     },
-    on : {
-      slideChangeTransitionEnd :function (){
-        var activeIndex = this.activeIndex
-        activeIndex
+    on: {
+      slideChange: function () {
+        var idx = this.realIndex
+
+        if (idx === 0) {
+          $(".swiper-slide").removeClass('on')
+          $(".swiper-slide.one").addClass("on");
+        } 
+        if (idx === 1) {
+          $(".swiper-slide").removeClass('on')
+          $(".swiper-slide.two").addClass('on')
+        }
       }
-    }
+    },
   })
 
   $(".first_area button").on('click', function () {
@@ -126,6 +134,7 @@ $(function(){
 
   var mainForthSection = new Swiper('.forth_area .swiper-area', {
     autoplay:false,
+    
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
@@ -136,19 +145,19 @@ $(function(){
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+      loop: true,
     },
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      type: "progressbar",
     },
     a11y: { 
       enabled: true,
       prevSlideMessage: '이전 슬라이드',
       nextSlideMessage: '다음 슬라이드',   
       slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
-    },
+    }
   });
-
   
   $(".forth_area button").on('click', function () {
     if ($(this).hasClass("stop")) {
@@ -162,6 +171,13 @@ $(function(){
       $(this).addClass("stop");
       return false;
     }
+  });
+
+  mainForthSection.on('slideChange', function () {
+    var activeslide = mainForthSection.realIndex;
+    var totalslide = mainForthSection.slides.length;
+    $(".activeslide > span").text(activeslide + 1);
+    $(".totalslide").text(totalslide / 2);
   });
 
   $(window).scroll(function(){
@@ -214,6 +230,15 @@ $(function(){
       mainForthSection.autoplay.start();
       $('.forth_area').addClass('on');
     } 
+
+    $('.text_area').each(function () {
+			var motion_top = $(this).offset().top;
+			if (scT > motion_top - winH / 1) {
+				$(this).addClass('on');
+			} else {
+				$(this).removeClass('on');
+			}
+		});
   });
 
 });
@@ -231,3 +256,4 @@ function mainBackground(){
     timer++;
   },100);
 }
+
