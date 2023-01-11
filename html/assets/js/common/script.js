@@ -13,7 +13,7 @@ $(function () {
 	var windowWidth = $(window).width();
 	var thisScroll = 0;
 	var $header = $('header');
-	var $tabButton = $('.tab_area .tab_list button, .tab_area .tab_list a ');
+	var $tabButton = $('.tab_area .tab_list button');
 	var $tabView = $('.tab_area .view');
 	var $layerClose = $('.layer_wrap button');
 	var $layerAccessibility = $('.layer_accessibility');
@@ -22,7 +22,7 @@ $(function () {
 
 
 	// gnb
-	$gnbMenu.mouseenter(function () {
+	$gnbMenu.bind('mouseenter focusin', function () {
 		$header.addClass('open')
 		$('.content_type_menu').addClass('hide');
 		$(this).each(function () {
@@ -31,10 +31,48 @@ $(function () {
 		})
 	});
 
+
 	$header.mouseleave(function(){
 		$(this).removeClass('open')
 		$('.content_type_menu').removeClass('hide');
 	});
+
+	$('section').bind('focusin', function(){
+		$header.removeClass('open')
+	});
+
+	$('.file_upload input').bind('mouseenter focusin', function(){
+		$(this).prev('.com_button').addClass('on');
+	});
+
+	$('.support .confirm_button').bind('mouseenter focusin', function(){
+		$('.support .com_button').removeClass('on');
+	});
+
+
+	$('.support .checkbox input').bind('mouseenter focusin', function () {
+		$(this).next('label').addClass('on');
+	});
+
+	$('.support .checkbox input').bind('mouseleave focusout', function () {
+		$(this).next('label').removeClass('on');
+	});
+
+	$('.com_select').bind('click focusin' , function(){
+		$(this).addClass('on');
+			$('.select_list').addClass('on');
+	});
+
+	$('.com_select').bind('focusout, mouseleave' , function(){	
+		$(this).removeClass('on');
+			$('.select_list').removeClass('on');
+	});
+
+
+	$('.input_area input').bind('focusin' , function(){
+		$('.com_select, .select_list').removeClass('on');
+	});
+	
 
 	// 반응형
 
@@ -54,20 +92,7 @@ $(function () {
 	});
 
 
-	$(".com_select").on({
-		click : function () {
-			$(this).toggleClass('on');
-			$('.select_list').toggleClass('on');
-		},	
 
-		keydown: function(key) {
-			if(key.keyCode == 13){
-				$(this).toggleClass('on');
-				$('.select_list').toggleClass('on')
-			}
-		}
-	
-	});
 
 
 

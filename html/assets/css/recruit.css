@@ -506,6 +506,10 @@
   cursor: pointer;
 }
 
+.support .checkbox input+label.on {
+  outline: 1px solid #059aee;
+}
+
 .support .checkbox input+label::before {
   content: "";
   position: absolute;
@@ -528,6 +532,7 @@
   background-size: cover;
   transform: translateY(-50%);
 }
+
 
 .support .download_area {
   position: relative;
@@ -559,6 +564,14 @@
 .support .download_area .button a {
   width: 200px;
   padding:0;
+}
+
+.support .download_area .button a:focus-visible {
+  outline: 1px solid #059aee;
+}
+
+.support .download_area .button a:focus-visible::after {
+  border: 0;
 }
 
 
@@ -681,6 +694,10 @@
   font-size: 16px;
 }
 
+.support .select_box .com_select ul {
+  top:52px;
+}
+
 .support .select_box select {
   padding: 0 0 0 20px;
   appearance: none;
@@ -731,6 +748,17 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.support .input_area .file_upload label:focus-visible:after {border: 0;}
+
+.support .input_area .file_upload label::after:focus-visible {
+  border: 1px solid #059aee;
+}
+
+.support .input_area .file_upload .com_button.on:after {
+  border: 1px solid #059aee;
+}
+
 .support .input_area .file_upload input[type="file"] {  /* 파일 필드 숨기기 */
   position: absolute;
   width: 1px;

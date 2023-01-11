@@ -93,10 +93,22 @@ button {
   cursor: pointer;
 }
 
+button:focus-visible {
+  outline: 1px solid #059aee;
+}
+
 img {
   image-rendering: -webkit-optimize-contrast
 }
 
+a:focus-visible {
+  outline: 1px solid #059aee;
+}
+
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible {
+  outline: 1px solid #059aee;
+}
 
 /* skip_navigation */
 .skip_navigation a {
@@ -217,7 +229,10 @@ section {
  
 .wrap .com_button:hover::after {
  border: 1px solid #004098;
+}
 
+.wrap .com_button:focus-visible:after{
+  border: 0;
 }
 
 
@@ -296,7 +311,6 @@ section {
 
 
 /* tab */
-
 .scroll_motion.on  .tab_list{
   position: sticky;
   position: -webkit-sticky;
@@ -311,8 +325,6 @@ section {
   top:128px;
 }
 
-
-
 .tab_area {
   position: relative;
 }
@@ -323,18 +335,6 @@ section {
   width: 100%;
   text-align: center;
 }
-
-/* .tab_area .tab_list.on {
-  position: sticky;
-  top: 28%;21
-  width: 100%;
-  left: 0;
-  padding: 15px 0;
-  border: 1px solid #eee;
-  background: #fff;
-  z-index: 10000;
-} */
-
 .tab_area .tab_list button,
 .tab_area .tab_list a {
   position: relative;
@@ -387,51 +387,6 @@ section {
 
 .tab_area .view.on {
   display: block;
-}
-
-/* color  */
-.main_color {
-  color: #004098;
-}
-
-.sub_color_sky {
-  color: #059aee;
-}
-
-.sub_color_orange {
-  color: #f2622e;
-}
-
-.sub_color_purple {
-  color: #8c55d9;
-}
-
-.sub_color_green {
-  color: #26a677;
-}
-
-.sub_color_black {
-  color: #000;
-}
-
-.sub_color_gray {
-  color: #666;
-}
-
-.sub_color_lightgray {
-  color: #888;
-}
-
-.sub_color_lightwhite {
-  color: #eee;
-}
-
-.sub_color_graywhite {
-  color: #f7f7f7;
-}
-
-.sub_color_white {
-  color: #fff;
 }
 
 /* pageing */
@@ -649,6 +604,8 @@ header.open.scroll_menu .gnb_area::after {
   position: relative;
 }
 
+
+
 .gnb_area .menu_area .sub_menu_list a:after {
   content: "";
   position: absolute;
@@ -817,6 +774,10 @@ footer .link_area li:first-child {
 footer .link_area li a {
   font-size: 14px;
   color: #333;
+}
+
+footer .link_area li a:focus-visible {
+  outline: 1px solid #059aee;
 }
 
 footer .bottom_area {
@@ -1083,7 +1044,8 @@ footer .accessibility_logo img {
 }
 
 .detail_area .detail_content a {
-  display: block;
+  display: inline-block;
+  width: 100%;
   margin-top: 40px;
   color: #059aee;
   text-decoration: underline;
@@ -1156,7 +1118,7 @@ footer .accessibility_logo img {
 }
 
 .privacy .right_select .com_select ul {
-  top:58px;
+  top:53px;
   left: 0;
 }
 
