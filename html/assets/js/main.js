@@ -11,7 +11,11 @@
 	var mainFisrtSection = new Swiper(".first_swiper", {
     effect:'fade',
     autoplay: true,
-    speed : 5000,
+    speed : 1000,
+    // speed : {
+    //   delay : 3000,
+    //   disableOnInteraction :false 
+    // },
     loop:true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -110,36 +114,38 @@
 
     function contentIn() {
 
+      console.log(percent);
+
       var scrollBody = $('.fix_motion');
       var deviceImg = $('.image_area .image');
 
-      if(percent >= 0 && percent < 30) {
-        scrollBody.addClass('red')
+      if(percent >= 0 && percent < 20) {
+        scrollBody.addClass('blue')
         $('.fix_motion .text_box p').removeClass('active');
         $('.fix_motion .text_box .one').addClass('active');
       }
 
-      if(percent >= 30 && percent < 60) {
+      if(percent >= 20 && percent < 55) {
         scrollBody.removeClass('purple')
         scrollBody.removeClass('green')
-        scrollBody.removeClass('red')
-        scrollBody.addClass('blue')
+        scrollBody.removeClass('blue')
+        scrollBody.addClass('orange')
         $('.fix_motion .text_box p').removeClass('active');
         $('.fix_motion .text_box .two').addClass('active');
       }
 
-      if(percent >= 60 && percent < 95) {
-        scrollBody.removeClass('red')
-        scrollBody.removeClass('green')
+      if(percent >= 55 && percent < 85) {
         scrollBody.removeClass('blue')
+        scrollBody.removeClass('green')
+        scrollBody.removeClass('orange')
         scrollBody.addClass('purple')
         $('.fix_motion .text_box p').removeClass('active');
         $('.fix_motion .text_box .three').addClass('active');
       }
 
-      if(percent >= 95) {
-        scrollBody.removeClass('red')
+      if(percent >= 85) {
         scrollBody.removeClass('blue')
+        scrollBody.removeClass('orange')
         scrollBody.removeClass('purple');
         scrollBody.addClass('green ')
         $('.fix_motion .text_box p').removeClass('active');
@@ -148,9 +154,9 @@
 
       if(percent < 12 ) {
         scrollBody.removeClass('green')
-        scrollBody.removeClass('blue')
+        scrollBody.addClass('blue')
         scrollBody.removeClass('purple')
-        scrollBody.removeClass('green')
+        scrollBody.removeClass('orange')
         $('.fix_motion .text_box .one').removeClass('active');
         $('.fix_motion .text_box .two').removeClass('active');
         $('.fix_motion .text_box .three').removeClass('active');

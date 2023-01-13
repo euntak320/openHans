@@ -7,12 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>채용공고 | 삼성 SDS 자회사형 표준사업장</title>
 
-	<!-- css -->
+		<!-- css -->
 	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
 	<link rel="stylesheet" href="../assets/css/busniess.css">
 
 	<!-- js -->
 	<script src="../assets/js/common/jquery-3.6.0.min.js"></script>
+
+	<script src="../assets/js/common/gsap.min.js"></script>
+	<script src="../assets/js/ScrollMagic.js"></script>
+	<script src="../assets/js/animation.gsap.js"></script>
 	<script src="../assets/js/common/script.js"></script>
 	<script src="../assets/js/busniess.js"></script>
 </head>
@@ -135,78 +140,78 @@
 			 
 
 			<div class="content_wrap">
-				<div class="content">
-					<div class="title_wrap">
-						<span class="content_title">총무지원</span>
-						<p class="explain_text">총무지원서비스는 <strong>환경미화, 시설관리, 차량관리, 문서수발</strong> 등<br>고객의 쾌적한 사무환경 조성 및 제반시설의 활용 증대를 지원하고 있으며,<br><strong>체계적이고 표준화 된</strong> CS마인드 교육을 통해 <br><strong>고객감동 서비스를 실천</strong>합니다.</p>
-					</div>
-					<div class="content_image service">
-						<img src="../assets/images/business/image-service.jpg" alt="" class="only-pc">
-						<img src="../assets/images/business/mobile_image-service.jpg" alt="" class="only-mobile">
-					</div>
-				</div>
-
-
-				<div class="service_area fix_motion">
-					<div class="fix_wrap inner">
-						<div class="text_box">
-							<div class="text_area one active">
-								<span class="service_title width_auto">환경미화</span>
-								<div class="service_explain">
-									<span class="explain_title">쾌적한 사무환경을<br> 지원하는 서비스</span>
-									<p>고객의 사무실 및 회의실 청소와 정리정돈 서비스를 제공합니다.</p>
-								</div>
-								<div class="mobile_image">
-									<img src="../assets/images/business/image-service_01.jpg" alt="">
-								</div>
-							</div>
-							<div class="text_area two">
-								<span class="service_title width_auto">시설관리</span>
-								<div class="service_explain">
-									<span class="explain_title">활용도 향상을 지원하는 서비스</span>
-									<p><strong>영선 관리</strong> : 건물 시설물 유지 보수, 사무용 집기 운반 및<br> 배치 서비스를 지원합니다.</p>
-									<p><strong>AV 관리</strong> : 회의 및 행사시 영상 및 오디오 장치 지원<br> 서비스를 제공합니다.</p>
-								</div>
-								<div class="mobile_image">
-									<img src="../assets/images/business/image-service_02.jpg" alt="">
-								</div>
-							</div>
-							<div class="text_area three">
-								<span class="service_title width_auto">차량관리</span>
-								<div class="service_explain">
-									<span class="explain_title">쾌적한 차량 이용을<br> 지원하는 서비스</span>
-									<p>고객의 업무용 차량 점검과 내 · 외부 청결유지 서비스를 제공합니다.</p>
-								</div>
-								<div class="mobile_image">
-									<img src="../assets/images/business/image-service_03.jpg" alt="">
-								</div>
-							</div>
-							<div class="text_area four">
-								<span class="service_title width_auto">문서수발</span>
-								<div class="service_explain">
-									<span class="explain_title">업무 효율을 지원하는 서비스</span>
-									<p>각종 문서의 사내 전달 서비스를 제공합니다.</p>
-								</div>
-								<div class="mobile_image">
-									<img src="../assets/images/business/image-service_04.jpg" alt="">
-								</div>
-							</div>
+				<div class="scroll_area">
+					<div class="content">
+						<div class="title_wrap">
+							<span class="content_title">총무지원</span>
+							<p class="explain_text">총무지원서비스는 <strong>환경미화, 시설관리, 차량관리, 문서수발</strong> 등<br>고객의 쾌적한 사무환경 조성 및 제반시설의 활용 증대를 지원하고 있으며,<br><strong>체계적이고 표준화 된</strong> CS마인드 교육을 통해 <br><strong>고객감동 서비스를 실천</strong>합니다.</p>
 						</div>
-						<div class="image_view pc">
-							<div class="slide_wrap">
-								<div class="slide">
-									<figure>
+						<div class="content_image service">
+							<img src="../assets/images/business/image-service.jpg" alt="" class="only-pc">
+							<img src="../assets/images/business/mobile_image-service.jpg" alt="" class="only-mobile">
+						</div>
+					</div>
+					<div class="service_area fix_motion">
+						<div class="fix_wrap inner">
+							<div class="text_box">
+								<div class="text_area one active">
+									<span class="service_title width_auto">환경미화</span>
+									<div class="service_explain">
+										<span class="explain_title">쾌적한 사무환경을<br> 지원하는 서비스</span>
+										<p>고객의 사무실 및 회의실 청소와 정리정돈 서비스를 제공합니다.</p>
+									</div>
+									<div class="mobile_image">
 										<img src="../assets/images/business/image-service_01.jpg" alt="">
-									</figure>
-									<figure>
+									</div>
+								</div>
+								<div class="text_area two">
+									<span class="service_title width_auto">시설관리</span>
+									<div class="service_explain">
+										<span class="explain_title">활용도 향상을 지원하는 서비스</span>
+										<p><strong>영선 관리</strong> : 건물 시설물 유지 보수, 사무용 집기 운반 및<br> 배치 서비스를 지원합니다.</p>
+										<p><strong>AV 관리</strong> : 회의 및 행사시 영상 및 오디오 장치 지원<br> 서비스를 제공합니다.</p>
+									</div>
+									<div class="mobile_image">
 										<img src="../assets/images/business/image-service_02.jpg" alt="">
-									</figure>
-									<figure>
+									</div>
+								</div>
+								<div class="text_area three">
+									<span class="service_title width_auto">차량관리</span>
+									<div class="service_explain">
+										<span class="explain_title">쾌적한 차량 이용을<br> 지원하는 서비스</span>
+										<p>고객의 업무용 차량 점검과 내 · 외부 청결유지 서비스를 제공합니다.</p>
+									</div>
+									<div class="mobile_image">
 										<img src="../assets/images/business/image-service_03.jpg" alt="">
-									</figure>
-									<figure>
+									</div>
+								</div>
+								<div class="text_area four">
+									<span class="service_title width_auto">문서수발</span>
+									<div class="service_explain">
+										<span class="explain_title">업무 효율을 지원하는 서비스</span>
+										<p>각종 문서의 사내 전달 서비스를 제공합니다.</p>
+									</div>
+									<div class="mobile_image">
 										<img src="../assets/images/business/image-service_04.jpg" alt="">
-									</figure>
+									</div>
+								</div>
+							</div>
+							<div class="image_view pc">
+								<div class="slide_wrap">
+									<div class="slide">
+										<figure>
+											<img src="../assets/images/business/image-service_01.jpg" alt="">
+										</figure>
+										<figure>
+											<img src="../assets/images/business/image-service_02.jpg" alt="">
+										</figure>
+										<figure>
+											<img src="../assets/images/business/image-service_03.jpg" alt="">
+										</figure>
+										<figure>
+											<img src="../assets/images/business/image-service_04.jpg" alt="">
+										</figure>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -277,128 +282,6 @@
 	<div id="top">
 		<button type="button">상단으로</button>
 	</div>
-	<script>
-		$(function(){
-
-			document.documentElement.style.overflowX = "hidden";
-
-			setTimeout(()=> {
-				$('.title_wrap').addClass('on')
-				$('.content_image').addClass('on')
-			}, 1500)
-
-			$(window).scroll(function () {
-				var thisScroll = 0;
-				var scT = $(this).scrollTop();
-				var winH = $(this).height();
-				var contentTab  = $('.content_tab ').height();
-				
-				if (scrollTop > thisScroll + 30 && scrollTop > 30) {
-					$('.title_wrap').removeClass('on').addClass('down')
-					$('.content_image').removeClass('on').addClass('right')
-					
-				} else {
-					if (scrollTop - thisScroll < 0) {
-						$('.title_wrap').removeClass('on')
-						$('.content_image').removeClass('on')
-						$('.tab_area .view').removeClass('pt120')
-					}
-					if (scrollTop === 0) {
-						$('.title_wrap').removeClass('down').addClass('on')
-						$('.content_image').removeClass('right').addClass('on')
-					}
-				}
-			});
-			var scrollBody = document.querySelector(".service_list");
-			var parents = document.querySelector(".fixed_scrollmotion");
-			var wrapStyle = document.querySelector(".wrap");
-
-			var scrollHeight;
-			var sectionOffsetTop;
-			var sectionScrolTop;
-			var scrollRealHeight;
-			var winScrollTop;
-			var scrollPerecnt;
-			var percent;
-
-			var contentList = parents.children;
-
-			function changeOverlap() {
-				actionScroll ()
-			}
-
-			function actionScroll () {
-				scrollHeight = scrollBody.offsetHeight;
-				winScrollTop = window.pageYOffset;
-				sectionOffsetTop = scrollBody.getBoundingClientRect().top + window.pageYOffset;
-				scrollRealHeight = (scrollHeight - window.innerHeight);
-				sectionScrolTop = winScrollTop - sectionOffsetTop;
-				scrollPerecnt =  sectionScrolTop / scrollRealHeight;
-				percent = scrollPerecnt * 100 ;
-				
-
-				if(percent >= 0 ){
-					contentList[0].classList.remove('before');
-					contentList[0].classList.add('on');
-					contentList[1].classList.remove('on');
-					contentList[1].classList.remove('before');
-					contentList[2].classList.remove('on');
-					contentList[2].classList.remove('before');
-					contentList[3].classList.remove('on');
-					contentList[3].classList.remove('before');
-					wrapStyle.classList.add("visible");
-				}
-
-				if(percent >= 25){
-					contentList[0].classList.remove('on');
-					contentList[0].classList.add('before');
-					contentList[1].classList.add('on');
-					contentList[2].classList.remove('on');
-					contentList[3].classList.remove('on');
-					wrapStyle.classList.add("visible");
-				}
-
-				if(percent >= 50){
-					contentList[0].classList.remove('before');
-					contentList[0].classList.remove('on');
-					contentList[1].classList.add('before');
-					contentList[1].classList.remove('on');
-					contentList[2].classList.add('on');
-					contentList[3].classList.remove('on');
-					wrapStyle.classList.add("visible");
-
-				if(percent >= 75){
-					contentList[0].classList.remove('on');
-					contentList[1].classList.remove('on');
-					contentList[2].classList.remove('on');
-					contentList[2].classList.add('before');
-					contentList[3].classList.add('on');
-					wrapStyle.classList.add("visible");
-				}
-
-				
-			};
-		}
-
-		function init() {
-			changeOverlap();
-			bindEvent();
-		}
-
-		function bindEvent(){
-			window.addEventListener('scroll', function() {
-				changeOverlap();
-				if (winScrollTop === 0) {
-					wrapStyle.classList.remove("visible");
-				}
-				
-			});
-		};
-			
-			init();
-		});
-
-	</script>
 </body>
 
 </html>

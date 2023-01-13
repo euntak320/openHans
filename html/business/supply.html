@@ -7,14 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>채용공고 | 삼성 SDS 자회사형 표준사업장</title>
 
-	<!-- css -->
-	<link rel="stylesheet" href="../assets/css/common.css">
-	<link rel="stylesheet" href="../assets/css/busniess.css">
-
-	<!-- js -->
-	<script src="../assets/js/common/jquery-3.6.0.min.js"></script>
-	<script src="../assets/js/common/script.js"></script>
-	<script src="../assets/js/busniess.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="../assets/css/common.css">
+		<link rel="stylesheet" href="../assets/css/animate.css">
+		<link rel="stylesheet" href="../assets/css/busniess.css">
+	
+		<!-- js -->
+		<script src="../assets/js/common/jquery-3.6.0.min.js"></script>
+	
+		<script src="../assets/js/common/gsap.min.js"></script>
+		<script src="../assets/js/ScrollMagic.js"></script>
+		<script src="../assets/js/animation.gsap.js"></script>
+		<script src="../assets/js/common/script.js"></script>
+		<script src="../assets/js/busniess.js"></script>
 </head>
 
 <body>
@@ -117,7 +122,7 @@
 		</header>
 
 		<!-- section : [S] -->
-		<section class="business" id="section">
+		<section class="business supply" id="section">
 			 
 			<div class="keyvisual_area">
 				<div class="keyvisual_width">
@@ -133,38 +138,40 @@
 			 
 
 			<div class="content_wrap">
-				<div class="content">
-					<div class="title_wrap">
-						<span class="content_title">물류지원</span>
-						<p class="explain_text">삼성SDS 통합물류 시스템 “첼로”를 기반으로 주문 접수부터<br> 물류 이동, 비용 정산을 지원하는 <strong>물류 지원</strong><br> SDS 물류의 입출고, 재고 및 운송관리를 지원하는 <strong>실행관리</strong> 업무를 수행하고 있습니다.<br> 시스템 기반으로 <strong>최상의 서비스 및 최고의 만족</strong>을 제공합니다.</p>
+				<div class="scroll_area">
+					<div class="content">
+						<div class="title_wrap">
+							<span class="content_title">물류지원</span>
+							<p class="explain_text">삼성SDS 통합물류 시스템 “첼로”를 기반으로 주문 접수부터<br> 물류 이동, 비용 정산을 지원하는 <strong>물류 지원</strong><br> SDS 물류의 입출고, 재고 및 운송관리를 지원하는 <strong>실행관리</strong> 업무를 수행하고 있습니다.<br> 시스템 기반으로 <strong>최상의 서비스 및 최고의 만족</strong>을 제공합니다.</p>
+						</div>
+						<div class="content_image supply">
+							<img src="../assets/images/business/image-supply.jpg" alt="" class="only-pc">
+							<img src="../assets/images/business/mobile_image-supply.jpg" alt="" class="only-mobile">
+						</div>
 					</div>
-					<div class="content_image supply">
-						<img src="../assets/images/business/image-supply.jpg" alt="" class="only-pc">
-						<img src="../assets/images/business/mobile_image-supply.jpg" alt="" class="only-mobile">
-					</div>
-				</div>
 
-				<div class="service_area v2">
-					<div class="fix_wrap inner">
-						<div class="text_box">
-							<div class="text_area one active">
-								<span class="service_title">물류서비스</span>
-								<div class="service_explain">
-									<span class="explain_title">삼성SDS 물류시스템을<br> 활용한 고객 업무 지원 서비스</span>
-								<p>삼성SDS 물류시스템(Cello)을 활용하여 물류에 대한 Order 접수 예약, Invoice 입/출력, 서류작성 지원, 물류 현황 모니터링,  실행사 정산서 검증 및 발송 등에 대한 고객 업무 지원 서비스입니다.</p>
-								</div>
-								<div class="mobile_image">
-									<img src="../assets/images/business/image-supply_01.jpg" alt="">
+					<div class="service_area v2 scroll_motion">
+						<div class="fix_wrap inner">
+							<div class="text_box">
+								<div class="text_area one active">
+									<span class="service_title">물류서비스</span>
+									<div class="service_explain">
+										<span class="explain_title">삼성SDS 물류시스템을<br> 활용한 고객 업무 지원 서비스</span>
+									<p>삼성SDS 물류시스템(Cello)을 활용하여 물류에 대한 Order 접수 예약, Invoice 입/출력, 서류작성 지원, 물류 현황 모니터링,  실행사 정산서 검증 및 발송 등에 대한 고객 업무 지원 서비스입니다.</p>
+									</div>
+									<div class="mobile_image">
+										<img src="../assets/images/business/image-supply_01.jpg" alt="">
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="image_view pc">
-							<div class="slide_wrap">
-								<div class="slide">
-									<figure>
-										<img src="../assets/images/business/image-supply_01.jpg" alt="">
-									</figure>
-									<figure>
+							<div class="image_view pc">
+								<div class="slide_wrap">
+									<div class="slide">
+										<figure>
+											<img src="../assets/images/business/image-supply_01.jpg" alt="">
+										</figure>
+										<figure>
+									</div>
 								</div>
 							</div>
 						</div>

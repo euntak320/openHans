@@ -20,18 +20,18 @@ $(function(){
       var contentTab  = $('.content_tab ').height();
       
       if (scrollTop > thisScroll + 30 && scrollTop > 30) {
-        $('.title_wrap').removeClass('on').addClass('down')
-        $('.content_image').removeClass('on').addClass('right')
+        // $('.title_wrap').removeClass('on').addClass('down')
+        // $('.content_image').removeClass('on').addClass('right')
         
       } else {
         if (scrollTop - thisScroll < 0) {
-          $('.title_wrap').removeClass('on')
-          $('.content_image').removeClass('on')
+          $('.title_wrap').addClass('on')
+          $('.content_image').addClass('on')
           $('.tab_area .view').removeClass('pt120')
         }
         if (scrollTop === 0) {
-          $('.title_wrap').removeClass('down').addClass('on')
-          $('.content_image').removeClass('right').addClass('on')
+          $('.title_wrap').addClass('on')
+          $('.content_image').addClass('on')
         }
       }
 
@@ -58,27 +58,35 @@ $(function(){
       });
     });
 
-  $('.sw').click(function(e){
-    e.preventDefault
-    var itOffset = $('#sw').offset();
-    $('html').animate({scrollTop: itOffset.top - 200}, 400)
-  });
-  
-  $('.service').click(function(e){
-    e.preventDefault
-    var serviceOffset = $('#service').offset();
-    $('html').animate({scrollTop: serviceOffset.top - 200}, 400)
-  });
-  $('.ui').click(function(e){
-    e.preventDefault
-    var uiOffset = $('#ui').offset();
-    $('html').animate({scrollTop: uiOffset.top - 200}, 400)
-  });
-  $('.moniter').click(function(e){
-    e.preventDefault
-    var moniterOffset = $('#moniter').offset();
-    $('html').animate({scrollTop: moniterOffset.top - 200}, 400)
-  });
+		var width = $(window).width();
+
+
+	var controller = new ScrollMagic.Controller();
+
+	if(width > 1200) {
+		var firstArea = new TimelineMax()
+			firstArea
+			.add('start')
+			.to (".title_wrap ", 1, {y:"200px" , opacity:0})
+			.to (".content_image", 1, {width:"600px", height:"400px", x: width / 2.5, y:"75%", marginLeft:0, marginTop:0, opacity:0, ease: Linear.easeNone}, 'start')
+			.to (".content_image .only-pc", 1, {x:width/2.5, width:"600px", height:"400px", marginTop:0, opacity:0}, 'start')
+			.to (".service_area", 1, {y:"-100px", opacity:1}, 'start')
+
+			var scene1 = new ScrollMagic.Scene({
+			triggerElement: ".scroll_area", 
+			triggerHook: 0,
+			duration: "100%"  
+			})
+			.setPin(".scroll_area") 
+			.setTween(firstArea)
+			.addTo(controller);
+		}
+
+   
+
+
+
+ 
 
 
   var scrollBody = $('.fix_motion');
@@ -119,7 +127,6 @@ $(function(){
 
 		var deviceImg = $('.image_view .slide_wrap figure');
 		var imgWidth = deviceImg.height();
-		console.log(percent);
 
 		if(percent >= -14 && percent < 1) {
 
