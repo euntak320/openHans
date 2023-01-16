@@ -224,6 +224,7 @@
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		<!-- section : [E] -->
@@ -289,38 +290,7 @@
 	<div id="top">
 		<button type="button">상단으로</button>
 	</div>
-	<script>
-		$(function(){
-
-			setTimeout(()=> {
-				$('.title_wrap').addClass('on')
-				$('.content_image').addClass('on')
-			}, 1500)
-
-			$(window).scroll(function () {
-				var thisScroll = 0;
-				var scT = $(this).scrollTop();
-				var winH = $(this).height();
-				var contentTab  = $('.content_tab ').height();
-				
-				if (scrollTop > thisScroll + 30 && scrollTop > 30) {
-					$('.title_wrap').removeClass('on').addClass('down')
-					$('.content_image').removeClass('on').addClass('right')
-					
-				} else {
-					if (scrollTop - thisScroll < 0) {
-						$('.title_wrap').removeClass('on')
-						$('.content_image').removeClass('on')
-						$('.tab_area .view').removeClass('pt120')
-					}
-					if (scrollTop === 0) {
-						$('.title_wrap').removeClass('down').addClass('on')
-						$('.content_image').removeClass('right').addClass('on')
-					}
-				}
-			});
-		});
-	</script>
+	
 </body>
 
 </html>

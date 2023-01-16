@@ -69,7 +69,7 @@
 
 .first_area {
   position: relative;
-  height: 920px;
+  height: 980px;
   overflow: hidden;
 }
 
@@ -183,7 +183,8 @@
 }
 .first_area .swiper-slide .img_area img {
   width: 100%;
-  height: 920px;
+  height: 980px;
+  object-fit: cover;
 }
 .first_area .swiper-slide .img_area img.mobile,
 .first_area .swiper-slide .img_area img.tablet {
@@ -767,7 +768,7 @@
   transform: translateX(-178px);
 }
 .thrid_area .btn_area.other a::after {
-  background-position: 8% center;
+  background-position: 9.5% center;
 }
 
 .thrid_area .btn_area a::after {
@@ -1483,7 +1484,7 @@
   }
   .thrid_area .button_area {
     width: 125px;
-    bottom: -58px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1776,6 +1777,10 @@
     margin:30px auto 0;
   }
 
+  .thrid_area .btn_area.other a::after {
+    background-position: 11.33% center;
+  }
+
 
   .last_area {
     padding: 60px 77px 40px;
@@ -1831,6 +1836,13 @@
     top:150px;
     left: 30px;
   }
-
  
+}
+
+@media all and (max-width:320px) {
+  .last_area .btn_area a {
+    padding: 8px 29px 8px 32px;
+    font-size: 12px;
+  }
+  
 }

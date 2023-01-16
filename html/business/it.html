@@ -222,7 +222,7 @@
 					<div class="tab_area">
 						<div class="tab_list">
 							<div class="scroll_mobile">
-								<a href="javascript:void(0);" class="sw">S/W TEST</a>
+								<a href="javascript:void(0);" class="sw on">S/W TEST</a>
 								<a href="javascript:void(0);" class="ui">UI/UX검증</a>
 								<a href="javascript:void(0);" class="service">서비스데스크</a>
 								<a href="javascript:void(0);" class="moniter">관제/모니터링</a>
@@ -509,24 +509,32 @@
 
 	<script>
 		$(function(){
+
+
+			$('.tab_list a').click(function(e){
+				e.preventDefault();
+				$('.tab_list a').removeClass('on');
+				$('.tab_list a').eq($(this).index()).addClass('on');
+			});
+
 			$('.sw').click(function(e){
-				e.preventDefault
+				e.preventDefault();
 				var itOffset = $('#sw').offset();
 				$('html').animate({scrollTop: itOffset.top - 200}, 400)
 			});
 			
 			$('.service').click(function(e){
-				e.preventDefault
+				e.preventDefault();
 				var serviceOffset = $('#service').offset();
 				$('html').animate({scrollTop: serviceOffset.top - 200}, 400)
 			});
 			$('.ui').click(function(e){
-				e.preventDefault
+				e.preventDefault();
 				var uiOffset = $('#ui').offset();
 				$('html').animate({scrollTop: uiOffset.top - 200}, 400)
 			});
 			$('.moniter').click(function(e){
-				e.preventDefault
+				e.preventDefault();
 				var moniterOffset = $('#moniter').offset();
 				$('html').animate({scrollTop: moniterOffset.top - 200}, 400)
 			});
