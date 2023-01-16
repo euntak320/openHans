@@ -3,6 +3,10 @@ section.it{
   padding-bottom: 0;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 section.service .scroll_area {
   height: 2737px;
 }
@@ -88,6 +92,11 @@ section.service .scroll_area {
   margin: 0 100px 0 260px;
   opacity: 0;
   z-index: 10;
+}
+.business .service_area.v2 {
+  top:0;
+  margin-bottom: 300px;
+  transform: translateY(0)!important;
 }
 
 .business .content_image.right img {
@@ -215,6 +224,12 @@ section.service .scroll_area {
 .business.it .content_tab,
 .business.service .content_tab {
   top:-400px;
+}
+
+.business.supply .content_tab, 
+.business.health .content_tab {
+  margin-top: 400px;
+
 }
 
 .business .content_tab .tab_area {
@@ -529,6 +544,10 @@ section.service .scroll_area {
   section.it,
   section.supply {
     padding-bottom: 100px;
+  }
+
+  .business.supply .content_tab, .business.health .content_tab{
+    margin-top: 50px;
   }
 
   .business .only-pc {

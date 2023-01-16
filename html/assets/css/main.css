@@ -1839,7 +1839,7 @@
  
 }
 
-@media all and (max-width:320px) {
+@media all and (max-width:360px) {
   .last_area .btn_area a {
     padding: 8px 29px 8px 32px;
     font-size: 12px;
