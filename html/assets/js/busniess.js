@@ -120,6 +120,9 @@ $(function(){
 
     		imageChange(imgWidth * 0);
     		$('.fix_motion .text_box p').removeClass('active');
+				$('.fix_motion .text_box .two').removeClass('active');
+				$('.fix_motion .text_box .three').removeClass('active');
+				$('.fix_motion .text_box .four').removeClass('active');
     		$('.fix_motion .text_box .one').addClass('active');
     		$('.fix_motion .fix_wrap .image_view').removeClass('fixed');
     	}
@@ -128,6 +131,9 @@ $(function(){
 
     		imageChange(imgWidth * 1);
     		$('.fix_motion .text_box p').removeClass('active');
+				$('.fix_motion .text_box .one').removeClass('active');
+				$('.fix_motion .text_box .three').removeClass('active');
+				$('.fix_motion .text_box .four').removeClass('active');
     		$('.fix_motion .text_box .two').addClass('active');
     		$('.fix_motion .fix_wrap .image_view').removeClass('fixed');
     	}
@@ -136,6 +142,9 @@ $(function(){
 
     		imageChange(imgWidth * 2);
     		$('.fix_motion .text_box p').removeClass('active');
+				$('.fix_motion .text_box .two').removeClass('active');
+				$('.fix_motion .text_box .three').removeClass('active');
+				$('.fix_motion .text_box .four').removeClass('active');
     		$('.fix_motion .text_box .three').addClass('active');
     		$('.fix_motion .fix_wrap .image_view').removeClass('fixed');
 
@@ -145,6 +154,9 @@ $(function(){
 
     		imageChange(imgWidth * 3);
     		$('.fix_motion .text_box p').removeClass('active');
+				$('.fix_motion .text_box .one').removeClass('active');
+				$('.fix_motion .text_box .two').removeClass('active');
+				$('.fix_motion .text_box .three').removeClass('active');
     		$('.fix_motion .text_box .four').addClass('active');
     		$('.fix_motion .fix_wrap .image_view').addClass('fixed');
     	}
