@@ -7,9 +7,10 @@ body.hidden {
   overflow: hidden;
 }
 
-section.service .scroll_area {
-  height: 2737px;
+section.service .service_area {
+  /* height: 2737px; */
 }
+
 
 .wrap.visible {
   overflow: visible;
@@ -28,6 +29,13 @@ section.service .scroll_area {
   width: auto;
   max-width: unset;
   box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.business .content_wrap.opacity {
+  opacity: 1;
+
 }
 
 .business .content{
@@ -36,7 +44,7 @@ section.service .scroll_area {
   z-index: 0;
 }
 .business .title_wrap {
-  opacity: 0;
+  opacity: 1;
 }
 
 .business .content .content_title {
@@ -63,7 +71,7 @@ section.service .scroll_area {
   height: 320px;
   margin-top: 140px;
   margin-left: -260px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .business .content_image img {
@@ -88,7 +96,7 @@ section.service .scroll_area {
 
 .business .service_area {
   position: relative;
-  top:-120px;
+  /* top:-120px; */
   margin: 0 100px 0 260px;
   opacity: 0;
   z-index: 10;
@@ -141,6 +149,10 @@ section.service .scroll_area {
   width: auto;
 }
 
+.business.service .service_area .text_box .service_explain {
+ padding :50px 0;
+}
+
 .business .service_area .text_box .service_explain strong {
   font-weight: 700;
 }
@@ -159,6 +171,9 @@ section.service .scroll_area {
 .business .service_area.v2 .text_box {
   padding-top: 0;
 }
+
+
+
 
 /* 1개만 있을경우 */
 .business .service_area.v2 {
@@ -223,12 +238,12 @@ section.service .scroll_area {
 
 .business.it .content_tab,
 .business.service .content_tab {
-  top:-400px;
+  top:-200px;
 }
 
 .business.supply .content_tab, 
 .business.health .content_tab {
-  margin-top: 400px;
+  margin-top: 200px;
 
 }
 
@@ -352,7 +367,7 @@ section.service .scroll_area {
 
 
 .service .fix_wrap .image_view.fixed {
-  top: calc(50% - -160px);
+  /* top: calc(50% - -160px); */
 }
 
 .no-csspositionsticky .fix_motion .fix_wrap .image_view {
@@ -378,6 +393,10 @@ section.service .scroll_area {
 
  .fix_wrap .image_view .slide_wrap .slide figure {
   width: 600px;
+}
+
+.service .fix_motion .fix_wrap .text_box .four {
+  padding-bottom: 400px;  margin-bottom : 0;
 }
 
 

@@ -8,28 +8,20 @@ $(function(){
 
     document.documentElement.style.overflowX = "hidden";
 
-		$('html').css('overflow','hidden');
-
+		
 		setTimeout(()=> {
-			$('.title_wrap').addClass('on')
-    	$('.content_image').addClass('on')
+			$('.content_wrap').addClass('opacity')
 		}, 200)
-
-		setTimeout(()=> {
-			$('html').css('overflow','visible');
-		}, 2500)
-
-
     	
 
 		var width = $(window).width();
 		
-		if(width > 1200) {
-			$('.business.service').parents('.wrap').find('footer').css('margin-top','-265px');
-		}
-		else {
-			$('.business.service').parents('.wrap').find('footer').css('margin-top','auto');
-		}
+		// if(width > 1200) {
+		// 	$('.business.service').parents('.wrap').find('footer').css('margin-top','-265px');
+		// }
+		// else {
+		// 	$('.business.service').parents('.wrap').find('footer').css('margin-top','auto');
+		// }
 
 
     $(window).scroll(function () {
@@ -121,7 +113,9 @@ $(function(){
     	var deviceImg = $('.image_view .slide_wrap figure');
     	var imgWidth = deviceImg.height();
 
-    	if (percent >= -20 && percent < 15) {
+			console.log(percent);
+
+    	if (percent >= -21 && percent < 15) {
 
 
     		imageChange(imgWidth * 0);
